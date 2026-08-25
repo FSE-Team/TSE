@@ -1,0 +1,10 @@
+.github/
+.probe/
+.vscode/
+kubejs/config/
+kubejs/probe/
+kubejs/jsconfig.json
+kubejs/package.json
+kubejs/server_scripts/jsconfig.json
+kubejs/client_scripts/jsconfig.json
+kubejs/startup_scripts/jsconfig.json
