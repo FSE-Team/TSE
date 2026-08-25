@@ -1,0 +1,167 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1F44278D391DF444"
+	group: "52016480CE0E93EF"
+	icon: {
+		Count: 1
+		id: "minecraft:iron_sword"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "1F44278D391DF444"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"579309CB6A94D760"
+				"7B8908EABED5F7BC"
+			]
+			description: [
+				"&eEDA紧急更新：可选的更新"
+				"&r本次更新为工程师提供了一个便捷结构寻找器——&6探险家指南针&r，打开指南针后，在搜索框输入你需要的结构中文/英文，便可以寻找到该结构"
+				"如果寻找范围大于一万格，那么可能是建筑被禁用了或者你运气真的差"
+				"&bEDA温馨提示:如果你输入中文后找不到对应建筑，请输入英文尝试"
+				"&r&cFSE免责声明:对于工程师利用本次更新提供的系统导致的迷失/死亡，FSE集团概不负责!&r"
+			]
+			id: "60E1684C8097FC01"
+			subtitle: "探险家导航系统"
+			tasks: [{
+				id: "727A9AD0A8BBD9F1"
+				item: {
+					Count: 1
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "7B8908EABED5F7BC"
+			tasks: [{
+				id: "372F1D6A80232C03"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B8908EABED5F7BC"]
+			id: "10DB946D15C64BC5"
+			tasks: [{
+				id: "7FD696F702974CD5"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						inventorySlots: 27
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["10DB946D15C64BC5"]
+			id: "7A75BA3424C82051"
+			optional: true
+			tasks: [{
+				id: "4DD3C189E6341645"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:copper_backpack"
+					tag: {
+						inventorySlots: 45
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"10DB946D15C64BC5"
+				"7A75BA3424C82051"
+			]
+			id: "6F3D9325787606AC"
+			tasks: [{
+				id: "7E2EC3F146CC2D30"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:iron_backpack"
+					tag: {
+						inventorySlots: 54
+						upgradeSlots: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F3D9325787606AC"]
+			id: "160881FAF288B8B9"
+			tasks: [{
+				id: "3BF581AB2A5F9F75"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:gold_backpack"
+					tag: {
+						inventorySlots: 81
+						upgradeSlots: 3
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["160881FAF288B8B9"]
+			id: "4A9A29BDB24822E4"
+			tasks: [{
+				id: "13B4A33F93476EB0"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:diamond_backpack"
+					tag: {
+						inventorySlots: 108
+						upgradeSlots: 5
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A9A29BDB24822E4"]
+			id: "24955EDDE8F9D423"
+			tasks: [{
+				id: "72C693D7F4DFC212"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:netherite_backpack"
+					tag: {
+						inventorySlots: 120
+						upgradeSlots: 7
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+	]
+	title: "冒险旅途"
+}

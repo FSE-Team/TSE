@@ -1,0 +1,860 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2E9C01B924441395"
+	group: "7856FC9742FDA805"
+	icon: "pneumaticcraft:printed_circuit_board"
+	id: "2E9C01B924441395"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3367E382FD4ED628"]
+			description: ["方镁矾平模，可以用于碾碎/平整，是将&e纸板&r制备成&e纸质电路板&r的重要工具。"]
+			id: "393EBABF045145D3"
+			subtitle: "压平它们"
+			tasks: [{
+				id: "7A9D983BAE7FF055"
+				item: "embers:flat_stamp"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3367E382FD4ED628"]
+			description: [
+				"方镁矾压印模具，可以用于板材加工，效率似乎.......不如辊压机？"
+				"可以用来压制&e纸板&r。"
+			]
+			id: "3ED8D8F1D34F3D96"
+			subtitle: "正式压印"
+			tasks: [{
+				id: "35CE99C89C78CCCE"
+				item: "embers:plate_stamp"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5CF15A1072C8A6C5"
+				"535966BAB31E0C71"
+				"19905E1B602A7FC2"
+			]
+			description: [
+				"余烬工业集团在被我们收购后，我们研发的，余烬机器核心的全新替代物——&6余烬构件&r！"
+				"那些余烬矮人说科技构件可能导致机器不稳定，但是在我们的测试下，它工作良好，于是我叫它们&m回去工作&r各司其职，无需关心构件问题。"
+				"总之，这个构件让你可以制作余烬机器，进而开始PCB加工。"
+			]
+			id: "6623B6C11DE0BEFE"
+			subtitle: "稳定之选"
+			tasks: [{
+				id: "40642C2C51FCA68B"
+				item: "tse:ember_mechanism"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3367E382FD4ED628"]
+			description: ["方镁矾被加工后形成的板材，十分坚固，可以作为&6余烬构件&r的基底和&e机器的原材料&r。"]
+			id: "19905E1B602A7FC2"
+			subtitle: "这是一块实心板材"
+			tasks: [{
+				id: "66040BE1648F2EC3"
+				item: "embers:caminite_plate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: ["你制作了方镁矾混合物，这是制作方镁矾系列物品和余烬机器的原材料。"]
+			id: "3367E382FD4ED628"
+			subtitle: "这不就是&m啥子&r沙子和粘土吗"
+			tasks: [{
+				id: "18EF2BF8C2024C83"
+				item: "embers:caminite_blend"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3367E382FD4ED628"]
+			description: [
+				"方镁矾烧制后形成的硬砖，适合用来制造机器和搭建房子。"
+				"&3FSE集团提示:优先投身工业，基地稍后再说。&r"
+			]
+			id: "59F2063DB8127981"
+			subtitle: "这是一块砖..........?!砖砖!?"
+			tasks: [{
+				id: "5668F1BEDC8F6BEC"
+				item: "embers:caminite_brick"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"使用&b辊压机&r压出的银板材，具有好的延展性，表面十分平整，可以用于接下来的加工。"
+				"当然，我们建议先储备一批。"
+			]
+			id: "5CF15A1072C8A6C5"
+			subtitle: "这是银板材"
+			tasks: [{
+				id: "0691396BF123BF1A"
+				item: "alltheores:silver_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"使用&b辊压机&r压出的铅板材，表面十分平整，可以用于接下来的加工。"
+				"当然，我们建议先储备一批。"
+				"不推荐经常接触! 虽然没有什么负面效果。"
+			]
+			id: "535966BAB31E0C71"
+			subtitle: "防辐射，防辐射。"
+			tasks: [{
+				id: "5226947591E6777C"
+				item: "alltheores:lead_plate"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6623B6C11DE0BEFE"]
+			description: [
+				"&6余烬能量&r当然也可以用来&c加热。"
+				"&r通入&6余烬能量&r后，&a余烬燃烧室&r将开始&c加热&r，使用&b风箱&r将燃烧室提升到&9超级燃烧&r。"
+				"在&6余烬能量&r耗尽之前，&e燃烧室的燃烧等级不会下降&r。"
+			]
+			icon: "moreburners:ember_burner"
+			id: "392E2E96A2573978"
+			subtitle: "死灰复燃"
+			tasks: [
+				{
+					id: "566A6AC29A64F536"
+					item: "moreburners:ember_burner"
+					type: "item"
+				}
+				{
+					id: "2A2236BA25ED05A3"
+					item: "embers:atmospheric_bellows"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: ["&a工作盆&r只要加上盖板便可以临时形成发酵需要的密闭环境，利用工作盆进行小批量发酵是很有效的。"]
+			id: "5FDE7B1D23108031"
+			subtitle: "物尽其用"
+			tasks: [
+				{
+					id: "1091C286F77E31B1"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "4BD94DA7D11B666C"
+					item: "createdieselgenerators:basin_lid"
+					type: "item"
+				}
+			]
+			title: "小型发酵装置"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"神秘的传送门带你来到了一个新维度，&c这里赤红、阴暗而且压抑&r。&bXaero™ · 星球表面导航与制图协议&r告诉你这里叫做&4下界&r。"
+				"下界是个美丽的维度，富含我们需要的&o&3灵魂沙&r&r和&c热能&r。你可以从&3灵魂沙&r&8&m(据说是工程师死亡后留下的亡魂凝聚物)&r&r中获取&o&e灵魂醇&r&r，用以制取一些有趣的原料。"
+			]
+			id: "3BDDA627D171A69E"
+			subtitle: "工程师的亡魂"
+			tasks: [{
+				id: "1FB3CCC27BC70ECB"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "灵魂沙"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5FDE7B1D23108031"
+				"3BDDA627D171A69E"
+				"392E2E96A2573978"
+			]
+			description: [
+				"在&c加热&r的情况下，向&6发酵装置&r内放入&2灵魂沙和水&r，就可以产出&e250mB灵魂醇&r。"
+				"不知道为什么，你看着这种液体，感觉到了&4一丝不安&r。"
+				"&8&m即使在桶内静置，灵魂醇也时刻不停地流动，耳朵贴近还能听见惨叫声。&r"
+			]
+			icon: "tse:soul_alcohol_bucket"
+			id: "25380F69E72590FB"
+			subtitle: "提纯.........灵魂?"
+			tasks: [
+				{
+					id: "5FB30D2A7052FF93"
+					title: "灵魂醇"
+					type: "checkmark"
+				}
+				{
+					id: "27950558DCDA82BF"
+					item: "tse:soul_alcohol_bucket"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"&3古代城市&r有我们需要的一些材料，看来你是不得不去一趟了。"
+				"我们建议在前往古代城市之前先制作一个&e剪刀&r，就地取材获取静步所需的羊毛。"
+				"&b来自EDA的提示：一定要保持安静，曾经有&r&c191名&r&b工程师因为触发&r&6古城自动防卫系统&r&b而丧命，即使也有触发了防卫系统的工程师逃离了古代城市，他们也患上了严重的PTSD，并终生不能再从事相关工作。&r"
+				"&a来自EDA的消息：由于大量工程师反映找不到古代城市，公司进行了一次系统升级，具体前往支线&e冒险旅途&a中的&e探险家指南针&a查看。&r"
+			]
+			id: "74B2A4C09387A778"
+			subtitle: "&e监守者：迫近"
+			tasks: [{
+				id: "326165CAD5B77E40"
+				structure: "minecraft:ancient_city"
+				title: "古代城市"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"74B2A4C09387A778"
+				"25380F69E72590FB"
+			]
+			description: [
+				"获得&9回响碎片&r后，你就可以制作&b回响催化剂&r了。"
+				"回响催化剂满含&2古代力量&r，可以以神秘的方法增生一些金属和晶体，以及进行一些常理来说不能进行的配方。"
+				"在&a耗尽力量&r之后，&e催化剂会变为失活状态&r，你可以利用制造时的副产物——&b含回响杂质的铁锭&r——将&b失活的回响催化剂&r转换为&b回响回收液&r，然后用于&e增生回响碎片&r。"
+				"&c所以一定要记得留下足够余量的回响碎片，我相信你也不想回到古代城市吧。&r"
+			]
+			id: "5BC2DF96B69EA739"
+			subtitle: "古代力量"
+			tasks: [{
+				id: "7219891B7F81D805"
+				item: "tse:echo_catalyst"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BC2DF96B69EA739"]
+			id: "20AF69741EE88189"
+			tasks: [{
+				id: "7C706ABED5526F33"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"20AF69741EE88189"
+				"7A2AFE8F1FD10779"
+			]
+			id: "0753C053F288D3BB"
+			tasks: [{
+				id: "0D6A7929311E1C7E"
+				item: "tse:sealed_mechanism"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6AB3E1ACC86349EE"
+				"6865E893F50E4332"
+			]
+			icon: "tse:liquid_unprocessed_sulfurated_rubber_bucket"
+			id: "7A2AFE8F1FD10779"
+			tasks: [
+				{
+					id: "0267AC0CE1044A87"
+					title: "液态粗制硫化橡胶"
+					type: "checkmark"
+				}
+				{
+					id: "0B47B8005F328433"
+					item: "tse:liquid_unprocessed_sulfurated_rubber_bucket"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			id: "6865E893F50E4332"
+			tasks: [{
+				id: "3A08A0EC3F657095"
+				item: "immersiveengineering:dust_sulfur"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			id: "6AB3E1ACC86349EE"
+			tasks: [{
+				id: "3044079C7D808B04"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			id: "605406686AE012CD"
+			tasks: [{
+				id: "052500771B4E8DF4"
+				item: "embers:mini_boiler"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["605406686AE012CD"]
+			icon: "tse:steam_cracked_refinery_gas_bucket"
+			id: "006389D3D894307D"
+			tasks: [{
+				id: "5637D568907C2570"
+				title: "蒸汽"
+				type: "checkmark"
+			}]
+			title: "蒸汽裂化的炼油气"
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74B73EDEC42A769C"]
+			id: "41B0005652F6138D"
+			subtitle: "高分子"
+			tasks: [{
+				id: "06E14A5F9AA017D2"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["006389D3D894307D"]
+			id: "74B73EDEC42A769C"
+			tasks: [{
+				id: "145E1A7111781DDC"
+				item: "tse:ethylene_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0753C053F288D3BB"]
+			description: [
+				"使用压力室墙壁或压力室玻璃搭出&e边长为3、4或5的中空正方体&r，然后用压力室气阀和压力室接口替换掉&e位于面上&r的方块，通过压力室气阀向压力室通入压缩气体，通过压力室接口来输入/输出物品，随后你就可以利用压缩气体来处理物品了。"
+				"&b来自EDA的提醒：放置压力室接口时请注意接口的方向，要使这个接口作为输入端，请将蓝色的一面朝外，否则将黄色的一面朝外。&r"
+				"&c来自EDA的警告：在接口存取完物品后请立即抽出你的手，否则接口的气闸门会将手夹断，公司不会因为员工操作不当而赔偿。&r"
+			]
+			icon: "pneumaticcraft:pressure_chamber_valve"
+			id: "3ED32D91771C662E"
+			subtitle: "皮质醇骤增"
+			tasks: [
+				{
+					id: "72F0D5698AC09B33"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					id: "04825F57DF928E3E"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+				{
+					id: "5FACAC2A6ABFA526"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D81A468ABF0A5DD"
+					item: "pneumaticcraft:pressure_chamber_glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "压力室"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"使用&b辊压机&r压出的铜板材，具有好的延展性，表面十分平整，可以用于接下来的加工。"
+				"当然，我们建议先储备一批，因为这是PCB的材料之一。"
+			]
+			id: "573894DFF106A5C7"
+			subtitle: "良好导电"
+			tasks: [{
+				id: "6A53A2715E99D0FE"
+				item: "alltheores:copper_plate"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0753C053F288D3BB"]
+			description: [
+				"紫外线灯箱可以利用高强度紫外线为电路板刻上电路图案以便进行后续的蚀刻。"
+				"&b来自EDA的提醒：不要让自己的手暴露在高强度紫外线下，它会打碎你的染色体，公司不会因为员工操作不当而赔偿。&r"
+			]
+			id: "2AB7440591FC6676"
+			subtitle: "看不见的光"
+			tasks: [{
+				id: "27B80275C07BE24C"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20AF69741EE88189"]
+			description: [
+				"蚀刻器可以用蚀刻酸把电路板上不需要的铜去除掉，&c它也能“蚀刻”员工的身体，所以不要在机器工作时把手伸进去。"
+				"&e推荐加热以获得更高效率，最快可30s蚀刻完毕！&r"
+				"&b来自EDA的提醒：在机器工作时，酸液可能从机器中溅出，所以不要长时间停留在机器旁，公司不会因为员工操作不当而赔偿。&r"
+			]
+			id: "2D897DBE75533075"
+			subtitle: "当心酸液飞溅"
+			tasks: [{
+				id: "3E51ECA2746C448F"
+				item: "pneumaticcraft:etching_tank"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6623B6C11DE0BEFE"
+				"59F2063DB8127981"
+			]
+			description: [
+				"使用方镁矾和铁制成，十分稳定(真的很稳定！)，是接下来的&e压印&r流程需要的机器。"
+				"使用&6余烬能量&r驱动。"
+				"&b来自EDA的提醒：请不要在机器运行时将你的手放入机器，公司不会因为员工误操作导致的机器损坏/员工死亡负任何责任！&r"
+			]
+			icon: "embers:stamper"
+			id: "5E8E7D09FD08FB3E"
+			subtitle: "新型压印机械"
+			tasks: [
+				{
+					id: "05E5BCAFFA4E447D"
+					item: "embers:stamper"
+					type: "item"
+				}
+				{
+					id: "3D95C894791AB794"
+					item: "embers:stamp_base"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3ED8D8F1D34F3D96"
+				"5E8E7D09FD08FB3E"
+				"382534FE67AEF2F2"
+			]
+			description: [
+				"这是一块纸板........."
+				"你还希望我给你提供什么信息？这就是普通的纸板!"
+				"这是纸质电路板的原材料。"
+			]
+			id: "02A4490A70B1C12E"
+			subtitle: "纸板就是纸板，或许可以拿给收废品的？"
+			tasks: [{
+				id: "5EDDE4E343D9C84C"
+				item: "create:cardboard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"02A4490A70B1C12E"
+				"393EBABF045145D3"
+				"0EF7AD14A0976822"
+			]
+			description: ["将纸板置于&b压印基座&r之上，同时向其中倒入&e酚醛树脂&r，让&b压印锤&r用&e平模具&r压扁&e纸板&r，并使&e酚醛树脂&r充分渗入&e纸板&r，这样你就得到了&a纸质电基板&r。"]
+			id: "1F18670C39C06213"
+			subtitle: "别折坏了"
+			tasks: [{
+				id: "46F1841C33D4CEEA"
+				item: "tse:paper_circuit_base"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"573894DFF106A5C7"
+				"1F18670C39C06213"
+				"003F9EF19371B4E2"
+			]
+			description: ["将铜板安装在&e纸质基板&r上，再滴入一些&e沥青&r，用&b动力辊压机&r压实，最后使用&b动力锯&r把多余的部分切割掉，如此&c循环三次&r便可以得到&a空印刷电路板&r。"]
+			id: "32FE1259F0BDF218"
+			tasks: [{
+				id: "4CA85BCB10F483DF"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D897DBE75533075"
+				"32FE1259F0BDF218"
+				"2AB7440591FC6676"
+				"5881A65187C4318E"
+			]
+			description: ["将&e空印刷电路板&r放在&b紫外线灯箱&r中刻上电路图，再放入&b蚀刻器&r中用&e蚀刻酸&r去掉不需要的铜便可以得到&a未组装的印刷电路板&r。"]
+			id: "5879669E4143A438"
+			subtitle: "百尺竿头"
+			tasks: [{
+				id: "420026E616C1230A"
+				item: "pneumaticcraft:unassembled_pcb"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3ED32D91771C662E"
+				"41B0005652F6138D"
+			]
+			id: "5CAA12C1977270EC"
+			subtitle: "电子小伙容量巨大"
+			tasks: [{
+				id: "061A72B194878466"
+				item: "pneumaticcraft:capacitor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5CAA12C1977270EC"
+				"5879669E4143A438"
+				"003F9EF19371B4E2"
+				"1EEB768E9067C53C"
+			]
+			description: [
+				"在&e未组装的印刷电路板&r上依次安上&e电子管&r、&e电容&r和&e电阻&r，最后滴入一些&e润滑油&r，&c循环三次&r后你就得到了公司所需要的一种工业产品：&a印刷电路板&r。"
+				"&b现在，你可以拿着印刷电路板去商店页面向公司换点硬币了。&r"
+			]
+			id: "6A96F351A7C2775A"
+			size: 2.0d
+			subtitle: "落后进程"
+			tasks: [{
+				id: "19A912BFC8B5079B"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			title: "印刷电路板"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"用&e黏液球&r把&e铜线轴&r接到&e电阻线圈&r上就可以得到&a电阻&r。"
+				"&b来自EDA的提醒：如果因为电阻发热过多而造成火灾，请不惜一切代价将机器搬出火场。&r"
+			]
+			id: "1EEB768E9067C53C"
+			subtitle: "电子小伙热量巨大"
+			tasks: [{
+				id: "1AC3C20D80DFEFDC"
+				item: "tse:resistor"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["410573A73BACB5FF"]
+			description: [
+				"将&e氯气&r与&e水&r混合后把所得液体加入&b大型发酵储罐&r，然后向其中加入&e铁粉&r，最后对储罐&c超级加热&r即可得到&a蚀刻酸&r。"
+				"&c来自EDA的警告：请勿将手伸入酸液内，否则公司将起诉你蓄意破坏公司财产。&r"
+			]
+			icon: "pneumaticcraft:etching_acid_bucket"
+			id: "5881A65187C4318E"
+			subtitle: "pH<0"
+			tasks: [{
+				id: "6AF7623DCF6F34DF"
+				title: "蚀刻酸"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04545FDA8C3C8CEB"]
+			description: ["把&e失活的回响催化剂&r丢入&e盐水&r中&c加热搅拌&r，盐中的钠会附着在催化剂上并使其&a恢复活性&r，而盐中的氯会变成&a氯气&r逸出。"]
+			icon: "tse:chlorine_bucket"
+			id: "410573A73BACB5FF"
+			subtitle: "天呐，钠是结晶的"
+			tasks: [{
+				id: "4EED92B12D84C2A6"
+				title: "氯"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			id: "04545FDA8C3C8CEB"
+			tasks: [{
+				id: "28E70BC95B0465AF"
+				item: "bakeries:salt"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"1777982A9C04BFDA"
+				"6555C19A8E318116"
+			]
+			id: "003F9EF19371B4E2"
+			tasks: [{
+				id: "26A8999900EA5EB0"
+				title: "脱硫"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"在&b发酵盆&r中加入&e水&r后盖上盆盖，并使用燃烧室&c超级加热&r&b发酵盆&r，此时的温度足以让水分子裂解并重组成氢原子与氧原子，最终得到&a氢气与氧气&r。"
+				"如果你非得问水分子是如何分裂的，你可以亲自钻进发酵盆探究一下。"
+			]
+			id: "1777982A9C04BFDA"
+			subtitle: "3-X 分子分裂者"
+			tasks: [{
+				id: "6A1F66BA6D752EF9"
+				title: "水热解"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["76CA5C23A816C8F6"]
+			id: "6555C19A8E318116"
+			tasks: [{
+				id: "7640C4AAB269FF48"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			title: "分馏"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"使用&e原油探测器&r寻找拥有原油的地方，然后在那里搭建一个&b抽油机&r来提取当地的&a原油&r。"
+				"&c来自EDA的警告：你的防护服接触到原油会损坏。在地表有很多原油池，请不要陷入其中，否则公司将起诉你蓄意破坏公司财产。&r"
+			]
+			icon: "createdieselgenerators:oil_scanner"
+			id: "76CA5C23A816C8F6"
+			subtitle: "USA：Where？"
+			tasks: [
+				{
+					count: 3L
+					id: "4CEF5497BB90605F"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "47299D16A7A3216A"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+				{
+					id: "077CBFA88D82662E"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0839E6E61FBEC2B6"
+					item: "create:industrial_iron_block"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "10724F6E78FA60EF"
+					item: "create:metal_girder"
+					type: "item"
+				}
+				{
+					id: "7371C90B394BE902"
+					item: "createdieselgenerators:oil_scanner"
+					type: "item"
+				}
+			]
+			title: "石油开采"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"0B2E0DB794FCF39C"
+				"5BC2DF96B69EA739"
+			]
+			description: [
+				"还记得&e杂酚油&r吗？现在是用到它的时候了。"
+				"杂酚油可以在&c加热&r的&a发酵装置&r内发酵为&6纯化杂酚油&r。"
+				"然后利用&b回响催化剂&r，便可将其制为&6酚醛&r。"
+				"&e你问我其中的原理是什么?来人，把这位好奇的工程师送往监守者的办公室！&r"
+			]
+			icon: "immersiveengineering:phenolic_resin_bucket"
+			id: "0EF7AD14A0976822"
+			subtitle: "实验室制取酚醛树脂"
+			tasks: [
+				{
+					id: "454BFBAF17F03F71"
+					title: "酚醛树脂"
+					type: "checkmark"
+				}
+				{
+					id: "5EB7D10B494B1F9E"
+					item: "immersiveengineering:phenolic_resin_bucket"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1B4840F90C51B28B"]
+			description: [
+				"源自天然木屑的原生纸浆，是制作纸板的重要原材料"
+				"只有这样的原生纸浆才能制作出&e最优质的纸板！&r"
+			]
+			icon: "tse:pulp_bucket"
+			id: "382534FE67AEF2F2"
+			subtitle: "这不是可可饮料！"
+			tasks: [
+				{
+					id: "281A4F151A1B6297"
+					title: "纸浆"
+					type: "checkmark"
+				}
+				{
+					id: "520E7D86E2C3836E"
+					item: "tse:pulp_bucket"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"粉碎你的木头就可以获得木屑，当然，部分&a加工过程&r也会产生木屑。"
+				"木屑用于合成&6纸浆&r。"
+			]
+			id: "1B4840F90C51B28B"
+			subtitle: "木头：喂我花生！"
+			tasks: [{
+				id: "645981F72635D9A4"
+				item: "createdieselgenerators:wood_chip"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			description: [
+				"这是焦炉，它可以用于产出&6杂酚油&r，顺带产出副产物木炭。"
+				"没错，在这个阶段，杂酚油反而更重要。"
+				"&c尽快用储罐把杂酚油存储起来！不要浪费了你炉子的产能！&r"
+			]
+			id: "0B2E0DB794FCF39C"
+			subtitle: "有什么需要烤焦吗?"
+			tasks: [{
+				id: "35B37CF0607EC811"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "焦炉"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["30CD90CA2094A10E"]
+			hide_dependent_lines: true
+			id: "479BC754CDF97258"
+			size: 2.0d
+			subtitle: "&bNew Industrial Technology Is Aviliable!"
+			tasks: [{
+				id: "4C8CD71B28E1E048"
+				type: "checkmark"
+			}]
+			title: "机械动力-工业II期"
+			x: -4.0d
+			y: -6.0d
+		}
+	]
+	title: "机械动力 - II"
+}

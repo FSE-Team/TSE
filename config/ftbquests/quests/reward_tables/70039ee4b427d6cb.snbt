@@ -1,0 +1,16 @@
+{
+	id: "70039EE4B427D6CB"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 3, item: "minecraft:cooked_beef" }
+		{ count: 3, item: "minecraft:cooked_porkchop" }
+		{ count: 4, item: "minecraft:cooked_mutton" }
+		{ count: 5, item: "minecraft:cooked_chicken" }
+		{ count: 6, item: "farmersdelight:beef_patty" }
+		{ count: 6, item: "farmersdelight:cooked_bacon" }
+		{ count: 8, item: "farmersdelight:cooked_mutton_chops" }
+		{ count: 10, item: "farmersdelight:cooked_chicken_cuts" }
+	]
+	title: "陆地生物"
+}

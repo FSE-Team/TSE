@@ -1,0 +1,18 @@
+filename = 'ExplorersCompass-1.21.1-3.4.0-neoforge.jar'
+name = "Explorer's Compass"
+side = ''
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ExplorersCompass-1.21.1-3.4.0-neoforge.jar'
+
+[download]
+hash = '9f62af344988a6e2d855b113e61cf0e1611c7e0f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7892943
+project-id = 491794

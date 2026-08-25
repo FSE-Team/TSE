@@ -1,0 +1,21 @@
+filename = 'SDMStages-neoforge-0.2.3.jar'
+name = 'SDM Stages'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'SDMStages-neoforge-0.2.3.jar'
+
+[download]
+hash = '1a0516ebfebcf3b120a3d6706e982030f112a6a6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7142645
+project-id = 1082036
+
+[[x-prismlauncher-dependencies]]
+addonId = '419699'
+type = 'REQUIRED'

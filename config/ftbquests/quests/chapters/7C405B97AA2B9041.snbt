@@ -1,0 +1,127 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7C405B97AA2B9041"
+	group: "52016480CE0E93EF"
+	icon: "create:steam_engine"
+	id: "7C405B97AA2B9041"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7DB7FC5CAB2B92C8"
+				"3EC99ED11AFC4FEE"
+			]
+			id: "6DD71249EACEA55E"
+			tasks: [{
+				id: "0DF10366E813C930"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7DB7FC5CAB2B92C8"
+				"3EC99ED11AFC4FEE"
+			]
+			id: "79DAD3919E3B92EE"
+			subtitle: "河动力"
+			tasks: [{
+				id: "5E3A89AC4D4044DD"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79DAD3919E3B92EE"]
+			id: "2CDDA06B79B710C0"
+			tasks: [{
+				id: "027368AB04F09933"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"392E2E96A2573978"
+				"3EC99ED11AFC4FEE"
+			]
+			id: "1408CF305C66FFDA"
+			tasks: [{
+				id: "1E611A5E80B5588E"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "3EC99ED11AFC4FEE"
+			tasks: [{
+				id: "17F094BA13190498"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CBAAF53DC95FF5C"]
+			id: "3EF7405B7BCBA6D0"
+			tasks: [{
+				id: "27DEA0AE14B86AFE"
+				item: "pneumaticcraft:liquid_compressor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0753C053F288D3BB"
+				"3EC99ED11AFC4FEE"
+			]
+			id: "6CBAAF53DC95FF5C"
+			tasks: [{
+				id: "79026297BA3200CD"
+				item: "pneumaticcraft:air_compressor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CBAAF53DC95FF5C"]
+			id: "712BC5FBC79F99A3"
+			tasks: [{
+				id: "35A8650C6418F5A6"
+				item: "pneumaticcraft:thermal_compressor"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3EC99ED11AFC4FEE"
+				"392E2E96A2573978"
+			]
+			id: "4EBA36D5C2FDBD7A"
+			tasks: [{
+				id: "76021EE9F3965329"
+				item: "embers:ember_activator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "前方高能"
+}

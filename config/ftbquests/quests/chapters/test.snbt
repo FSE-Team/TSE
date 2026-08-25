@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "test"
+	group: ""
+	icon: "ae2:certus_quartz_wrench"
+	id: "25FB750F3CC2C9F3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"你好，工程师"
+			"TSE全域发展协议目前处于早期研制阶段"
+		]
+		id: "73CA62F8C1BFF523"
+		subtitle: "整合包处于早期开发阶段，不建议制作整合包设计之外的物品"
+		tasks: [{
+			id: "504A42844D883AD8"
+			title: "&cINDEV"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "前言"
+}

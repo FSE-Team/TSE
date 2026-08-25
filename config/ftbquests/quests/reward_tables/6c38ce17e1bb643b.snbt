@@ -1,0 +1,13 @@
+{
+	id: "6C38CE17E1BB643B"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 2, item: "minecraft:cooked_cod" }
+		{ count: 2, item: "minecraft:cooked_salmon" }
+		{ count: 4, item: "farmersdelight:cooked_cod_slice" }
+		{ count: 4, item: "farmersdelight:cooked_salmon_slice" }
+		{ count: 16, item: "minecraft:dried_kelp" }
+	]
+	title: "水产品"
+}

@@ -1,0 +1,18 @@
+filename = 'Multiblocked2-1.21-1.21.1-21.0.11.jar'
+name = 'Multiblocked2'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'mc1.21.1-21.0.11-neoforge'
+
+[download]
+hash = 'c65d1a4865a2e51d662cd838b73284cead8defcba7e62b95cdedf114695aef7078ba2439384252905fb71c29ce12196acc53701534441ee3b0efa73f4d071428'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/R2gjKEpa/versions/f1qypgZj/Multiblocked2-1.21-1.21.1-21.0.11.jar'
+
+[update.modrinth]
+mod-id = 'R2gjKEpa'
+version = 'f1qypgZj'

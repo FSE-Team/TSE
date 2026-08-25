@@ -1,0 +1,207 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6BD1BCE5C8CF5C73"
+	group: "7856FC9742FDA805"
+	icon: "create:precision_mechanism"
+	id: "6BD1BCE5C8CF5C73"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5AB1E3FB67DA27E0"]
+			description: ["安山合金，你工业的基石"]
+			id: "7DB7FC5CAB2B92C8"
+			subtitle: "What's This?"
+			tasks: [{
+				id: "7CFF541CC7540864"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DB7FC5CAB2B92C8"]
+			description: [
+				"&a安山构件&r现在是你工业的基石之一"
+				"为了&m增加复杂度&r提高安全性，各类安山器械中的&3安山机壳&r都被替换成了&b安山机械箱&r，并搭载&bFSE&r引以为傲的微缩工业安全系统"
+			]
+			id: "579309CB6A94D760"
+			subtitle: "I级构件"
+			tasks: [{
+				id: "41336AE895513BD9"
+				item: "tse:andesite_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DB7FC5CAB2B92C8"]
+			description: [
+				"这是一个符合&bFSE&r工业规范的标准&m(也许不标准)&r储罐，你需要它来制作一些需要发酵的工业产物"
+				"为了安全，请遵守&bFSE&r工业守则，不要拿它进行诸如石油化工的操作"
+			]
+			id: "4A05221101810ABA"
+			subtitle: "这是一个储罐，可以用于发酵"
+			tasks: [{
+				id: "1002DAF2622F3166"
+				item: "createdieselgenerators:bulk_fermenter"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"48AF8A64A0A22B48"
+				"4A05221101810ABA"
+			]
+			description: [
+				"看起来我们工程师的大手强而有力，可以直接&9手搓制酸"
+				"&r但是为了后面的自动化，系统建议工程师采用&bFSE&r提供的发酵储罐系统来制作&c红石酸&r"
+			]
+			icon: "immersiveengineering:redstone_acid_bucket"
+			id: "06E8CF8A602115A2"
+			subtitle: "你的第一桶酸液"
+			tasks: [
+				{
+					id: "1DE8E66C3E212749"
+					title: "红石酸"
+					type: "checkmark"
+				}
+				{
+					id: "3FF72CDCA5817E4B"
+					item: "immersiveengineering:redstone_acid_bucket"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5AB1E3FB67DA27E0"]
+			description: [
+				"这是&c红石粉&r，你可以从地下矿脉中开采得到，可以制作各种红石器件，比如&m&c雷石东直放站&r&r&c红石中继器&r，当然，它在后续工业合成中也有用处，比如制作&b红石酸&r"
+				"当然，安山构件也需要它，所以我们建议至少储备&32组以上&r红石"
+			]
+			id: "48AF8A64A0A22B48"
+			subtitle: "雷石东"
+			tasks: [{
+				id: "754242288EA2729A"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"06E8CF8A602115A2"
+				"70FDF5B5F7CF2D59"
+			]
+			description: [
+				"&c玫瑰石英&r，用于制作电子管，后续电子管需要的量也比较大，建议先储备一批"
+				"当然，我们更建议您制作一条&e被动产线&r"
+			]
+			id: "4440112C7AE255A4"
+			subtitle: "Smooth's Rose Quartz"
+			tasks: [{
+				id: "144A2AE798B374BD"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5AB1E3FB67DA27E0"]
+			description: [
+				"看起来你现在遇到了些麻烦。"
+				"你需要获取&a下界石英&r，这种特殊石英只会在下界那样的高温环境下形成。"
+			]
+			id: "70FDF5B5F7CF2D59"
+			subtitle: "要去下界吗?"
+			tasks: [{
+				id: "25C44A2F24FB30AF"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4440112C7AE255A4"
+				"579309CB6A94D760"
+			]
+			description: [
+				"真空管的暂时替代品，与机械构件相容性高，也是你目前唯一能用于电路的管类元器件"
+				"在真空管可以制造之前，你或许都要用它了"
+			]
+			icon: "create:electron_tube"
+			id: "2ABC4633A9656F4E"
+			subtitle: "真空管下位替代"
+			tasks: [{
+				id: "5B051AD459229229"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["579309CB6A94D760"]
+			description: [
+				"这是一个金板，除了确实是块金板，它还能用于制作高新技术"
+				"你需要一个&6辊压机&r来制作金板"
+			]
+			id: "0F1ECF6AE31D7E4B"
+			subtitle: "金金金金钱钱钱钱"
+			tasks: [{
+				id: "624FFF3E738E3329"
+				item: "alltheores:gold_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0F1ECF6AE31D7E4B"
+				"2ABC4633A9656F4E"
+				"579309CB6A94D760"
+			]
+			description: [
+				"这是进行工业II期之前的最后一步,来看&6精密构件&r！新时代工业的明珠!"
+				"有了精密构件之后，你就可以依托你的旧工业系统发展 机械动力-工业II期的内容了"
+			]
+			id: "30CD90CA2094A10E"
+			size: 2.0d
+			subtitle: "精密构件，就是很精密啊"
+			tasks: [{
+				id: "174D680C6056F82C"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04E5224676789B5F"]
+			hide_dependent_lines: true
+			id: "5AB1E3FB67DA27E0"
+			size: 2.0d
+			subtitle: "&bNew Industrial Technology Is Aviliable!"
+			tasks: [{
+				id: "1542F667BE12A610"
+				type: "checkmark"
+			}]
+			title: "机械动力-工业I期"
+			x: -4.0d
+			y: 0.0d
+		}
+	]
+	title: "机械动力 - I"
+}

@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "53CB173216FD5059"
+	group: ""
+	icon: "tse:copper_coin"
+	id: "53CB173216FD5059"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "0F3E03D3354688AB"
+			tasks: [{
+				id: "316F67A57E4C5EE1"
+				title: "关于商店"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"0F3E03D3354688AB"
+				"6A96F351A7C2775A"
+			]
+			id: "6F98AE96CFBED5CA"
+			repeat_cooldown: 600
+			rewards: [{
+				auto: "invisible"
+				count: 4
+				id: "12F3798B6554D4C5"
+				item: "tse:compressed_iron_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "71488676E30E2995"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"0F3E03D3354688AB"
+				"30CD90CA2094A10E"
+			]
+			id: "07C2C4B2F8F70C12"
+			repeat_cooldown: 600
+			rewards: [{
+				auto: "invisible"
+				count: 16
+				id: "65586B693519298A"
+				item: "tse:copper_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "26D2BB2DEF84C415"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"0F3E03D3354688AB"
+				"0753C053F288D3BB"
+			]
+			id: "2F506FB32F2F60F9"
+			repeat_cooldown: 600
+			rewards: [{
+				auto: "invisible"
+				count: 16
+				id: "47F1B558011B6E74"
+				item: "tse:copper_coin"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "789AC3D02CE0B499"
+				item: "tse:sealed_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F3E03D3354688AB"]
+			icon: "minecraft:cooked_beef"
+			id: "092E51EAAD029B4E"
+			repeat_cooldown: 300
+			rewards: [{
+				auto: "invisible"
+				id: "4968199AA49B33FE"
+				table_id: 8071469662290302667L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "3AC55A2B3591AAB3"
+				item: { Count: 16, id: "tse:copper_coin" }
+				type: "item"
+			}]
+			title: "陆地生物"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0F3E03D3354688AB"]
+			icon: "minecraft:cooked_cod"
+			id: "234EB8BBE98194FC"
+			repeat_cooldown: 300
+			rewards: [{
+				auto: "invisible"
+				id: "06E6A69B6A95B3E0"
+				table_id: 7798209356758737979L
+				type: "random"
+			}]
+			tasks: [{
+				count: 16L
+				id: "3A533FFEA304F5E3"
+				item: { Count: 16, id: "tse:copper_coin" }
+				type: "item"
+			}]
+			title: "水产品"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "商店"
+}

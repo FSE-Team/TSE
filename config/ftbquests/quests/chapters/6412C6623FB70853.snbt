@@ -1,0 +1,27 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6412C6623FB70853"
+	group: "52016480CE0E93EF"
+	icon: "farmersdelight:roast_chicken_block"
+	id: "6412C6623FB70853"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		description: ["&b来自EDA的提醒：你的脑读数已偏离正常值，请立即停止开小差行为，否则公司将有权对你进行处罚。&r"]
+		id: "1DD94D718E56D00A"
+		subtitle: "吃了一口后，你莫名地想要弹吉他"
+		tasks: [{
+			id: "745678E0C53705F6"
+			item: {
+				Count: 1
+				id: "bakeries:matcha_parfait"
+				tag: { }
+			}
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "饕餮盛宴"
+}
