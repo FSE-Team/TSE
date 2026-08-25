@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:plate_electrum",
+      "createaddition:electrum_sheet"
+    ],
+    "resultItems": "alltheores:electrum_plate"
+  }
+]

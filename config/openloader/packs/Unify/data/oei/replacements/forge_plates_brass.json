@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "create:brass_sheet"
+    ],
+    "resultItems": "alltheores:brass_plate"
+  }
+]

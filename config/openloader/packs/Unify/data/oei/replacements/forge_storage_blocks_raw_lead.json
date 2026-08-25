@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:raw_block_lead",
+      "embers:raw_lead_block"
+    ],
+    "resultItems": "alltheores:raw_lead_block"
+  }
+]

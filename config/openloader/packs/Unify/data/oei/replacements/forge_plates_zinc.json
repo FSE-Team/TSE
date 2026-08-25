@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "createaddition:zinc_sheet"
+    ],
+    "resultItems": "alltheores:zinc_plate"
+  }
+]

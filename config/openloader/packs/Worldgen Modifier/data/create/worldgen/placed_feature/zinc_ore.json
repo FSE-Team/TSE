@@ -1,0 +1,9 @@
+{
+  "feature": "create:zinc_ore",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 0
+    }
+  ]
+}

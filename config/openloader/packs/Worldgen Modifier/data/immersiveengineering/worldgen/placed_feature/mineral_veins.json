@@ -1,0 +1,9 @@
+{
+    "feature": "immersiveengineering:mineral_veins",
+    "placement": [
+        {
+            "type": "count",
+            "count": 0
+        }
+    ]
+}

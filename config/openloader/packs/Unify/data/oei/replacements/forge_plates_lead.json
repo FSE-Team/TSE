@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:plate_lead",
+      "embers:lead_plate"
+    ],
+    "resultItems": "alltheores:lead_plate"
+  }
+]

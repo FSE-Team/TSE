@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:nugget_electrum",
+      "createaddition:electrum_nugget"
+    ],
+    "resultItems": "alltheores:electrum_nugget"
+  }
+]

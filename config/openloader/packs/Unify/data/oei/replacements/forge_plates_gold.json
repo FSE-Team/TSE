@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "create:golden_sheet",
+      "immersiveengineering:plate_gold"
+    ],
+    "resultItems": "alltheores:gold_plate"
+  }
+]

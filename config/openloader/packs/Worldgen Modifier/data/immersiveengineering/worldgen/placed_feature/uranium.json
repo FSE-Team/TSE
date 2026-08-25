@@ -1,0 +1,9 @@
+{
+    "feature": "immersiveengineering:uranium",
+    "placement": [
+        {
+            "type": "count",
+            "count": 0
+        }
+    ]
+}

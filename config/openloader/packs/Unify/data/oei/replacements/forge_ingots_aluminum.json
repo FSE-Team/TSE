@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ingot_aluminum"
+    ],
+    "resultItems": "alltheores:aluminum_ingot"
+  }
+]

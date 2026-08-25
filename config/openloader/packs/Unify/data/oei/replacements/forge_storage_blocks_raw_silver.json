@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:raw_block_silver",
+      "embers:raw_silver_block"
+    ],
+    "resultItems": "alltheores:raw_silver_block"
+  }
+]

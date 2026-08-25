@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:storage_silver",
+      "embers:silver_block"
+    ],
+    "resultItems": "alltheores:silver_block"
+  }
+]

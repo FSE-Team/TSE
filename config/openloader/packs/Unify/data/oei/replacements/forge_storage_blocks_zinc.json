@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "create:zinc_block"
+    ],
+    "resultItems": "alltheores:zinc_block"
+  }
+]

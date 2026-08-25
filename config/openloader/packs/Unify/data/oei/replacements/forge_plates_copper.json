@@ -1,0 +1,10 @@
+[
+  {
+    "matchItems": [
+      "create:copper_sheet",
+      "immersiveengineering:plate_copper",
+      "embers:copper_plate"
+    ],
+    "resultItems": "alltheores:copper_plate"
+  }
+]

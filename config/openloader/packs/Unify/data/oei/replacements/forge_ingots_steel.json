@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ingot_steel"
+    ],
+    "resultItems": "alltheores:steel_ingot"
+  }
+]

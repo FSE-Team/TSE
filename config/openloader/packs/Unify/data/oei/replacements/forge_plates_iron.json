@@ -1,0 +1,10 @@
+[
+  {
+    "matchItems": [
+      "create:iron_sheet",
+      "immersiveengineering:plate_iron",
+      "embers:iron_plate"
+    ],
+    "resultItems": "alltheores:iron_plate"
+  }
+]

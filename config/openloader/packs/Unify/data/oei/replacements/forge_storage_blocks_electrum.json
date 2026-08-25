@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:storage_electrum",
+      "createaddition:electrum_block"
+    ],
+    "resultItems": "alltheores:electrum_block"
+  }
+]

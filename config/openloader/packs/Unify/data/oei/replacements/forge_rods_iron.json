@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:stick_iron",
+      "createaddition:iron_rod"
+    ],
+    "resultItems": "alltheores:iron_rod"
+  }
+]

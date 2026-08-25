@@ -1,0 +1,11 @@
+[
+  {
+    "matchItems": [
+      "create:copper_nugget",
+      "immersiveengineering:nugget_copper",
+      "embers:copper_nugget",
+      "pneumaticcraft:copper_nugget"
+    ],
+    "resultItems": "alltheores:copper_nugget"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:plate_silver",
+      "embers:silver_plate"
+    ],
+    "resultItems": "alltheores:silver_plate"
+  }
+]

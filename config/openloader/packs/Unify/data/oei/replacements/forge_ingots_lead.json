@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ingot_lead",
+      "embers:lead_ingot"
+    ],
+    "resultItems": "alltheores:lead_ingot"
+  }
+]

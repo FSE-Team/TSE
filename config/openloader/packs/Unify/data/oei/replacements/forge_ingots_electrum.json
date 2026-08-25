@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ingot_electrum",
+      "createaddition:electrum_ingot"
+    ],
+    "resultItems": "alltheores:electrum_ingot"
+  }
+]

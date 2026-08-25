@@ -1,0 +1,9 @@
+{
+    "pack": {
+        "description": {"text":"统一标签", "color":"gold"},
+		"pack_format": 88,
+        "supported_formats": [48, 88],
+		"min_format": 48,
+        "max_format": 88
+    }
+}
