@@ -71,5 +71,4 @@ StartupEvents.registry("item", event => {
     event.create(MODID + "resistor")
     event.create(MODID + "incomplete_pcb",'create:sequenced_assembly')
     event.create(MODID + "plate_iron_compressed")
-    //Test
 })
