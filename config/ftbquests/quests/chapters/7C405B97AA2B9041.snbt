@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "7C405B97AA2B9041"
 	group: "52016480CE0E93EF"
-	icon: "create:steam_engine"
+	icon: {
+		id: "create:steam_engine"
+	}
 	id: "7C405B97AA2B9041"
+	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -16,7 +19,7 @@
 			id: "6DD71249EACEA55E"
 			tasks: [{
 				id: "0DF10366E813C930"
-				item: "create:windmill_bearing"
+				item: { count: 1, id: "create:windmill_bearing" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -28,10 +31,9 @@
 				"3EC99ED11AFC4FEE"
 			]
 			id: "79DAD3919E3B92EE"
-			subtitle: "河动力"
 			tasks: [{
 				id: "5E3A89AC4D4044DD"
-				item: "create:water_wheel"
+				item: { count: 1, id: "create:water_wheel" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -42,7 +44,7 @@
 			id: "2CDDA06B79B710C0"
 			tasks: [{
 				id: "027368AB04F09933"
-				item: "create:large_water_wheel"
+				item: { count: 1, id: "create:large_water_wheel" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -56,7 +58,7 @@
 			id: "1408CF305C66FFDA"
 			tasks: [{
 				id: "1E611A5E80B5588E"
-				item: "create:steam_engine"
+				item: { count: 1, id: "create:steam_engine" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -77,7 +79,7 @@
 			id: "3EF7405B7BCBA6D0"
 			tasks: [{
 				id: "27DEA0AE14B86AFE"
-				item: "pneumaticcraft:liquid_compressor"
+				item: { count: 1, id: "pneumaticcraft:liquid_compressor" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -91,7 +93,7 @@
 			id: "6CBAAF53DC95FF5C"
 			tasks: [{
 				id: "79026297BA3200CD"
-				item: "pneumaticcraft:air_compressor"
+				item: { count: 1, id: "pneumaticcraft:air_compressor" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -102,7 +104,7 @@
 			id: "712BC5FBC79F99A3"
 			tasks: [{
 				id: "35A8650C6418F5A6"
-				item: "pneumaticcraft:thermal_compressor"
+				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -116,12 +118,11 @@
 			id: "4EBA36D5C2FDBD7A"
 			tasks: [{
 				id: "76021EE9F3965329"
-				item: "embers:ember_activator"
+				item: { count: 1, id: "embers:ember_activator" }
 				type: "item"
 			}]
 			x: 2.0d
 			y: 0.0d
 		}
 	]
-	title: "前方高能"
 }

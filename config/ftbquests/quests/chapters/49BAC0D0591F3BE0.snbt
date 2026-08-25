@@ -3,8 +3,11 @@
 	default_quest_shape: ""
 	filename: "49BAC0D0591F3BE0"
 	group: "52016480CE0E93EF"
-	icon: "create:item_vault"
+	icon: {
+		id: "create:item_vault"
+	}
 	id: "49BAC0D0591F3BE0"
+	images: [ ]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -22,7 +25,7 @@
 			id: "228A1F3C18713993"
 			tasks: [{
 				id: "3EC14AEB63C94B6E"
-				item: "create:item_vault"
+				item: { count: 1, id: "create:item_vault" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -33,7 +36,7 @@
 			id: "312BCCA9788AB306"
 			tasks: [{
 				id: "19F631304AD04E96"
-				item: "create:fluid_tank"
+				item: { count: 1, id: "create:fluid_tank" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -43,18 +46,10 @@
 			dependencies: ["312BCCA9788AB306"]
 			id: "689DF10255D780EE"
 			tasks: [{
-				id: "45D54515696146E7"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(functionalstorage:fluid_1)item(functionalstorage:fluid_2)item(functionalstorage:fluid_4))"
-					}
-				}
-				title: "流体抽屉"
+				id: "19C2A0B123DBEF3B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(functionalstorage:fluid_drawer)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "流体抽屉"
 			x: -4.0d
 			y: 1.0d
 		}
@@ -62,18 +57,10 @@
 			dependencies: ["228A1F3C18713993"]
 			id: "4620E51B9C1E48B0"
 			tasks: [{
-				id: "1CFB45D804261098"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "item_tag(functionalstorage:drawer)"
-					}
-				}
-				title: "物品抽屉 "
+				id: "1EBE30E88302B8E4"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(functionalstorage:drawer)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			title: "抽物品屉"
 			x: -4.0d
 			y: -1.0d
 		}
@@ -81,15 +68,8 @@
 			dependencies: ["4620E51B9C1E48B0"]
 			id: "606BE1EC51AB4BD6"
 			tasks: [{
-				id: "02F9C5390A1F762E"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(functionalstorage:compacting_drawer)item(functionalstorage:compacting_framed_drawer))"
-					}
-				}
-				title: "压缩抽屉"
+				id: "74C00622E0B50CEC"
+				item: { components: { "ftbfiltersystem:filter": "or(item(functionalstorage:simple_compacting_drawer)item(functionalstorage:framed_simple_compacting_drawer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -99,15 +79,8 @@
 			dependencies: ["4620E51B9C1E48B0"]
 			id: "07A7A57350CAB612"
 			tasks: [{
-				id: "4AAE5B7A984E1157"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(functionalstorage:simple_compacting_drawer)item(functionalstorage:framed_simple_compacting_drawer))"
-					}
-				}
-				title: "简易压缩抽屉"
+				id: "6D20635231F07B67"
+				item: { components: { "ftbfiltersystem:filter": "or(item(functionalstorage:compacting_drawer)item(functionalstorage:compacting_framed_drawer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -117,15 +90,8 @@
 			dependencies: ["4620E51B9C1E48B0"]
 			id: "08BBFD65E23A06E1"
 			tasks: [{
-				id: "23A83DC3529C105D"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(functionalstorage:storage_controller)item(functionalstorage:framed_storage_controller))"
-					}
-				}
-				title: "存储控制器"
+				id: "56BB1F88EAFF942B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(functionalstorage:storage_controller)item(functionalstorage:framed_storage_controller))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -135,15 +101,8 @@
 			dependencies: ["4620E51B9C1E48B0"]
 			id: "07ECE9D6FB4B0061"
 			tasks: [{
-				id: "73DAFD320A457FC7"
-				item: {
-					Count: 1
-					id: "ftbfiltersystem:smart_filter"
-					tag: {
-						"ftbfiltersystem:filter": "or(item(functionalstorage:controller_extension)item(functionalstorage:framed_controller_extension))"
-					}
-				}
-				title: "控制器扩展器"
+				id: "02797C108A900985"
+				item: { components: { "ftbfiltersystem:filter": "or(item(functionalstorage:controller_extension)item(functionalstorage:framed_controller_extension))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -154,7 +113,7 @@
 			id: "7E3F79B572C8C4E7"
 			tasks: [{
 				id: "6F96ECD790B4707C"
-				item: "functionalstorage:armory_cabinet"
+				item: { count: 1, id: "functionalstorage:armory_cabinet" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -166,7 +125,7 @@
 			id: "78C684CC958727F9"
 			tasks: [{
 				id: "578E39153698BB02"
-				item: "functionalstorage:iron_downgrade"
+				item: { count: 1, id: "functionalstorage:iron_downgrade" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -178,7 +137,7 @@
 			id: "3332405E3A52BB27"
 			tasks: [{
 				id: "63D642C0C76C987A"
-				item: "functionalstorage:copper_upgrade"
+				item: { count: 1, id: "functionalstorage:copper_upgrade" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -189,7 +148,7 @@
 			id: "7B1F7B6B6AC7D3CD"
 			tasks: [{
 				id: "4B7E0028116389E3"
-				item: "functionalstorage:gold_upgrade"
+				item: { count: 1, id: "functionalstorage:gold_upgrade" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -200,7 +159,7 @@
 			id: "022F0E3CFCC55D73"
 			tasks: [{
 				id: "6A9A31A7F124168D"
-				item: "functionalstorage:diamond_upgrade"
+				item: { count: 1, id: "functionalstorage:diamond_upgrade" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -211,12 +170,11 @@
 			id: "5A85AAEF61617B74"
 			tasks: [{
 				id: "45EA66D8325EBF72"
-				item: "functionalstorage:netherite_upgrade"
+				item: { count: 1, id: "functionalstorage:netherite_upgrade" }
 				type: "item"
 			}]
 			x: -4.0d
 			y: 5.0d
 		}
 	]
-	title: "容量不足"
 }
