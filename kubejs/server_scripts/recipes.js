@@ -1,3 +1,5 @@
+const { item } = require("@package/net/minecraft/world")
+
 ServerEvents.recipes(event => {
     const MODID = "tse:"
     /*
@@ -420,8 +422,8 @@ ServerEvents.recipes(event => {
     ).processingTime(500).superheated()
     event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "purified_creosote", 250), Fluid.of("immersiveengineering:creosote", 1000), 20).heated()
     event.recipes.create.mixing([Fluid.of("immersiveengineering:phenolic_resin", 100), MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "purified_creosote", 250), MODID + "echo_catalyst"]).heated()
-    stamping("liquid", "create:cardboard", MODID + "pulp", 0, 0, 1000, "embers:plate_stamp")
-    stamping("compact", MODID + "paper_circuit_base", "immersiveengineering:phenolic_resin", "create:cardboard", 0, 500, "embers:flat_stamp")
+    stamping(MODID + "pulp", 1000, null, null, "create:cardboard", 1, "embers:plate_stamp")
+    stamping("immersiveengineering:phenolic_resin", 500, "create:cardboard", 1, MODID + "paper_circuit_base", 1, "embers:flat_stamp")
     //空印刷电路板制作
     event.remove({ id: "pneumaticcraft:pressure_chamber/empty_pcb" })
     event.recipes.create.sequenced_assembly(
