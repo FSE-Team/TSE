@@ -155,6 +155,7 @@ ServerEvents.recipes(event => {
         "create:empty_blaze_burner",
         "create:precision_mechanism"
     )
+    event.remove({output: "morecreateburnerswithemberburner:ember_burner"})
     event.shaped("morecreateburnerswithemberburner:ember_burner", ["AAA", "BCB", " D "], {A: "embers:dawnstone_plate", B: "minecraft:iron_ingot", C: MODID + "ember_mechanism", D: "embers:mechanical_core"})
     //添加安山构件原始配方
     event.shapeless(MODID + "andesite_mechanism", ["2x minecraft:comparator", "create:andesite_alloy_block", "3x create:cogwheel", "3x create:large_cogwheel"]).id("andesite_mechanism_manual_only")
@@ -397,6 +398,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: "minecraft:paper" })
     event.remove({ output: "create:pulp" })
     event.remove({ output: "create:cardboard" })
+    event.shaped("minecraft:paper", ["   ", "AAA", "   "],{A: "farmersdelight:tree_bark"})
     event.recipes.createdieselgenerators.bulk_fermenting(
         [
             "4x create:pulp"
@@ -422,6 +424,7 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "purified_creosote", 250), Fluid.of("immersiveengineering:creosote", 1000), 20).heated()
     event.recipes.create.mixing([Fluid.of("immersiveengineering:phenolic_resin", 100), MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "purified_creosote", 250), MODID + "echo_catalyst"]).heated()
     stamping(MODID + "pulp", 1000, null, null, "create:cardboard", 1, "embers:plate_stamp")
+    stamping(MODID + "pulp", 1000, null, null, "minecraft:paper", 1, "embers:flat_stamp")
     stamping("immersiveengineering:phenolic_resin", 500, "create:cardboard", 1, MODID + "paper_circuit_base", 1, "embers:flat_stamp")
     //空印刷电路板制作
     event.remove({ id: "pneumaticcraft:pressure_chamber/empty_pcb" })
