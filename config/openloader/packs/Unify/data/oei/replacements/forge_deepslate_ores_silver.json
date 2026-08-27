@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:deepslate_ore_silver",
+      "embers:deepslate_silver_ore"
+    ],
+    "resultItems": "alltheores:deepslate_silver_ore"
+  }
+]

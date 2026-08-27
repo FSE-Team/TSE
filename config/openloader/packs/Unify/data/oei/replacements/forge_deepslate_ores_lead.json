@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:deepslate_ore_lead",
+      "embers:deepslate_lead_ore"
+    ],
+    "resultItems": "alltheores:deepslate_lead_ore"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ore_nickel"
+    ],
+    "resultItems": "alltheores:nickel_ore"
+  }
+]

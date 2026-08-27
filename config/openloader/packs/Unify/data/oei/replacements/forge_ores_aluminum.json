@@ -1,0 +1,8 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ore_aluminum"
+    ],
+    "resultItems": "alltheores:aluminum_ore"
+  }
+]

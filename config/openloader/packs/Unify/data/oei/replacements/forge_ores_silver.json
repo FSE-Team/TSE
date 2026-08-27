@@ -1,0 +1,9 @@
+[
+  {
+    "matchItems": [
+      "immersiveengineering:ore_silver",
+      "embers:silver_ore"
+    ],
+    "resultItems": "alltheores:silver_ore"
+  }
+]
