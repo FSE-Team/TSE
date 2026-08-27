@@ -144,17 +144,18 @@ ServerEvents.recipes(event => {
     }
     //* Stage 1
     //移除烈焰人燃烧室及添加替代
-    // event.remove({ output: "create:empty_blaze_burner" })
-    // event.replaceInput(
-    //     { output: "moreburners:electric_burner" },
-    //     "create:empty_blaze_burner",
-    //     "create:precision_mechanism"
-    // )
-    // event.replaceInput(
-    //     { output: "createdieselgenerators:burner" },
-    //     "create:empty_blaze_burner",
-    //     "create:precision_mechanism"
-    // )
+    event.remove({ output: "create:empty_blaze_burner" })
+    event.replaceInput(
+        { output: "moreburners:electric_burner" },
+        "create:empty_blaze_burner",
+        "create:precision_mechanism"
+    )
+    event.replaceInput(
+        { output: "createdieselgenerators:burner" },
+        "create:empty_blaze_burner",
+        "create:precision_mechanism"
+    )
+    event.shaped("morecreateburnerswithemberburner:ember_burner", ["AAA", "BCB", " D "], {A: "embers:dawnstone_plate", B: "minecraft:iron_ingot", C: MODID + "ember_mechanism", D: "embers:mechanical_core"})
     //添加安山构件原始配方
     event.shapeless(MODID + "andesite_mechanism", ["2x minecraft:comparator", "create:andesite_alloy_block", "3x create:cogwheel", "3x create:large_cogwheel"]).id("andesite_mechanism_manual_only")
     //添加安山合金板配方
@@ -179,7 +180,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.item_application(MODID + "andesite_machine", ["create:andesite_casing", MODID + "andesite_mechanism"])
     //修改玫瑰石英配方
     event.remove({ output: "create:rose_quartz" })
-    event.recipes.create.mixing("create:rose_quartz", [Fluid.of("immersiveengineering:redstone_acid", 1000), "minecraft:quartz"])
+    event.recipes.create.mixing("create:rose_quartz", [Fluid.of("immersiveengineering:redstone_acid", 250), "minecraft:quartz"])
     //修改电子管配方
     event.remove({ output: "create:electron_tube" })
     event.shaped("create:electron_tube", [" A ", " A ", " B "], { A: "create:polished_rose_quartz", B: "alltheores:iron_plate" }).id("electron_tube_manual_only")
@@ -250,7 +251,7 @@ ServerEvents.recipes(event => {
     event.shaped("embers:ember_bore", ["ABA", "ACA", "DED"], { A: "embers:caminite_bricks", B: "embers:mechanical_core", C: "create:precision_mechanism", D: "create:brass_ingot", E: "create:mechanical_drill" })
     //修改余烬能量激发器配方
     event.remove({ output: "embers:ember_activator" })
-    event.shaped("embers:ember_activator", ["AAA", "ABA", "CDC"], { A: "alltheores:copper_plate", B: MODID + "ember_mechanism", C: "embers:caminite_brick", D: "create:blaze_burner" })
+    event.shaped("embers:ember_activator", ["AAA", "ABA", "CDC"], { A: "alltheores:copper_plate", B: MODID + "ember_mechanism", C: "embers:caminite_brick", D: "createdieselgenerators:burner" })
     //修改压印锤配方
     event.remove({ output: "embers:stamper" })
     event.shaped("embers:stamper", ["ABA", "ACA", "A A"], { A: "embers:caminite_brick", B: MODID + "ember_mechanism", C: "minecraft:iron_block" })
