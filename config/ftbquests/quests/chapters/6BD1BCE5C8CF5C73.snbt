@@ -49,18 +49,14 @@
 				"48AF8A64A0A22B48"
 				"4A05221101810ABA"
 			]
+			icon: {
+				id: "immersiveengineering:redstone_acid_bucket"
+			}
 			id: "06E8CF8A602115A2"
-			tasks: [
-				{
-					id: "1DE8E66C3E212749"
-					type: "checkmark"
-				}
-				{
-					id: "3FF72CDCA5817E4B"
-					item: { count: 1, id: "immersiveengineering:redstone_acid_bucket" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1DE8E66C3E212749"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 2.0d
 		}

@@ -156,18 +156,14 @@
 				"3BDDA627D171A69E"
 				"392E2E96A2573978"
 			]
+			icon: {
+				id: "tse:soul_alcohol_bucket"
+			}
 			id: "25380F69E72590FB"
-			tasks: [
-				{
-					id: "5FB30D2A7052FF93"
-					type: "checkmark"
-				}
-				{
-					id: "27950558DCDA82BF"
-					item: { count: 1, id: "tse:soul_alcohol_bucket" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5FB30D2A7052FF93"
+				type: "checkmark"
+			}]
 			x: 2.0d
 			y: -4.0d
 		}
@@ -226,18 +222,14 @@
 				"6AB3E1ACC86349EE"
 				"6865E893F50E4332"
 			]
+			icon: {
+				id: "tse:liquid_unprocessed_sulfurated_rubber_bucket"
+			}
 			id: "7A2AFE8F1FD10779"
-			tasks: [
-				{
-					id: "0267AC0CE1044A87"
-					type: "checkmark"
-				}
-				{
-					id: "0B47B8005F328433"
-					item: { count: 1, id: "tse:liquid_unprocessed_sulfurated_rubber_bucket" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0267AC0CE1044A87"
+				type: "checkmark"
+			}]
 			x: 6.0d
 			y: -4.0d
 		}
@@ -276,6 +268,9 @@
 		}
 		{
 			dependencies: ["605406686AE012CD"]
+			icon: {
+				id: "tse:steam_cracked_refinery_gas_bucket"
+			}
 			id: "006389D3D894307D"
 			tasks: [{
 				id: "5637D568907C2570"
@@ -297,11 +292,13 @@
 		}
 		{
 			dependencies: ["006389D3D894307D"]
+			icon: {
+				id: "tse:ethylene_bucket"
+			}
 			id: "74B73EDEC42A769C"
 			tasks: [{
-				id: "145E1A7111781DDC"
-				item: { count: 1, id: "tse:ethylene_bucket" }
-				type: "item"
+				id: "0659E0F6FF486202"
+				type: "checkmark"
 			}]
 			x: 12.0d
 			y: -2.0d
@@ -495,6 +492,9 @@
 		}
 		{
 			dependencies: ["410573A73BACB5FF"]
+			icon: {
+				id: "pneumaticcraft:etching_acid_bucket"
+			}
 			id: "5881A65187C4318E"
 			tasks: [{
 				id: "6AF7623DCF6F34DF"
@@ -505,6 +505,9 @@
 		}
 		{
 			dependencies: ["04545FDA8C3C8CEB"]
+			icon: {
+				id: "tse:chlorine_bucket"
+			}
 			id: "410573A73BACB5FF"
 			tasks: [{
 				id: "4EED92B12D84C2A6"
@@ -518,7 +521,7 @@
 			id: "04545FDA8C3C8CEB"
 			tasks: [{
 				id: "28E70BC95B0465AF"
-				item: { count: 1, id: "bakeries:salt" }
+				item: { count: 1, id: "alltheores:salt" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -529,6 +532,9 @@
 				"1777982A9C04BFDA"
 				"6555C19A8E318116"
 			]
+			icon: {
+				id: "immersiveengineering:dust_sulfur"
+			}
 			id: "003F9EF19371B4E2"
 			tasks: [{
 				id: "26A8999900EA5EB0"
@@ -539,6 +545,9 @@
 		}
 		{
 			dependencies: ["479BC754CDF97258"]
+			icon: {
+				id: "minecraft:water_bucket"
+			}
 			id: "1777982A9C04BFDA"
 			tasks: [{
 				id: "6A1F66BA6D752EF9"
@@ -560,6 +569,9 @@
 		}
 		{
 			dependencies: ["479BC754CDF97258"]
+			icon: {
+				id: "createdieselgenerators:oil_scanner"
+			}
 			id: "76CA5C23A816C8F6"
 			tasks: [
 				{
@@ -604,35 +616,27 @@
 				"0B2E0DB794FCF39C"
 				"5BC2DF96B69EA739"
 			]
+			icon: {
+				id: "immersiveengineering:phenolic_resin_bucket"
+			}
 			id: "0EF7AD14A0976822"
-			tasks: [
-				{
-					id: "454BFBAF17F03F71"
-					type: "checkmark"
-				}
-				{
-					id: "5EB7D10B494B1F9E"
-					item: { count: 1, id: "immersiveengineering:phenolic_resin_bucket" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "454BFBAF17F03F71"
+				type: "checkmark"
+			}]
 			x: 2.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["1B4840F90C51B28B"]
+			icon: {
+				id: "tse:pulp_bucket"
+			}
 			id: "382534FE67AEF2F2"
-			tasks: [
-				{
-					id: "281A4F151A1B6297"
-					type: "checkmark"
-				}
-				{
-					id: "520E7D86E2C3836E"
-					item: { count: 1, id: "tse:pulp_bucket" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "281A4F151A1B6297"
+				type: "checkmark"
+			}]
 			x: 0.0d
 			y: 4.0d
 		}

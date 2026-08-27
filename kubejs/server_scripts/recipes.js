@@ -1,5 +1,3 @@
-const { item } = require("@package/net/minecraft/world")
-
 ServerEvents.recipes(event => {
     const MODID = "tse:"
     /*
