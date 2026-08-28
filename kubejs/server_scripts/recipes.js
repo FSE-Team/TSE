@@ -26,18 +26,18 @@ ServerEvents.recipes(event => {
         event.custom(JSON.stringify(obj))
     }
 
-    const alchemy = (inputItemArr, aspectsArr, tablet, output) => {
-        var obj = { type: "embers:alchemy", inputs: [], aspects: [], tablet: { item: "" }, output: { item: "" } }
-        var input = new Array()
-        inputItemArr.forEach(element => { input.push({ item: element }) })
-        obj.inputs = input
-        var aspects = new Array()
-        aspectsArr.forEach(element => { aspects.push({ tag: "embers:aspectus/" + element }) })
-        obj.aspects = aspects
-        obj.tablet.item = tablet
-        obj.output.item = output
-        event.custom(JSON.stringify(obj))
-    }
+    // const alchemy = (inputItemArr, aspectsArr, tablet, output) => {
+    //     var obj = { type: "embers:alchemy", inputs: [], aspects: [], tablet: { item: "" }, output: { item: "" } }
+    //     var input = new Array()
+    //     inputItemArr.forEach(element => { input.push({ item: element }) })
+    //     obj.inputs = input
+    //     var aspects = new Array()
+    //     aspectsArr.forEach(element => { aspects.push({ tag: "embers:aspectus/" + element }) })
+    //     obj.aspects = aspects
+    //     obj.tablet.item = tablet
+    //     obj.output.item = output
+    //     event.custom(JSON.stringify(obj))
+    // }
 
     const hydrotreater = (energy, inputFluid1Amount, inputFluid1Tag, outputFluidAmount, outputFluid, inputFluid2Amount, inputFluid2Tag, outputItemAmount, outputItem, outputItemChance, time) => {
         var obj = { type: "immersivepetroleum:hydrotreater", energy: energy, input: { amount: inputFluid1Amount, tag: inputFluid1Tag }, result: { amount: outputFluidAmount, id: outputFluid }, time: time }
@@ -55,6 +55,7 @@ ServerEvents.recipes(event => {
     //* 删除配方
     //移除原有炼金配方
     event.remove({ type: "embers:alchemy" })
+    event.remove({ output: "embers:dynamic_crystal_seed"})
     //删除原有塑料配方
     event.remove({ output: "pneumaticcraft:plastic_sheet" })
     event.remove({ id: "pneumaticcraft:thermo_plant/plastic_from_biodiesel" })
@@ -193,6 +194,9 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: "createaddition:rolling_mill" }, "create:andesite_casing", MODID + "andesite_machine")
     //替换余烬燃烧室配方
     event.replaceInput({ output: 'embers:ember_burner' }, "create:empty_blaze_burner", MODID + "ember_parts")
+    //高级炼金
+    event.stonecutting('advalchemy:exchange_tablet', 'embers:alchemy_tablet')
+    event.stonecutting('advalchemy:alchemy_pedestal', 'embers:alchemy_pedestal')
 
     //* Stage 2
     //分馏塔控制器配方替换
@@ -244,10 +248,31 @@ ServerEvents.recipes(event => {
     event.remove({ output: "embers:ancient_motive_core" })
     event.recipes.create.deploying("embers:ancient_motive_core", [MODID + "ember_mechanism", "embers:ember_crystal"])
     //添加古代砖块配方
-    event.recipes.create.compacting(["embers:archaic_bricks", MODID + "ineffective_echo_catalyst"], ["immersiveengineering:blastbrick", MODID + "echo_catalyst"])
+    event.recipes.create.compacting(["4x embers:archaic_brick", MODID + "ineffective_echo_catalyst"], ["immersiveengineering:blastbrick", MODID + "echo_catalyst"])
     //修改机械核心配方
     event.remove({ output: "embers:mechanical_core" })
     event.shaped("embers:mechanical_core", ["ABA", " C ", "D D"], { A: "embers:caminite_brick", B: MODID + "ember_mechanism", C: "immersiveengineering:plate_lead", D: "minecraft:iron_ingot" })
+    //修改野火核心配方
+    event.recipes.advalchemy.alchemy({
+        result:'embers:wildfire_core',
+        tablet:MODID+'andesite_mechanism',
+        inputs:[
+            "embers:dawnstone_plate",
+            "integrateddynamics:logic_director",
+            "embers:ember_crystal_cluster",
+            "integrateddynamics:logic_director",
+            "embers:dawnstone_plate"
+        ],
+        input_aspects:["copper","iron","dawnstone","iron","copper"],
+        aspects:{copper:[16,16],iron:[8,8],dawnstone:[9,9]}
+    })
+    //添加余烬晶簇配方
+    event.recipes.createdieselgenerators.basin_fermenting(
+        ["embers:ember_crystal_cluster"],
+        ["embers:ember_crystal","embers:ember_grit",Fluid.of("minecraft:lava", 100)],
+    ).heated()
+    
+
     //修改余烬晶体开采机配方
     event.remove({ output: "embers:ember_bore" })
     event.shaped("embers:ember_bore", ["ABA", "ACA", "DED"], { A: "embers:caminite_bricks", B: "embers:mechanical_core", C: "create:precision_mechanism", D: "create:brass_ingot", E: "create:mechanical_drill" })
