@@ -155,8 +155,8 @@ ServerEvents.recipes(event => {
         "create:empty_blaze_burner",
         "create:precision_mechanism"
     )
-    event.remove({output: "morecreateburnerswithemberburner:ember_burner"})
-    event.shaped("morecreateburnerswithemberburner:ember_burner", ["AAA", "BCB", " D "], {A: "embers:dawnstone_plate", B: "minecraft:iron_ingot", C: MODID + "ember_mechanism", D: "embers:mechanical_core"})
+    event.remove({ output: "morecreateburnerswithemberburner:ember_burner" })
+    event.shaped("morecreateburnerswithemberburner:ember_burner", ["AAA", "BCB", " D "], { A: "embers:dawnstone_plate", B: "minecraft:iron_ingot", C: MODID + "ember_mechanism", D: "embers:mechanical_core" })
     //添加安山构件原始配方
     event.shapeless(MODID + "andesite_mechanism", ["2x minecraft:comparator", "create:andesite_alloy_block", "3x create:cogwheel", "3x create:large_cogwheel"]).id("andesite_mechanism_manual_only")
     //添加安山合金板配方
@@ -187,9 +187,10 @@ ServerEvents.recipes(event => {
     event.shaped("create:electron_tube", [" A ", " A ", " B "], { A: "create:polished_rose_quartz", B: "alltheores:iron_plate" }).id("electron_tube_manual_only")
     //修改机器配方
     const machines = ["encased_fan", "millstone", "mechanical_press", "mechanical_mixer", "mechanical_piston", "mechanical_bearing", "rope_pulley", "mechanical_drill", "mechanical_saw", "deployer"]
-    for (var i = 0; i < 10; i++) {
-        event.replaceInput({ output: "create:" + machines[i] }, "create:andesite_casing", MODID + "andesite_machine")
-    }
+    machines.forEach(machine => {
+        event.replaceInput({ output: "create:" + machine }, "create:andesite_casing", MODID + "andesite_machine")
+    })
+    event.replaceInput({ output: "createaddition:rolling_mill" }, "create:andesite_casing", MODID + "andesite_machine")
     //替换余烬燃烧室配方
     event.replaceInput({ output: 'embers:ember_burner' }, "create:empty_blaze_burner", MODID + "ember_parts")
 
@@ -379,7 +380,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(MODID + "incomplete_echo_mechanism", [MODID + "incomplete_echo_mechanism", MODID + "echo_catalyst"])
     ]).transitionalItem(MODID + "incomplete_echo_mechanism").loops(3)
     //添加灵魂醇配方
-    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "soul_alcohol", 250), ["minecraft:soul_sand", Fluid.of("minecraft:water", 250)]).heated()
+    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "soul_alcohol", 250), ["minecraft:soul_sand", Fluid.of("minecraft:water", 250)]).heated().processingTime(50)
     //添加回响催化剂配方
     event.recipes.create.mixing([MODID + "echo_catalyst", MODID + "iron_ingot_with_echo_impurity"], ["minecraft:echo_shard", "minecraft:iron_ingot", Fluid.of(MODID + "soul_alcohol", 250)]).heated()
     //添加液态粗制硫化橡胶配方
@@ -393,12 +394,58 @@ ServerEvents.recipes(event => {
         event.recipes.create.filling(MODID + "duplicating_echo_shard", [MODID + "duplicating_echo_shard", Fluid.of(MODID + "recycled_echo_liquid", 250)]),
         event.recipes.create.cutting(MODID + "duplicating_echo_shard", MODID + "duplicating_echo_shard")
     ]).transitionalItem(MODID + "duplicating_echo_shard")
-    //PCB合成
+
+    //* 集成动力
+    //添加门瑞欧树脂配方
+    event.recipes.create.compacting(Fluid.of("integrateddynamics:menril_resin", 1000), "integrateddynamics:menril_log")
+    event.recipes.create.compacting(Fluid.of("integrateddynamics:menril_resin", 250), "integrateddynamics:menril_planks")
+    //添加门瑞欧结晶方块融化配方
+    event.recipes.create.mixing(Fluid.of("integrateddynamics:menril_resin", 1000), "integrateddynamics:crystalized_menril_block").heated()
+    //修改变量卡配方
+    event.remove({ output: "integrateddynamics:variable", input: "minecraft:paper" })
+    event.recipes.create.filling("integrateddynamics:variable", [Fluid.of("integrateddynamics:menril_resin", 100), "minecraft:paper"])
+    //添加门瑞欧构件配方
+    event.recipes.create.sequenced_assembly([MODID + "menril_mechanism"], MODID + "andesite_mechanism", [
+        event.recipes.create.filling(MODID + "incomplete_menril_mechanism", [MODID + "incomplete_menril_mechanism", Fluid.of("integrateddynamics:menril_resin", 250)]),
+        event.recipes.create.deploying(MODID + "incomplete_menril_mechanism", [MODID + "incomplete_menril_mechanism", "integrateddynamics:crystalized_menril_chunk"])
+    ]).loops(3).transitionalItem(MODID + "incomplete_menril_mechanism")
+    //修改逻辑线缆配方
+    event.remove({ output: "integrateddynamics:cable" })
+    event.recipes.create.filling("integrateddynamics:cable", ["createaddition:copper_wire", Fluid.of("integrateddynamics:menril_resin", 100)])
+    //删除发电机配方
+    event.remove({ output: "integrateddynamics:coal_generator" })
+    //添加紫颂果浆配方
+    event.recipes.create.compacting(Fluid.of("integrateddynamics:liquid_chorus", 125), "minecraft:popped_chorus_fruit")
+    event.recipes.create.compacting(Fluid.of("integrateddynamics:liquid_chorus", 125), "integrateddynamics:proto_chorus")
+    //添加紫颂果结晶方块融化配方
+    event.recipes.create.mixing(Fluid.of("integrateddynamics:liquid_chorus", 1000), "integrateddynamics:crystalized_chorus_block").heated()
+    //修改变量输出配方
+    event.remove({ output: "integrateddynamics:variable_transformer_output" })
+    event.recipes.create.sequenced_assembly("4x integrateddynamics:variable_transformer_output", MODID + "menril_mechanism", [
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_output", [MODID + "incomplete_variable_transformer_output", "minecraft:piston"]),
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_output", [MODID + "incomplete_variable_transformer_output", "integrateddynamics:variable"]),
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_output", [MODID + "incomplete_variable_transformer_output", "integrateddynamics:variable"]),
+        event.recipes.create.cutting(MODID + "incomplete_variable_transformer_output", MODID + "incomplete_variable_transformer_output")
+    ]).transitionalItem(MODID + "incomplete_variable_transformer_output")
+    //修改变量输入配方
+    event.remove({ output: "integrateddynamics:variable_transformer_input" })
+    event.recipes.create.sequenced_assembly("4x integrateddynamics:variable_transformer_input", MODID + "menril_mechanism", [
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_input", [MODID + "incomplete_variable_transformer_input", "minecraft:sticky_piston"]),
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_input", [MODID + "incomplete_variable_transformer_input", "integrateddynamics:variable"]),
+        event.recipes.create.deploying(MODID + "incomplete_variable_transformer_input", [MODID + "incomplete_variable_transformer_input", "integrateddynamics:variable"]),
+        event.recipes.create.cutting(MODID + "incomplete_variable_transformer_input", MODID + "incomplete_variable_transformer_input")
+    ]).transitionalItem(MODID + "incomplete_variable_transformer_input")
+    //修改物品接口配方
+    event.replaceInput({ output: "integratedtunnels:part_interface_item" }, "minecraft:chest", "create:item_vault")
+    //修改流体接口配方
+    event.replaceInput({ output: "integratedtunnels:part_interface_fluid" }, "minecraft:bucket", "create:fluid_tank")
+
+    //* PCB合成
     //纸基材制备
     event.remove({ output: "minecraft:paper" })
     event.remove({ output: "create:pulp" })
     event.remove({ output: "create:cardboard" })
-    event.shaped("minecraft:paper", ["   ", "AAA", "   "],{A: "farmersdelight:tree_bark"})
+    event.shaped("minecraft:paper", ["   ", "AAA", "   "], { A: "farmersdelight:tree_bark" })
     event.recipes.createdieselgenerators.bulk_fermenting(
         [
             "4x create:pulp"
@@ -421,7 +468,7 @@ ServerEvents.recipes(event => {
         Fluid.of("minecraft:water", 1000)
     ]
     ).processingTime(500).superheated()
-    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "purified_creosote", 250), Fluid.of("immersiveengineering:creosote", 1000), 20).heated()
+    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "purified_creosote", 250), Fluid.of("immersiveengineering:creosote", 1000), 20).heated().processingTime(50)
     event.recipes.create.mixing([Fluid.of("immersiveengineering:phenolic_resin", 100), MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "purified_creosote", 250), MODID + "echo_catalyst"]).heated()
     stamping(MODID + "pulp", 1000, null, null, "create:cardboard", 1, "embers:plate_stamp")
     stamping(MODID + "pulp", 1000, null, null, "minecraft:paper", 1, "embers:flat_stamp")
@@ -439,13 +486,13 @@ ServerEvents.recipes(event => {
     ]
     ).transitionalItem(MODID + "incomplete_empty_pcb")
     //添加电阻配方
-    event.shaped(MODID + "resistor", ["ABA", "BCB", " B "], {A:"minecraft:slime_ball", B: "createaddition:copper_spool", C: "moreburners:nickel_coil"})
+    event.shaped(MODID + "resistor", ["ABA", "BCB", " B "], { A: "minecraft:slime_ball", B: "createaddition:copper_spool", C: "moreburners:nickel_coil" })
     //蒸汽裂化炼油气
-    event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of(MODID + "steam_cracked_refinery_gas", 200), [Fluid.of("embers:steam", 50), Fluid.of(MODID + "refinery_gas", 200)], 20).heated()
+    event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of(MODID + "steam_cracked_refinery_gas", 200), [Fluid.of("embers:steam", 50), Fluid.of(MODID + "refinery_gas", 200)], 20).heated().processingTime(50)
     //蒸馏蒸汽裂化炼油气
-    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "ethylene", 250), Fluid.of(MODID + "steam_cracked_refinery_gas", 500)).heated()
+    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "ethylene", 250), Fluid.of(MODID + "steam_cracked_refinery_gas", 500)).heated().processingTime(50)
     //加聚乙烯
-    event.recipes.create.mixing([Fluid.of("pneumaticcraft:plastic", 1000),MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "ethylene", 1000), MODID + "echo_catalyst"]).heated()
+    event.recipes.create.mixing([Fluid.of("pneumaticcraft:plastic", 1000), MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "ethylene", 1000), MODID + "echo_catalyst"]).heated()
     //氯
     event.recipes.create.mixing([Fluid.of(MODID + "chlorine", 100), MODID + "echo_catalyst"], ["alltheores:salt", MODID + "ineffective_echo_catalyst"]).heated()
     //电路板制作+蚀刻液
@@ -460,5 +507,5 @@ ServerEvents.recipes(event => {
     ]
     ).transitionalItem(MODID + "incomplete_pcb").loops(3)
     event.remove({ id: "pneumaticcraft:pressure_chamber/etching_acid" })
-    event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of("pneumaticcraft:etching_acid", 100), [Fluid.of(MODID + "chlorine", 150), "alltheores:copper_dust", Fluid.of("minecraft:water", 100)]).superheated()
+    event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of("pneumaticcraft:etching_acid", 100), [Fluid.of(MODID + "chlorine", 150), "alltheores:copper_dust", Fluid.of("minecraft:water", 100)]).superheated().processingTime(10)
 })

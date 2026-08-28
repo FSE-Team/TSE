@@ -71,4 +71,8 @@ StartupEvents.registry("item", event => {
     event.create(MODID + "resistor")
     event.create(MODID + "incomplete_pcb",'create:sequenced_assembly')
     event.create(MODID + "plate_iron_compressed")
+    event.create(MODID + "menril_mechanism")
+    event.create(MODID + "incomplete_menril_mechanism", "create:sequenced_assembly")
+    event.create(MODID + "incomplete_variable_transformer_output", "create:sequenced_assembly")
+    event.create(MODID + "incomplete_variable_transformer_input", "create:sequenced_assembly")
 })
