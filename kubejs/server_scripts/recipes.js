@@ -193,9 +193,13 @@ ServerEvents.recipes(event => {
     }
     //替换余烬燃烧室配方
     event.replaceInput({ output: 'embers:ember_burner' }, "create:empty_blaze_burner", MODID + "ember_parts")
-    //高级炼金
-    event.stonecutting('advalchemy:exchange_tablet', 'embers:alchemy_tablet')
-    event.stonecutting('advalchemy:alchemy_pedestal', 'embers:alchemy_pedestal')
+    //石英增生配方
+    event.recipes.create.crushing("4x tse:amethyst_dust", "minecraft:amethyst_shard")
+    event.recipes.create.crushing("4x tse:quartz_dust", "minecraft:quartz")
+    event.recipes.createdieselgenerators.bulk_fermenting(
+        ["8x minecraft:quartz"],
+        [Ingredient.of("#c:dusts/quartz"), Fluid.of("minecraft:water", 1000),Ingredient.of("#c:dusts/amethyst",8)]
+    ).superheated()
 
     //* Stage 2
     //分馏塔控制器配方替换
@@ -270,6 +274,16 @@ ServerEvents.recipes(event => {
         ["embers:ember_crystal_cluster"],
         ["embers:ember_crystal","embers:ember_grit",Fluid.of("minecraft:lava", 100)],
     ).heated()
+    event.recipes.createdieselgenerators.basin_fermenting(
+        ["3x embers:ember_shard"],
+        ["4x embers:ember_grit","500x #c:ethanol"],
+    ).heated()
+    //高级炼金
+    event.stonecutting('advalchemy:exchange_tablet', 'embers:alchemy_tablet')
+    event.stonecutting('advalchemy:alchemy_pedestal', 'embers:alchemy_pedestal')
+    //移除余烬电力转换器
+    event.remove({ output: "embers:ember_energy_converter"})
+
     
 
     //修改余烬晶体开采机配方

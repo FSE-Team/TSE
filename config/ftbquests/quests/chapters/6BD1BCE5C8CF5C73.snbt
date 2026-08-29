@@ -30,11 +30,11 @@
 				item: { count: 1, id: "tse:andesite_mechanism" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7DB7FC5CAB2B92C8"]
+			dependencies: ["0BD582E3AA6B5A68"]
 			id: "4A05221101810ABA"
 			tasks: [{
 				id: "1002DAF2622F3166"
@@ -42,7 +42,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -58,7 +58,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5AB1E3FB67DA27E0"]
@@ -69,7 +69,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -83,7 +83,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5AB1E3FB67DA27E0"]
@@ -93,7 +93,7 @@
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -108,7 +108,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["579309CB6A94D760"]
@@ -118,7 +118,7 @@
 				item: { count: 1, id: "alltheores:gold_plate" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -134,8 +134,8 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["04E5224676789B5F"]
@@ -148,6 +148,17 @@
 			}]
 			x: -4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7DB7FC5CAB2B92C8"]
+			id: "0BD582E3AA6B5A68"
+			tasks: [{
+				id: "4F9B4ABA3C99C47C"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 }

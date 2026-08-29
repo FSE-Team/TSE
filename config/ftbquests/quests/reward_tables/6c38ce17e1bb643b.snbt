@@ -3,11 +3,45 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ count: 2, item: "minecraft:cooked_cod" }
-		{ count: 2, item: "minecraft:cooked_salmon" }
-		{ count: 4, item: "farmersdelight:cooked_cod_slice" }
-		{ count: 4, item: "farmersdelight:cooked_salmon_slice" }
-		{ count: 16, item: "minecraft:dried_kelp" }
+		{
+			count: 2
+			id: "53E88E06FDBC6240"
+			item: {
+				count: 1
+				id: "minecraft:cooked_cod"
+			}
+		}
+		{
+			count: 2
+			id: "13F2EBAE0C6039DA"
+			item: {
+				count: 1
+				id: "minecraft:cooked_salmon"
+			}
+		}
+		{
+			count: 4
+			id: "712D5CA78E1FF1EB"
+			item: {
+				count: 1
+				id: "farmersdelight:cooked_cod_slice"
+			}
+		}
+		{
+			count: 4
+			id: "4815453D4B459F74"
+			item: {
+				count: 1
+				id: "farmersdelight:cooked_salmon_slice"
+			}
+		}
+		{
+			count: 16
+			id: "188685613DBF19C9"
+			item: {
+				count: 1
+				id: "minecraft:dried_kelp"
+			}
+		}
 	]
-	title: "水产品"
 }

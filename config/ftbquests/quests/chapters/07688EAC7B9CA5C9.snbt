@@ -1,0 +1,46 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "07688EAC7B9CA5C9"
+	group: "52016480CE0E93EF"
+	icon: {
+		id: "ae2:controller"
+	}
+	id: "07688EAC7B9CA5C9"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3ADF1712A2A596CC"
+			tasks: [{
+				id: "69AF872ECC709EA5"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3ADF1712A2A596CC"]
+			id: "4EB9AD3B631B39E3"
+			tasks: [{
+				id: "5D2FA709D6C6B6E6"
+				item: { count: 1, id: "integrateddynamics:crystalized_menril_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3ADF1712A2A596CC"]
+			id: "0402A6A0BFF95C9E"
+			tasks: [{
+				id: "2335A94778692858"
+				item: { count: 1, id: "ae2:sky_stone_block" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

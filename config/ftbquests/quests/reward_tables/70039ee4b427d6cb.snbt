@@ -3,14 +3,69 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ count: 3, item: "minecraft:cooked_beef" }
-		{ count: 3, item: "minecraft:cooked_porkchop" }
-		{ count: 4, item: "minecraft:cooked_mutton" }
-		{ count: 5, item: "minecraft:cooked_chicken" }
-		{ count: 6, item: "farmersdelight:beef_patty" }
-		{ count: 6, item: "farmersdelight:cooked_bacon" }
-		{ count: 8, item: "farmersdelight:cooked_mutton_chops" }
-		{ count: 10, item: "farmersdelight:cooked_chicken_cuts" }
+		{
+			count: 3
+			id: "2A8D602BC42C7078"
+			item: {
+				count: 1
+				id: "minecraft:cooked_beef"
+			}
+		}
+		{
+			count: 3
+			id: "6E2089448BEA030E"
+			item: {
+				count: 1
+				id: "minecraft:cooked_porkchop"
+			}
+		}
+		{
+			count: 4
+			id: "2830CD2D6E466E52"
+			item: {
+				count: 1
+				id: "minecraft:cooked_mutton"
+			}
+		}
+		{
+			count: 5
+			id: "08BF8FF4A5BCF694"
+			item: {
+				count: 1
+				id: "minecraft:cooked_chicken"
+			}
+		}
+		{
+			count: 6
+			id: "18A0FB714EECEEDD"
+			item: {
+				count: 1
+				id: "farmersdelight:beef_patty"
+			}
+		}
+		{
+			count: 6
+			id: "666BE2F09805A272"
+			item: {
+				count: 1
+				id: "farmersdelight:cooked_bacon"
+			}
+		}
+		{
+			count: 8
+			id: "1D9E0A70A27607D7"
+			item: {
+				count: 1
+				id: "farmersdelight:cooked_mutton_chops"
+			}
+		}
+		{
+			count: 10
+			id: "6C0645689B733389"
+			item: {
+				count: 1
+				id: "farmersdelight:cooked_chicken_cuts"
+			}
+		}
 	]
-	title: "陆地生物"
 }

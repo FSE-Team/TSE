@@ -9,6 +9,7 @@
 	drop_book_on_death: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
+	fallback_locale: ""
 	grid_scale: 0.5d
 	hide_excluded_quests: false
 	lock_message: ""
@@ -18,7 +19,22 @@
 		passive: 4000
 	}
 	pause_game: false
+	presets: {
+		goal: {
+			shape: "hexagon"
+			size: 2.0d
+		}
+		info: {
+			shape: "gear"
+			size: 1.0d
+		}
+		normal: {
+			shape: "square"
+			size: 1.0d
+		}
+	}
 	progression_mode: "linear"
 	show_lock_icons: false
+	verify_on_load: false
 	version: 13
 }

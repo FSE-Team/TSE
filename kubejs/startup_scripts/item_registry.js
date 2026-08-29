@@ -43,6 +43,9 @@ StartupEvents.registry("item", event => {
     event.create(MODID + "copper_coin")
     event.create(MODID + "compressed_iron_coin")
     event.create(MODID + "gold_coin")
+
+    event.create(MODID + "amethyst_dust")
+    event.create(MODID + "quartz_dust")
     
     event.create(MODID + "andesite_mechanism")
     event.create(MODID + "incomplete_andesite_mechanism", "create:sequenced_assembly")

@@ -1,6 +1,6 @@
 {
 	chapter_groups: [
-		{ id: "7856FC9742FDA805", title: "主线" }
-		{ id: "52016480CE0E93EF", title: "支线" }
+		{ id: "7856FC9742FDA805" }
+		{ id: "52016480CE0E93EF" }
 	]
 }

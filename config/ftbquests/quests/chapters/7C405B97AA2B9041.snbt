@@ -22,7 +22,7 @@
 				item: { count: 1, id: "create:windmill_bearing" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -61,8 +61,8 @@
 				item: { count: 1, id: "create:steam_engine" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			hide_dependent_lines: true
@@ -75,7 +75,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6CBAAF53DC95FF5C"]
+			dependencies: ["3DFC7DC9A092F864"]
 			id: "3EF7405B7BCBA6D0"
 			tasks: [{
 				id: "27DEA0AE14B86AFE"
@@ -88,7 +88,7 @@
 		{
 			dependencies: [
 				"0753C053F288D3BB"
-				"3EC99ED11AFC4FEE"
+				"3DFC7DC9A092F864"
 			]
 			id: "6CBAAF53DC95FF5C"
 			tasks: [{
@@ -96,11 +96,11 @@
 				item: { count: 1, id: "pneumaticcraft:air_compressor" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["6CBAAF53DC95FF5C"]
+			dependencies: ["3DFC7DC9A092F864"]
 			id: "712BC5FBC79F99A3"
 			tasks: [{
 				id: "35A8650C6418F5A6"
@@ -108,7 +108,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -121,8 +121,122 @@
 				item: { count: 1, id: "embers:ember_activator" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4EBA36D5C2FDBD7A"]
+			id: "741463E4C035470C"
+			tasks: [{
+				id: "61F227CF43B95F7C"
+				item: { count: 1, id: "embers:pressure_refinery" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["741463E4C035470C"]
+			icon: {
+				id: "embers:ignem_reactor"
+			}
+			id: "6DDBC4E45D1B821E"
+			tasks: [
+				{
+					id: "71BD27881CE51815"
+					item: { count: 1, id: "embers:combustion_chamber" }
+					type: "item"
+				}
+				{
+					id: "377F5866895B8BF6"
+					item: { count: 1, id: "embers:ignem_reactor" }
+					type: "item"
+				}
+				{
+					id: "3F85FC675F652EF0"
+					item: { count: 1, id: "embers:catalysis_chamber" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CBAAF53DC95FF5C"]
+			id: "3BD692B1C3CBB287"
+			tasks: [{
+				id: "712A9F64A3AFBAC7"
+				item: { count: 1, id: "pneumaticcraft:advanced_air_compressor" }
+				type: "item"
+			}]
+			x: -6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3EF7405B7BCBA6D0"]
+			id: "170C73EE5FB4CF7C"
+			tasks: [{
+				id: "6F790BE98CF23516"
+				item: { count: 1, id: "pneumaticcraft:advanced_liquid_compressor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3EC99ED11AFC4FEE"]
+			id: "3DFC7DC9A092F864"
+			tasks: [{
+				id: "085DEF3E09697D5F"
+				item: { count: 1, id: "pneumaticcraft:manual_compressor" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DFC7DC9A092F864"]
+			id: "13977959C818A458"
+			tasks: [{
+				id: "676A9B3AE133A1A5"
+				item: { count: 1, id: "pneumaticcraft:solar_compressor" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3DFC7DC9A092F864"]
+			id: "081C65ACC72A4177"
+			tasks: [{
+				id: "11D210FDB2EB7CB2"
+				item: { count: 1, id: "pneumaticcraft:electrostatic_compressor" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DFC7DC9A092F864"]
+			id: "0C5819B9671E553E"
+			tasks: [{
+				id: "7AADD7D709CA95E0"
+				item: { count: 1, id: "pneumaticcraft:flux_compressor" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4EBA36D5C2FDBD7A"]
+			id: "0431FC0EFDA4C5CE"
+			tasks: [{
+				id: "266812445214DB11"
+				item: { count: 1, id: "embers:heat_exchanger" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
 		}
 	]
 }

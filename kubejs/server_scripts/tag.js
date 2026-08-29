@@ -2,6 +2,8 @@ ServerEvents.tags("item", event => {
     event.add("functionalstorage:fluid_drawer", "functionalstorage:framed_fluid_1")
     event.add("functionalstorage:fluid_drawer", "functionalstorage:framed_fluid_2")
     event.add("functionalstorage:fluid_drawer", "functionalstorage:framed_fluid_4")
+    event.add("c:dusts/amethyst", "tse:amethyst_dust")
+    event.add("c:dusts/quartz", "tse:quartz_dust")
 
     event.remove("advalchemy:aspect/netherite", "minecraft:netherite_scrap")
     const a1=["iron","gold","copper"]
