@@ -16,4 +16,6 @@ ServerEvents.recipes(event => {
     event.remove({input: "minecraft:soul_sand", output: "minecraft:quartz"})
     event.recipes.create.mixing(["8x minecraft:gold_ingot", MODID + "ineffective_echo_catalyst"], ["6x minecraft:gold_ingot", MODID + "echo_catalyst"])
     event.recipes.create.mixing(["10x minecraft:quartz", MODID + "ineffective_echo_catalyst"], ["5x minecraft:quartz", MODID + "echo_catalyst"])
+    //钻石
+    event.recipes.create.mixing(["minecraft:diamond", MODID + "ineffective_echo_catalyst"], ["2x minecraft:diamond", MODID + "echo_catalyst"])
 })
