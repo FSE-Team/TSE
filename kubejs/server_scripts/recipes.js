@@ -30,6 +30,20 @@ ServerEvents.recipes(event => {
         event.custom(JSON.stringify(obj))
     }
 
+    const pressure_chamber = (inputsArr, outputsArr, pressure) => {
+        var inputsObjArr = []
+        var outputsObjArr = []
+        inputsArr.forEach(array => {
+            if (array[0][0] == "#") inputsObjArr.push({tag: array[0].slice(1), count: array[1]})
+            else inputsObjArr.push({item: array[0], count: array[1]})
+        })
+        outputsArr.forEach(array => {
+            outputsObjArr.push({id: array[0], count: array[1]})
+        })
+        var obj = {type: "pneumaticcraft:pressure_chamber", inputs: inputsObjArr, results: outputsObjArr, pressure: pressure}
+        event.custom(JSON.stringify(obj))
+    }
+
     // const alchemy = (inputItemArr, aspectsArr, tablet, output) => {
     //     var obj = { type: "embers:alchemy", inputs: [], aspects: [], tablet: { item: "" }, output: { item: "" } }
     //     var input = new Array()
