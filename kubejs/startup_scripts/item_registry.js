@@ -78,4 +78,6 @@ StartupEvents.registry("item", event => {
     event.create(MODID + "incomplete_menril_mechanism", "create:sequenced_assembly")
     event.create(MODID + "incomplete_variable_transformer_output", "create:sequenced_assembly")
     event.create(MODID + "incomplete_variable_transformer_input", "create:sequenced_assembly")
+    event.create(MODID + "caminite_capacitor_packet")
+    event.create(MODID + "carbon_rod")
 })

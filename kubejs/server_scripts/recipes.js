@@ -14,11 +14,15 @@ ServerEvents.recipes(event => {
     maxTemperature 最高温度
     */
     const thermal_plant = (inputItem, inputItemAmount, inputFluid, inputFluidAmount, outputItem, outputItemAmount, outputFluid, outputFluidAmount, pressure, minTemperature, maxTemperature, airUseMultiplier, speed, isExothermic) => {
-        var obj = { type: "pneumaticcraft:thermo_plant", exothermic: isExothermic, air_use_multiplier: airUseMultiplier, speed: speed }
-        if (inputItem != null) obj.item_input = { item: inputItem, count: inputItemAmount }
-        if (inputFluid != null) obj.fluid_input = { type: "pneumaticcraft:fluid", tag: inputFluid, amount: inputFluidAmount }
-        if (outputItem != null) obj.item_output = { item: outputItem, count: outputItemAmount }
-        if (outputFluid != null) obj.fluid_output = { fluid: outputFluid, amount: outputFluidAmount }
+        var obj = { type: "pneumaticcraft:thermo_plant", exothermic: isExothermic, air_use_multiplier: airUseMultiplier, speed: speed, inputs: {}, outputs: {} }
+        if (inputItem != null) 
+            if(inputItem[0] == "#") obj.inputs.item = { tag: inputItem.slice(1), count: inputItemAmount }
+            else obj.inputs.item = { item: inputItem, count: inputItemAmount }
+        if (inputFluid != null) 
+            if(inputFluid[0] == "#") obj.inputs.fluid = { tag: inputFluid.slice(1), amount: inputFluidAmount }
+            else obj.inputs.fluid = { fluid: inputFluid, amount: inputFluidAmount }
+        if (outputItem != null) obj.outputs.item_output = { id: outputItem, count: outputItemAmount }
+        if (outputFluid != null) obj.outputs.fluid_output = { id: outputFluid, amount: outputFluidAmount }
         if (pressure != null) obj.pressure = pressure
         if (minTemperature != null && maxTemperature == null) obj.temperature = { min_temp: minTemperature + 273 }
         else if (maxTemperature == null && minTemperature != null) obj.temperature = { max_temp: maxTemperature + 273 }
@@ -402,7 +406,7 @@ ServerEvents.recipes(event => {
     event.shaped("pneumaticcraft:advanced_liquid_compressor", ["AAA", "ABC", "ADA"], { A: "pneumaticcraft:ingot_iron_compressed", B: MODID + "advanced_sealed_mechanism", C: "pneumaticcraft:advanced_pressure_tube", D: "pneumaticcraft:liquid_compressor" })
     //修改通量压缩机配方
     event.replaceInput({ output: "pneumaticcraft:flux_compressor" }, "pneumaticcraft:compressed_iron_gear", MODID + "advanced_sealed_mechanism")
-    //修改启动能源炉配方
+    //修改气动能源炉配方
     event.remove({ output: "pneumaticcraft:pneumatic_dynamo" })
     event.shaped("pneumaticcraft:pneumatic_dynamo", [" A ", "BCB", "DED"], { A: "pneumaticcraft:advanced_pressure_tube", B: "pneumaticcraft:compressed_iron_gear", C: MODID + "advanced_sealed_mechanism", D: "pneumaticcraft:ingot_iron_compressed", E: "createaddition:alternator" })
     //添加回响构件配方
@@ -525,7 +529,34 @@ ServerEvents.recipes(event => {
     ]
     ).transitionalItem(MODID + "incomplete_empty_pcb")
     //添加电阻配方
-    event.shaped(MODID + "resistor", ["ABA", "BCB", " B "], { A: "minecraft:slime_ball", B: "createaddition:copper_spool", C: "moreburners:nickel_coil" })
+    event.custom({
+        "type": "pneumaticcraft:pressure_chamber",
+        "inputs": [
+            {
+                "count": 2,
+                "tag": "pneumaticcraft:wiring"
+            },
+            {
+                "item":"moreburners:nickel_coil"
+            },
+            {
+                "item": "pneumaticcraft:plastic"
+            }
+        ],
+        "pressure": 2.0,
+        "results": [
+            {
+                "id": MODID + "resistor"
+            }
+        ]
+    })
+    //修改晶体管配方
+    event.replaceInput({ output: "pneumaticcraft:transistor" }, "minecraft:redstone", "create:polished_rose_quartz")
+    //修改电容配方
+    event.recipes.create.mixing([Fluid.of(MODID + "caminite",1000)],[Fluid.of("minecraft:water",1000),"4x embers:caminite_blend"])
+    thermal_plant(MODID+"carbon_rod",1,MODID+"caminite",500,MODID+"caminite_capacitor_packet",1,null,null,5,100,250,3,0.3,false)
+    event.replaceInput({ output: "pneumaticcraft:capacitor"}, "#c:slimeballs",MODID+"caminite_capacitor_packet")
+
     //蒸汽裂化炼油气
     event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of(MODID + "steam_cracked_refinery_gas", 200), [Fluid.of("embers:steam", 50), Fluid.of(MODID + "refinery_gas", 200)], 20).heated().processingTime(50)
     //蒸馏蒸汽裂化炼油气

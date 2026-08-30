@@ -92,4 +92,5 @@ StartupEvents.registry("fluid", event => {
     reg("purified_creosote", "thin", 0x714627)
     reg("steam_cracked_refinery_gas", "thin", 0xE9E9E9)
     reg("ethylene", "thin", 0xF1F1F1)
+    reg("caminite", "thick", 0xAAAAAA)
 })
