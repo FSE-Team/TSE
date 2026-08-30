@@ -61,8 +61,8 @@
 				item: { count: 1, id: "create:steam_engine" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			hide_dependent_lines: true
@@ -237,6 +237,62 @@
 			}]
 			x: 1.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["1408CF305C66FFDA"]
+			id: "635CB4116EF04942"
+			tasks: [{
+				id: "47A429DAFDA5E51A"
+				item: { count: 1, id: "createdieselgenerators:huge_diesel_engine" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EC99ED11AFC4FEE"]
+			id: "2D5C6D7E8F7EB29D"
+			tasks: [{
+				id: "28D4D6463B7D0673"
+				item: { count: 1, id: "createdieselgenerators:diesel_engine" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D5C6D7E8F7EB29D"]
+			id: "156DB059FC3A526B"
+			tasks: [{
+				id: "377CE566D8EB0F9D"
+				item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2D5C6D7E8F7EB29D"]
+			id: "0AF025665FD6F767"
+			tasks: [{
+				id: "762FE4F11C8D2DD9"
+				item: { count: 1, id: "createdieselgenerators:engine_turbocharger" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2D5C6D7E8F7EB29D"]
+			id: "70FBA5647434FEB2"
+			optional: true
+			tasks: [{
+				id: "4B8E4EDB756117C2"
+				item: { count: 1, id: "createdieselgenerators:engine_silencer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
 		}
 	]
 }

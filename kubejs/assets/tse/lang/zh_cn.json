@@ -41,6 +41,10 @@
     "item.tse.incomplete_menril_mechanism": "未完成的门瑞欧构件",
     "item.tse.incomplete_variable_transformer_output": "未完成的变量输出",
     "item.tse.incomplete_variable_transformer_input": "未完成的变量输入",
+    "item.tse.caminite_capacitor_packet": "方镁矾电容芯",
+    "item.tse.carbon_rod": "碳棒",
+    "item.tse.spark_plug": "火花塞",
+    "item.tse.incomplete_diesel_engine": "未完成的柴油引擎",
     "block.tse.andesite_machine": "安山机械箱",
     "item.tse.liquid_unprocessed_sulfurated_rubber_bucket": "液态粗制硫化橡胶桶",
     "item.tse.soul_alcohol_bucket": "灵魂醇桶",
@@ -68,6 +72,7 @@
     "item.tse.purified_creosote_bucket": "纯化的杂酚油桶",
     "item.tse.steam_cracked_refinery_gas_bucket": "蒸汽裂化的炼油气桶",
     "item.tse.ethylene_bucket": "乙烯桶",
+    "item.tse.caminite_bucket": "液态方镁矾桶",
     "fluid_type.tse.liquid_unprocessed_sulfurated_rubber": "液态粗制硫化橡胶",
     "fluid_type.tse.soul_alcohol": "灵魂醇",
     "fluid_type.tse.recycled_echo_liquid": "回响回收液",
@@ -93,5 +98,6 @@
     "fluid_type.tse.processed_crude": "除杂原油",
     "fluid_type.tse.purified_creosote": "纯化的杂酚油",
     "fluid_type.tse.steam_cracked_refinery_gas": "蒸汽裂化的炼油气",
-    "fluid_type.tse.ethylene": "乙烯"
+    "fluid_type.tse.ethylene": "乙烯",
+    "fluid_type.tse.caminite": "液态方镁矾"
 }

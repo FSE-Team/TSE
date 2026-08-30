@@ -302,6 +302,19 @@ ServerEvents.recipes(event => {
     event.stonecutting('advalchemy:alchemy_pedestal', 'embers:alchemy_pedestal')
     //移除余烬电力转换器
     event.remove({ output: "embers:ember_energy_converter"})
+    //修改催化剂插头配方
+    event.recipes.advalchemy.alchemy({
+        result:"embers:catalytic_plug",
+        tablet:MODID+'ember_mechanism',
+        inputs:[
+            "minecraft:glass",
+            "alltheores:silver_plate",
+            "embers:ember_crystal",
+            "create:sturdy_sheet"
+        ],
+        input_aspects:["dawnstone","silver","lead","copper"],
+        aspects:{dawnstone:[2,2],silver:[10,10],lead:[8,8],copper:[16,16]},
+    })
 
     
 
@@ -497,6 +510,38 @@ ServerEvents.recipes(event => {
     //修改流体接口配方
     event.replaceInput({ output: "integratedtunnels:part_interface_fluid" }, "minecraft:bucket", "create:fluid_tank")
 
+    //*液体燃料
+    //修改原生物柴油配方
+    event.remove({ output: "createdieselgenerators:biodiesel" })
+    event.remove({ output: "pneumaticcraft:biodiesel" })
+
+    //*内燃机
+    //修改柴油机配方
+    event.remove({ output: "createdieselgenerators:diesel_engine" })
+    event.recipes.create.sequenced_assembly("createdieselgenerators:diesel_engine", MODID+"plate_iron_compressed", [
+        event.recipes.create.deploying(MODID + "incomplete_diesel_engine", [MODID + "incomplete_diesel_engine", "createdieselgenerators:engine_piston"]),
+        event.recipes.create.deploying(MODID + "incomplete_diesel_engine", [MODID + "incomplete_diesel_engine", "create:shaft"]),
+        event.recipes.create.deploying(MODID + "incomplete_diesel_engine", [MODID + "incomplete_diesel_engine", "create:precision_mechanism"]),
+        event.recipes.create.filling(MODID + "incomplete_diesel_engine", [MODID + "incomplete_diesel_engine", "100x #c:lubricant"]),
+        event.recipes.create.deploying(MODID + "incomplete_diesel_engine", [MODID + "incomplete_diesel_engine", "alltheores:brass_plate"]),
+        event.recipes.create.pressing(MODID + "incomplete_diesel_engine", MODID + "incomplete_diesel_engine")
+    ]).transitionalItem(MODID + "incomplete_diesel_engine").loops(2)
+    //修改模块化柴油机配方
+    event.remove({ output: "createdieselgenerators:large_diesel_engine" })
+    event.recipes.advalchemy.alchemy({
+        result: 'createdieselgenerators:large_diesel_engine',
+        tablet: 'createdieselgenerators:diesel_engine',
+        inputs: [
+            'createdieselgenerators:engine_piston',
+            'create:fluid_pipe',
+            'alltheores:brass_plate',
+            'integrateddynamics:crystalized_menril_chunk',
+            'pneumaticcraft:heat_sink'
+        ],        
+        input_aspects: ['copper', 'copper', 'dawnstone', 'iron', 'iron'],
+        aspects: { copper: [24, 24], dawnstone: [7, 7], iron: [14, 14] }
+    })
+
     //* PCB合成
     //纸基材制备
     event.remove({ output: "minecraft:paper" })
@@ -543,27 +588,7 @@ ServerEvents.recipes(event => {
     ]
     ).transitionalItem(MODID + "incomplete_empty_pcb")
     //添加电阻配方
-    event.custom({
-        "type": "pneumaticcraft:pressure_chamber",
-        "inputs": [
-            {
-                "count": 2,
-                "tag": "pneumaticcraft:wiring"
-            },
-            {
-                "item":"moreburners:nickel_coil"
-            },
-            {
-                "item": "pneumaticcraft:plastic"
-            }
-        ],
-        "pressure": 2.0,
-        "results": [
-            {
-                "id": MODID + "resistor"
-            }
-        ]
-    })
+    pressure_chamber([["#pneumaticcraft:wiring",2],["moreburners:nickel_coil",1],["pneumaticcraft:plastic",1]],[[MODID+"resistor",1]],3.0)
     //修改晶体管配方
     event.replaceInput({ output: "pneumaticcraft:transistor" }, "minecraft:redstone", "create:polished_rose_quartz")
     //修改电容配方

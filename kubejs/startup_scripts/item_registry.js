@@ -80,4 +80,7 @@ StartupEvents.registry("item", event => {
     event.create(MODID + "incomplete_variable_transformer_input", "create:sequenced_assembly")
     event.create(MODID + "caminite_capacitor_packet")
     event.create(MODID + "carbon_rod")
+    event.create(MODID + "spark_plug")
+
+    event.create(MODID + "incomplete_diesel_engine", "create:sequenced_assembly")
 })
