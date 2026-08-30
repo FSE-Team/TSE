@@ -30,6 +30,20 @@ ServerEvents.recipes(event => {
         event.custom(JSON.stringify(obj))
     }
 
+    const pressure_chamber = (inputsArr, outputsArr, pressure) => {
+        var inputsObjArr = []
+        var outputsObjArr = []
+        inputsArr.forEach(array => {
+            if (array[0][0] == "#") inputsObjArr.push({tag: array[0].slice(1), count: array[1]})
+            else inputsObjArr.push({item: array[0], count: array[1]})
+        })
+        outputsArr.forEach(array => {
+            outputsObjArr.push({id: array[0], count: array[1]})
+        })
+        var obj = {type: "pneumaticcraft:pressure_chamber", inputs: inputsObjArr, results: outputsObjArr, pressure: pressure}
+        event.custom(JSON.stringify(obj))
+    }
+
     // const alchemy = (inputItemArr, aspectsArr, tablet, output) => {
     //     var obj = { type: "embers:alchemy", inputs: [], aspects: [], tablet: { item: "" }, output: { item: "" } }
     //     var input = new Array()
@@ -446,7 +460,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(Fluid.of("integrateddynamics:menril_resin", 1000), "integrateddynamics:crystalized_menril_block").heated()
     //修改变量卡配方
     event.remove({ output: "integrateddynamics:variable", input: "minecraft:paper" })
-    event.recipes.create.filling("integrateddynamics:variable", [Fluid.of("integrateddynamics:menril_resin", 100), "minecraft:paper"])
+    event.recipes.create.filling("4x integrateddynamics:variable", [Fluid.of("integrateddynamics:menril_resin", 100), "minecraft:paper"])
     //添加门瑞欧构件配方
     event.recipes.create.sequenced_assembly([MODID + "menril_mechanism"], MODID + "andesite_mechanism", [
         event.recipes.create.filling(MODID + "incomplete_menril_mechanism", [MODID + "incomplete_menril_mechanism", Fluid.of("integrateddynamics:menril_resin", 250)]),
