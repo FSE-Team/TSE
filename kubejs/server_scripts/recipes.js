@@ -14,11 +14,15 @@ ServerEvents.recipes(event => {
     maxTemperature 最高温度
     */
     const thermal_plant = (inputItem, inputItemAmount, inputFluid, inputFluidAmount, outputItem, outputItemAmount, outputFluid, outputFluidAmount, pressure, minTemperature, maxTemperature, airUseMultiplier, speed, isExothermic) => {
-        var obj = { type: "pneumaticcraft:thermo_plant", exothermic: isExothermic, air_use_multiplier: airUseMultiplier, speed: speed }
-        if (inputItem != null) obj.item_input = { item: inputItem, count: inputItemAmount }
-        if (inputFluid != null) obj.fluid_input = { type: "pneumaticcraft:fluid", tag: inputFluid, amount: inputFluidAmount }
-        if (outputItem != null) obj.item_output = { item: outputItem, count: outputItemAmount }
-        if (outputFluid != null) obj.fluid_output = { fluid: outputFluid, amount: outputFluidAmount }
+        var obj = { type: "pneumaticcraft:thermo_plant", exothermic: isExothermic, air_use_multiplier: airUseMultiplier, speed: speed, inputs: {}, outputs: {} }
+        if (inputItem != null) 
+            if(inputItem[0] == "#") obj.inputs.item = { tag: inputItem.slice(1), count: inputItemAmount }
+            else obj.inputs.item = { item: inputItem, count: inputItemAmount }
+        if (inputFluid != null) 
+            if(inputFluid[0] == "#") obj.inputs.fluid = { tag: inputFluid.slice(1), amount: inputFluidAmount }
+            else obj.inputs.fluid = { fluid: inputFluid, amount: inputFluidAmount }
+        if (outputItem != null) obj.outputs.item_output = { id: outputItem, count: outputItemAmount }
+        if (outputFluid != null) obj.outputs.fluid_output = { id: outputFluid, amount: outputFluidAmount }
         if (pressure != null) obj.pressure = pressure
         if (minTemperature != null && maxTemperature == null) obj.temperature = { min_temp: minTemperature + 273 }
         else if (maxTemperature == null && minTemperature != null) obj.temperature = { max_temp: maxTemperature + 273 }
