@@ -1,7 +1,10 @@
 {
 	chapter.07688EAC7B9CA5C9.title: "物流先锋"
 	chapter.1F44278D391DF444.title: "冒险旅途"
+	chapter.202FE054BF2715A3.title: "生化环材"
+	chapter.21A358B505B15EDA.title: "余烬重燃"
 	chapter.2E9C01B924441395.title: "机械动力 - II"
+	chapter.40D490DDB575B647.title: "电力工业 - I"
 	chapter.49BAC0D0591F3BE0.title: "容量不足"
 	chapter.5281D556538A0AD5.title: "欢迎新员工"
 	chapter.53CB173216FD5059.title: "商店"
@@ -10,32 +13,57 @@
 	chapter.7C405B97AA2B9041.title: "前方高能"
 	chapter_group.52016480CE0E93EF.title: "支线"
 	chapter_group.7856FC9742FDA805.title: "主线"
+	quest.003F9EF19371B4E2.quest_subtitle: "我是来退出这个混合物的"
 	quest.006389D3D894307D.title: "蒸汽裂化的炼油气"
 	quest.02A4490A70B1C12E.quest_desc: [
 		"这是一块纸板........."
 		"你还希望我给你提供什么信息？这就是普通的纸板!"
-		"这是纸质电路板的原材料。"
+		"这是纸质电路基板的原材料。"
 	]
 	quest.02A4490A70B1C12E.quest_subtitle: "纸板就是纸板，或许可以拿给收废品的？"
+	quest.03AACB95FB49D28D.quest_desc: [
+		"黎明石是一种由铜与金，利用余烬能量混合而产出的合金。具有温润的特质，并且摸起来……并不像金属。"
+		"经过适当加工，能够将余烬能量转化为热能。从而你可以使用它来制造燃烧室为工作盆加热。"
+	]
+	quest.03AACB95FB49D28D.quest_subtitle: "合金，还是石？"
+	quest.03EC604D31607F58.quest_subtitle: "比矮人更好"
+	quest.03F1B7AE9E0855E6.quest_desc: [
+		"得益于门瑞欧物质稳定的性质，它成为了存储信息的不二之选。向&a纸&r注入&a门瑞欧树脂&r便可得到&a变量卡&r。"
+		"顾名思义，变量卡是用来储存&4数据&r的。数据的种类多种多样，可以是&9各种数字&r、&9字符串&r、&9布尔值&r、&9物品&r、&9方块&r、&9流体&r，还可以是&9以上任意一种数据所组成的列表&r。数据的来源也很丰富，你可以&9通过逻辑编程器给它赋值&r，也可以&9通过各种读取器来让它存储读数&r，还可以&9让它成为另外几个变量卡经过某种运算得到的结果&r。"
+	]
+	quest.03F1B7AE9E0855E6.quest_subtitle: "信息存储"
+	quest.0402A6A0BFF95C9E.quest_subtitle: "天外来客"
 	quest.0431FC0EFDA4C5CE.quest_desc: [
 		"用于提升余烬沙砾、余烬晶体碎片与余烬晶体的产出比。"
 		"安装后，余烬沙砾产出提升至300，余烬晶体碎片产出提升至660，余烬晶体产出提升至2460。"
 		"如果燃料为余烬晶簇，产出会折损140点。"
 	]
 	quest.0431FC0EFDA4C5CE.quest_subtitle: "提效设备"
+	quest.04545FDA8C3C8CEB.quest_subtitle: "调味料"
+	quest.04714CEDEC99E86E.quest_subtitle: "工业之母"
+	quest.04714CEDEC99E86E.title: "硫酸产线"
 	quest.04E5224676789B5F.quest_desc: ["得益于机械部门的优秀设计，EDA默认搭载了“思索”演算示例系统，对着一些元件长按[W]以学习它们的工作方法。"]
 	quest.04E5224676789B5F.title: "你已经准备好了"
+	quest.05EC2866C1ABF490.quest_subtitle: "&bNew Industrial Technology Is Aviliable!"
+	quest.05EC2866C1ABF490.title: "余烬工业"
+	quest.063F1DCA97C1F5A3.title: "胶乳"
 	quest.06E8CF8A602115A2.quest_desc: [
 		"看起来我们工程师的大手强而有力，可以直接&9手搓制酸"
 		"&r但是为了后面的自动化，系统建议工程师采用&bFSE&r提供的发酵储罐系统来制作&c红石酸&r"
 	]
 	quest.06E8CF8A602115A2.quest_subtitle: "你的第一桶酸液"
+	quest.0753C053F288D3BB.quest_desc: ["使用压缩铁锭和强化石强化精密构件，安装齿轮，最后使用液态粗制硫化橡胶密封便可得到气密构件。"]
+	quest.0753C053F288D3BB.quest_subtitle: "密不透风"
+	quest.07A47FBAD5127CA2.title: "余烬能源"
 	quest.081C65ACC72A4177.quest_desc: [
 		"压缩动力部门又一力作，我们很难不怀疑之前从电力部门开除的人流入了这个部门。"
 		"产出很强劲，但闪电本身就太过短暂，至少在这个阶段你可以利用自然电力，挺不错了。"
 	]
 	quest.081C65ACC72A4177.quest_subtitle: "也算一种电力压缩机"
 	quest.092E51EAAD029B4E.title: "陆地生物"
+	quest.09FF4DF5A855F0A7.quest_desc: ["也许你已经发现了，在这个星球上到处都能看见这种奇异的树——他们长着&a蓝色的叶子&r，树干上时不时会有一些&a蓝色的结晶&r——这些树就是&e门瑞欧树&r。"]
+	quest.09FF4DF5A855F0A7.quest_subtitle: "发现门瑞欧树"
+	quest.0A11F311E9C6CB06.title: "二氧化硫"
 	quest.0A40FA728A069764.quest_desc: [
 		"功能02-EMI™ · 工程材料情报数据库"
 		"&b系统标识：EMI™（Engineering Material Intelligence·工程材料情报数据库）"
@@ -78,6 +106,13 @@
 	]
 	quest.0A40FA728A069764.quest_subtitle: "功能02-&bEMI™ · 工程材料情报数据库"
 	quest.0A40FA728A069764.title: "&d工程材料情报数据库"
+	quest.0A7ECA553CB4E169.quest_desc: ["利用高温将木屑和水一起烹煮，就可以得到一团纸浆——想要进一步加工就得将其溶解在水中形成悬浊液。"]
+	quest.0A7ECA553CB4E169.quest_subtitle: "蔡伦®工艺"
+	quest.0AF025665FD6F767.quest_desc: [
+		"在小型柴油机上非常实用的插件，它能将它们的应力产出翻倍，并同时使转速翻倍。"
+		"&c在大型柴油引擎上不可用。&r"
+	]
+	quest.0AF025665FD6F767.quest_subtitle: "充分燃烧"
 	quest.0B2E0DB794FCF39C.quest_desc: [
 		"这是焦炉，它可以用于产出&6杂酚油&r，顺带产出副产物木炭。"
 		"没错，在这个阶段，杂酚油反而更重要。"
@@ -102,6 +137,11 @@
 		"不过散热依然是一个令人恼火的问题，现在你知道为什么热力学部如此讨厌压缩动力部门了。"
 	]
 	quest.0C5819B9671E553E.quest_subtitle: "真正的电力压缩机"
+	quest.0E1EBC16A026DEA6.quest_desc: [
+		"非常强力的冶炼帮手，能够在熔炼矿物时产出各类液态金属作为副产物。"
+		"如果你十分缺少银，可以考虑在熔炼金矿或铅矿时利用地质分离器副产银。"
+	]
+	quest.0E1EBC16A026DEA6.quest_subtitle: "副产物"
 	quest.0EF7AD14A0976822.quest_desc: [
 		"还记得&e杂酚油&r吗？现在是用到它的时候了。"
 		"杂酚油可以在&c加热&r的&a发酵装置&r内发酵为&6纯化杂酚油&r。"
@@ -115,6 +155,14 @@
 	]
 	quest.0F1ECF6AE31D7E4B.quest_subtitle: "金金金金钱钱钱钱"
 	quest.0F3E03D3354688AB.title: "关于商店"
+	quest.0F5575E2769F92B3.title: "变量I/O模块"
+	quest.0FCA6FB9675547CE.quest_desc: ["将它贴在流体容器上使物品容器连接至网络。"]
+	quest.11270172775C3E80.quest_desc: ["将它贴在物品容器上使物品容器连接至网络。"]
+	quest.11A9E2D8399CABF2.quest_desc: [
+		"通过逻辑编程器，你可以为变量写入各种数据。&b你不仅可以写入常量，还可以写入比较运算符等。&r"
+		"&b来自EDA的提醒：物流部门的研发人员最近研制出了手持式逻辑编程器，你可以直接将其转化为便携款并拿在手上使用。&r"
+	]
+	quest.11A9E2D8399CABF2.quest_subtitle: "变量赋值"
 	quest.13977959C818A458.quest_desc: [
 		"压缩动力部门与核能部门联合力作——实际上核能部门只是派了个扫地的来帮忙而已。"
 		"拥有非常“精妙”的工作温度限制，不过依靠太阳能来压缩空气实际上也不算难用，做好散热还是不错的。"
@@ -125,6 +173,11 @@
 		"不过我们更建议你用它来发电，毕竟发电机消耗的应力不是个小数目。"
 	]
 	quest.1408CF305C66FFDA.quest_subtitle: "动力强权"
+	quest.156DB059FC3A526B.quest_desc: [
+		"史上最棒的小型柴油机，没有之一！"
+		"机械动力部门力作，化学能释放更彻底，不过在燃烧初级生物燃料的情况下依然不如一台满配风车。"
+	]
+	quest.156DB059FC3A526B.quest_subtitle: "澎湃动力"
 	quest.170C73EE5FB4CF7C.quest_desc: [
 		"依然不是推荐的压缩机，液体燃料本身就足够金贵，现阶段生产的也质量不足，等到有条件批量使用液体燃料的时候，为什么不选择电力压缩机呢？"
 		"热力学部最讨厌的产品之一。"
@@ -137,6 +190,12 @@
 	quest.1777982A9C04BFDA.quest_subtitle: "3-X 分子分裂者"
 	quest.19905E1B602A7FC2.quest_desc: ["方镁矾被加工后形成的板材，十分坚固，可以作为&6余烬构件&r的基底和&e机器的原材料&r。"]
 	quest.19905E1B602A7FC2.quest_subtitle: "这是一块实心板材"
+	quest.1A6215F436465273.quest_desc: [
+		"化学工业是你建造工厂的一大基础，作为基本工业，你应当熟悉三酸两碱在不同阶段如何量产。"
+		"化学部将会指导你的工作，不必担心。"
+	]
+	quest.1A6215F436465273.quest_subtitle: "万顷工厂平地起"
+	quest.1A6215F436465273.title: "天坑专业"
 	quest.1AB7833D6F8AE256.quest_desc: [
 		"在你阅读EDA引导系统描述时，你会时常看到右下角的&a翻页箭头&r"
 		"点击翻页箭头，即可进行一次翻页"
@@ -145,6 +204,7 @@
 		"恭喜你！你完成了第一次翻页，现在，完成引导系统，然后投身&bFSE的伟大事业！&r"
 	]
 	quest.1AB7833D6F8AE256.quest_subtitle: "在接下来的引导中，阅读功能十分重要"
+	quest.1AC85FE94B2A8896.title: "三氧化硫"
 	quest.1B4840F90C51B28B.quest_desc: [
 		"粉碎你的木头就可以获得木屑，当然，部分&a加工过程&r也会产生木屑。"
 		"木屑用于合成&6纸浆&r。"
@@ -162,14 +222,15 @@
 	]
 	quest.1CF63B09C35FE2D3.quest_subtitle: "我是&bEDA&r，你好工程师"
 	quest.1CF63B09C35FE2D3.title: "你好，新世界"
+	quest.1D3C8622EE336FD6.title: "硫酸"
 	quest.1DD94D718E56D00A.quest_desc: ["&b来自EDA的提醒：你的脑读数已偏离正常值，请立即停止开小差行为，否则公司将有权对你进行处罚。&r"]
 	quest.1DD94D718E56D00A.quest_subtitle: "吃了一口后，你莫名地想要弹吉他"
 	quest.1EEB768E9067C53C.quest_desc: [
-		"用&e黏液球&r把&e铜线轴&r接到&e电阻线圈&r上就可以得到&a电阻&r。"
+		"在压力室中用塑料片封装铜线和电阻线圈即可得到电阻。"
 		"&b来自EDA的提醒：如果因为电阻发热过多而造成火灾，请不惜一切代价将机器搬出火场。&r"
 	]
 	quest.1EEB768E9067C53C.quest_subtitle: "电子小伙热量巨大"
-	quest.1F18670C39C06213.quest_desc: ["将纸板置于&b压印基座&r之上，同时向其中倒入&e酚醛树脂&r，让&b压印锤&r用&e平模具&r压扁&e纸板&r，并使&e酚醛树脂&r充分渗入&e纸板&r，这样你就得到了&a纸质电基板&r。"]
+	quest.1F18670C39C06213.quest_desc: ["将纸板置于&b压印基座&r之上，同时向其中倒入&e酚醛树脂&r，让&b压印锤&r用&e平模具&r压扁&e纸板&r，并使&e酚醛树脂&r充分渗入&e纸板&r，这样你就得到了&a纸质电路基板&r。"]
 	quest.1F18670C39C06213.quest_subtitle: "别折坏了"
 	quest.205DEA17C622D9A2.quest_desc: [
 		"功能01-Jade™ · 环境感知扫描协议"
@@ -200,6 +261,7 @@
 	quest.205DEA17C622D9A2.quest_subtitle: "功能01-&bJade™ · 环境感知扫描协议"
 	quest.205DEA17C622D9A2.title: "&d环境感知扫描协议"
 	quest.234EB8BBE98194FC.title: "水产品"
+	quest.2379D7F230937C9F.quest_subtitle: "你说这玩意能炼金？"
 	quest.25380F69E72590FB.quest_desc: [
 		"在&c加热&r的情况下，向&6发酵装置&r内放入&2灵魂沙和水&r，就可以产出&e250mB灵魂醇&r。"
 		"不知道为什么，你看着这种液体，感觉到了&4一丝不安&r。"
@@ -275,11 +337,13 @@
 	quest.286F6BA58FC07936.quest_subtitle: "功能03-&bXaero™ · 星球表面导航与制图协议"
 	quest.286F6BA58FC07936.title: "&d星球表面导航与制图协议"
 	quest.292BC95EFCCAF862.quest_desc: [
-		"存储部是FSE内自称最优秀最重要的部，他们这么说也有道理。没有存储，产品就无法存放，流水线上十分重要的缓存就无法设计，甚至信息也没有可靠的载体来保存。"
+		"存储部是FSE内自称最优秀最重要的部门，他们这么说也有道理。没有存储，产品就无法存放，流水线上十分重要的缓存就无法设计，甚至信息也没有可靠的载体来保存。"
 		"存储部不只有容器，它们还有优秀的磁盘。"
 	]
 	quest.292BC95EFCCAF862.quest_subtitle: "你绝对需要，也必须要懂"
 	quest.292BC95EFCCAF862.title: "存储的艺术"
+	quest.29614F3EAD9B0892.quest_desc: ["将它贴在流体容器上使网络能够与容器进行I/O。"]
+	quest.29614F3EAD9B0892.title: "流体I/O"
 	quest.2AB7440591FC6676.quest_desc: [
 		"紫外线灯箱可以利用高强度紫外线为电路板刻上电路图案以便进行后续的蚀刻。"
 		"&b来自EDA的提醒：不要让自己的手暴露在高强度紫外线下，它会打碎你的染色体，公司不会因为员工操作不当而赔偿。&r"
@@ -290,8 +354,18 @@
 		"在真空管可以制造之前，你或许都要用它了"
 	]
 	quest.2ABC4633A9656F4E.quest_subtitle: "真空管下位替代"
+	quest.2B22090C65E0137C.title: "传输余烬能量"
+	quest.2C0DFC774C4679AC.quest_desc: ["有了黄铜，你便可以做出黄铜手部零件，进而做出机械手。不同于安山构件，精密构件所要求的零件公差更小，你的手无法再满足精度要求，而机械手比你的手要精确的多，因此你需要机械手来完成精密构件的生产。"]
+	quest.2C0DFC774C4679AC.quest_subtitle: "精确安装"
 	quest.2CDDA06B79B710C0.quest_desc: ["适合用来补充和过渡，动力强劲，体积过大，不建议常用。"]
 	quest.2CDDA06B79B710C0.quest_subtitle: "河电站"
+	quest.2D5C6D7E8F7EB29D.quest_desc: [
+		"小巧，紧凑，唯一的缺点是油罐不能串联。"
+		"当前阶段，你能利用的燃料非常有限，即使有涡轮增压的加持，一台的应力甚至不如满配风车。"
+		"推荐做更高级的模块化柴油机。"
+	]
+	quest.2D5C6D7E8F7EB29D.quest_subtitle: "轰鸣时代"
+	quest.2D742866BFF74B2A.quest_subtitle: "论紫颂果的一百种利用"
 	quest.2D897DBE75533075.quest_desc: [
 		"蚀刻器可以用蚀刻酸把电路板上不需要的铜去除掉，&c它也能“蚀刻”员工的身体，所以不要在机器工作时把手伸进去。"
 		"&e推荐加热以获得更高效率，最快可30s蚀刻完毕！&r"
@@ -304,8 +378,15 @@
 	]
 	quest.30CD90CA2094A10E.quest_subtitle: "精密构件，就是很精密啊"
 	quest.32FE1259F0BDF218.quest_desc: ["将铜板安装在&e纸质基板&r上，再滴入一些&e沥青&r，用&b动力辊压机&r压实，最后使用&b动力锯&r把多余的部分切割掉，如此&c循环三次&r便可以得到&a空印刷电路板&r。"]
+	quest.32FE1259F0BDF218.quest_subtitle: "绿色大板"
+	quest.3303A45009A5ABC1.quest_desc: [
+		"真正的合金，产自你的合金窑。"
+		"有了黄铜，你就可以制作机械手这一精密设备，简单如安山构件，复杂如组装电路，都需要依靠机械手。"
+	]
+	quest.3303A45009A5ABC1.quest_subtitle: "真正的合金"
 	quest.3367E382FD4ED628.quest_desc: ["你制作了方镁矾混合物，这是制作方镁矾系列物品和余烬机器的原材料。"]
 	quest.3367E382FD4ED628.quest_subtitle: "这不就是&m啥子&r沙子和粘土吗"
+	quest.33BDB4FF00522C3C.title: "流体抽放装置"
 	quest.382534FE67AEF2F2.quest_desc: [
 		"源自天然木屑的原生纸浆，是制作纸板的重要原材料"
 		"只有这样的原生纸浆才能制作出&e最优质的纸板！&r"
@@ -319,6 +400,12 @@
 	quest.392E2E96A2573978.quest_subtitle: "死灰复燃"
 	quest.393EBABF045145D3.quest_desc: ["方镁矾平模，可以用于碾碎/平整，是将&e纸板&r制备成&e纸质电路板&r的重要工具。"]
 	quest.393EBABF045145D3.quest_subtitle: "压平它们"
+	quest.39552B5E96CDBEA4.quest_desc: ["在&a铜线&r外浇上一层&a门瑞欧树脂&r，待其凝固便可得到&a逻辑线缆&r。&9物品&r、&9流体&r、&9能量&r均可以在逻辑管道中运输，你只需要在管道上接上各种&e接口&r便可以将容器接入网络并实现各种东西的输入输出。"]
+	quest.39552B5E96CDBEA4.quest_subtitle: "物质的高速公路"
+	quest.3A2BEFFEAD1FF666.quest_subtitle: " 跨维度远程连接"
+	quest.3ADF1712A2A596CC.quest_desc: ["物流部门——FSE最繁忙的部门——无时不刻地监视着每一份物资的去向。包裹的流向、资源的调度、合成任务的发配……这些全都由他们掌管。物流不仅仅关乎物品的去向，机器配方的执行也与它息息相关。"]
+	quest.3ADF1712A2A596CC.quest_subtitle: "是物流(Logistics)不是逻辑(Logics)!"
+	quest.3ADF1712A2A596CC.title: "物质的传递"
 	quest.3BD692B1C3CBB287.quest_desc: [
 		"非常伟大的产品——如果能把过热降效这点去掉的话。"
 		"难以想象压缩动力部门为什么要设计这种糟糕的工作条件，好在热力学部的产品足够优秀，能够收拾压缩动力部门的半成品设计。"
@@ -330,6 +417,7 @@
 	]
 	quest.3BDDA627D171A69E.quest_subtitle: "工程师的亡魂"
 	quest.3BDDA627D171A69E.title: "灵魂沙"
+	quest.3D636E80A7B1DE14.quest_subtitle: "终极机械手"
 	quest.3DFC7DC9A092F864.quest_desc: [
 		"这是你最高效的压缩空气来源——开玩笑的。"
 		"名副其实的打气筒，前期过渡使用没问题，但不建议作为唯一来源。"
@@ -364,6 +452,7 @@
 		"&o&m&8很难想象发明固体燃料压缩机的压缩动力部门还会搞出这种东西"
 	]
 	quest.3EF7405B7BCBA6D0.quest_subtitle: "燃油打气筒"
+	quest.3F07187D75803B8F.quest_subtitle: "远程连接"
 	quest.410573A73BACB5FF.quest_desc: ["把&e失活的回响催化剂&r丢入&e盐水&r中&c加热搅拌&r，盐中的钠会附着在催化剂上并使其&a恢复活性&r，而盐中的氯会变成&a氯气&r逸出。"]
 	quest.410573A73BACB5FF.quest_subtitle: "天呐，钠是结晶的"
 	quest.41B0005652F6138D.quest_subtitle: "高分子"
@@ -372,9 +461,18 @@
 		"当然，我们更建议您制作一条&e被动产线&r"
 	]
 	quest.4440112C7AE255A4.quest_subtitle: "Smooth's Rose Quartz"
+	quest.459BD6AD705E3A0D.quest_subtitle: "常见卤素"
+	quest.459BD6AD705E3A0D.title: "盐酸及氯气产线"
+	quest.45E914A68C80C2C7.quest_desc: [
+		"现在，你终于可以熔炼矿物以提升产率，或者熔炼金属制作合金。我们推荐你建造一个产线来增加你的矿物产出。"
+		"推荐熔炼矿物时附带一个地质分离器，可以产出一些副产物金属。"
+		"记得在下半部供给余烬能量，上半部分右键放入或物流组件输入你想要熔炼的矿物或金属，等待片刻就可以抽出液态金属。"
+	]
+	quest.45E914A68C80C2C7.quest_subtitle: "液态金属工业"
 	quest.4620E51B9C1E48B0.title: "抽物品屉"
 	quest.479BC754CDF97258.quest_subtitle: "&bNew Industrial Technology Is Aviliable!"
 	quest.479BC754CDF97258.title: "机械动力-工业II期"
+	quest.47DB819E481B94F1.title: "发烟硫酸"
 	quest.48AF8A64A0A22B48.quest_desc: [
 		"这是&c红石粉&r，你可以从地下矿脉中开采得到，可以制作各种红石器件，比如&m&c雷石东直放站&r&r&c红石中继器&r，当然，它在后续工业合成中也有用处，比如制作&b红石酸&r"
 		"当然，安山构件也需要它，所以我们建议至少储备&32组以上&r红石"
@@ -385,14 +483,13 @@
 		"为了安全，请遵守&bFSE&r工业守则，不要拿它进行诸如危化品制取的操作"
 	]
 	quest.4A05221101810ABA.quest_subtitle: "这是一个储罐，可以用于发酵"
+	quest.4AAB04238EE506C4.title: "方块交互装置"
+	quest.4E7E0A05646A828F.quest_desc: ["制作黄铜的必要设备，由耐热材料建造，在没有液态金属工业的情况下，这是你唯一的黄铜来源。"]
+	quest.4E7E0A05646A828F.quest_subtitle: "原子级聚合"
+	quest.4E7E0A05646A828F.title: "窑炉"
 	quest.4EBA36D5C2FDBD7A.quest_desc: ["顶部输出余烬能量，底部输入余烬晶体——不要着急投入余烬沙砾，在做出热量交换器前余烬沙砾是没有产出的。"]
 	quest.4EBA36D5C2FDBD7A.quest_subtitle: "低效产能"
-	quest.535966BAB31E0C71.quest_desc: [
-		"使用&b辊压机&r压出的铅板材，表面十分平整，可以用于接下来的加工。"
-		"当然，我们建议先储备一批。"
-		"不推荐经常接触! 虽然没有什么负面效果。"
-	]
-	quest.535966BAB31E0C71.quest_subtitle: "防辐射，防辐射。"
+	quest.5262861053937675.quest_subtitle: "热科技"
 	quest.573894DFF106A5C7.quest_desc: [
 		"使用&b辊压机&r压出的铜板材，具有好的延展性，表面十分平整，可以用于接下来的加工。"
 		"当然，我们建议先储备一批，因为这是PCB的材料之一。"
@@ -424,18 +521,20 @@
 		"&c所以一定要记得留下足够余量的回响碎片，我相信你也不想回到古代城市吧。&r"
 	]
 	quest.5BC2DF96B69EA739.quest_subtitle: "古代力量"
+	quest.5C15D3E13056AEE5.title: "物品拾放装置"
 	quest.5CAA12C1977270EC.quest_subtitle: "电子小伙容量巨大"
-	quest.5CF15A1072C8A6C5.quest_desc: [
-		"使用&b辊压机&r压出的银板材，具有好的延展性，表面十分平整，可以用于接下来的加工。"
-		"当然，我们建议先储备一批。"
-	]
-	quest.5CF15A1072C8A6C5.quest_subtitle: "这是银板材"
+	quest.5E62A06599880560.quest_subtitle: "新产线"
 	quest.5E8E7D09FD08FB3E.quest_desc: [
 		"使用方镁矾和铁制成，十分稳定(真的很稳定！)，是接下来的&e压印&r流程需要的机器。"
 		"使用&6余烬能量&r驱动。"
 		"&b来自EDA的提醒：请不要在机器运行时将你的手放入机器，公司不会因为员工误操作导致的机器损坏/员工死亡负任何责任！&r"
 	]
 	quest.5E8E7D09FD08FB3E.quest_subtitle: "新型压印机械"
+	quest.5F7C585A342BEE54.quest_desc: [
+		"需要提供余烬能量工作，在底部不同面输入液态金属后会自动开始混合它们，并在上部输出液态合金。"
+		"这是你目前唯一能够获取黎明石的方式。"
+	]
+	quest.5F7C585A342BEE54.quest_subtitle: "保温混合"
 	quest.5FDE7B1D23108031.quest_desc: ["&a工作盆&r只要加上盖板便可以临时形成发酵需要的密闭环境，利用工作盆进行小批量发酵是很有效的。"]
 	quest.5FDE7B1D23108031.quest_subtitle: "物尽其用"
 	quest.5FDE7B1D23108031.title: "小型发酵装置"
@@ -452,6 +551,12 @@
 		"&r&cFSE免责声明:对于工程师利用本次更新提供的系统导致的迷失/死亡，FSE集团概不负责!&r"
 	]
 	quest.60E1684C8097FC01.quest_subtitle: "探险家导航系统"
+	quest.635CB4116EF04942.quest_desc: [
+		"专为大型设备设计的柴油机，彻底释放燃料化学能，油耗速率更低。"
+		"缺点是有些笨重，不如模块化柴油机方便，而且不支持涡轮增压。不过一根曲轴最多可以支持4台大型柴油机输出动力，设计得当能够做出能量密度较大的引擎。"
+	]
+	quest.635CB4116EF04942.quest_subtitle: "化学能释放者"
+	quest.6555C19A8E318116.quest_subtitle: "精炼提取"
 	quest.6555C19A8E318116.title: "分馏"
 	quest.6623B6C11DE0BEFE.quest_desc: [
 		"余烬工业集团在被我们收购后，我们研发的，余烬机器核心的全新替代物——&6余烬构件&r！"
@@ -459,6 +564,9 @@
 		"总之，这个构件让你可以制作余烬机器，进而开始PCB加工。"
 	]
 	quest.6623B6C11DE0BEFE.quest_subtitle: "稳定之选"
+	quest.6623B6C11DE0BEFE.title: "余烬构件"
+	quest.67E29E561A524C0E.title: "水溶制硫酸"
+	quest.6865E893F50E4332.quest_subtitle: "氧化性"
 	quest.689DF10255D780EE.title: "流体抽屉"
 	quest.6A96F351A7C2775A.quest_desc: [
 		"在&e未组装的印刷电路板&r上依次安上&e电子管&r、&e电容&r和&e电阻&r，最后滴入一些&e润滑油&r，&c循环三次&r后你就得到了公司所需要的一种工业产品：&a印刷电路板&r。"
@@ -466,15 +574,26 @@
 	]
 	quest.6A96F351A7C2775A.quest_subtitle: "落后制程"
 	quest.6A96F351A7C2775A.title: "印刷电路板"
+	quest.6B8DEEC09B826431.quest_desc: ["将它贴在物品容器上使网络能够与容器进行I/O。"]
+	quest.6B8DEEC09B826431.title: "物品I/O"
+	quest.6C8A77EFF19188D6.quest_desc: [
+		"把门瑞欧木板放入&e工作盆&r中用&e动力冲压机&r砸一下便可得到&a门瑞欧树脂&r，再将树脂通入&e烘干池&r中干燥便可得到&a门瑞欧结晶方块&r，再通过分解得到&a门瑞欧晶体碎块&r。另外，你也可以通过破坏那些带有结晶的原木来直接获得&a门瑞欧晶体碎块&r，但这种方案的产出效率较低。"
+		"&8当然，你还可以通过挤压机来获得门瑞欧树脂——如果你想一直用脚踩。&r"
+		"&b来自EDA的提醒：你可能注意到了，门瑞欧树脂也可以通过冲压原木获得。如果你选择冲压原木，请注意不要把它变成门瑞欧木。&r"
+	]
+	quest.6C8A77EFF19188D6.quest_subtitle: "物质与信息的介质"
 	quest.6CBAAF53DC95FF5C.quest_desc: [
 		"消耗固体燃料产出压缩空气，一旦超过最大压力就会爆炸！"
 		"不需要注意工作温度，有燃料就会一直工作，是前期低压阶段的最佳压缩机。"
 		"&m&o&8压缩动力部门应该给这台机器颁一个奖&r"
 	]
 	quest.6CBAAF53DC95FF5C.quest_subtitle: "燃煤打气筒"
+	quest.6D322FCD51547807.quest_desc: ["还在为远程铺设网络需要铺设大量逻辑线缆而烦恼吗？现在这些问题通通不存在了！通过一对单向连接器，你可以在&b一条直线上跨过方块&r来传输各种物质。"]
+	quest.6D322FCD51547807.quest_subtitle: "直线远程连接"
+	quest.6D322FCD51547807.title: "单向连接器"
 	quest.6DD71249EACEA55E.quest_desc: [
 		"这是你前期唯一的高能动力来源，最高可达8192su应力，十分强劲。"
-		"并且使用0排放风能，十分环保。"
+		"并且使用零排放风能，十分环保。"
 	]
 	quest.6DD71249EACEA55E.quest_subtitle: "强风呼啸"
 	quest.6DDBC4E45D1B821E.quest_desc: [
@@ -484,6 +603,9 @@
 	]
 	quest.6DDBC4E45D1B821E.quest_subtitle: "工业用余烬能源"
 	quest.6DDBC4E45D1B821E.title: "高温催化反应器"
+	quest.6DF79A597BE1D996.quest_subtitle: "与世界接轨"
+	quest.70FBA5647434FEB2.quest_desc: ["只是一个消音器。"]
+	quest.70FBA5647434FEB2.quest_subtitle: "听力保护"
 	quest.70FDF5B5F7CF2D59.quest_desc: [
 		"看起来你现在遇到了些麻烦。"
 		"你需要获取&a下界石英&r，这种特殊石英只会在下界那样的高温环境下形成。"
@@ -491,10 +613,12 @@
 	]
 	quest.70FDF5B5F7CF2D59.quest_subtitle: "要去下界吗?"
 	quest.712BC5FBC79F99A3.quest_desc: [
-		"实际上是热力学部的产品，但压缩动力部门硬说是自己提出的原型，我们姑且还是相信吧。"
+		"实际上是热力学部的产品，但压缩动力部门硬说是自己提出的原型，我们姑且还是相信他们吧。"
 		"还算优秀的设计，但也就这样了，比较适合拿来回收蓝色压缩机的废热。"
 	]
 	quest.712BC5FBC79F99A3.quest_subtitle: "废热废冷回收者"
+	quest.72AFEEE3260B8496.quest_desc: ["作为门瑞欧树的果实，吃下门瑞欧浆果不仅可以恢复少许的饱食度，还可以让你获得短暂的夜视效果。"]
+	quest.72AFEEE3260B8496.quest_subtitle: "眼前一亮"
 	quest.73CA62F8C1BFF523.quest_desc: [
 		"你好，工程师"
 		"TSE全域发展协议目前处于早期研制阶段"
@@ -506,13 +630,17 @@
 		"推荐使用铜/银/琥珀金块以达到最大工作效率。"
 	]
 	quest.741463E4C035470C.quest_subtitle: "导热“蒸”效"
+	quest.7420FBE18F684D98.quest_subtitle: "化工之母"
+	quest.7420FBE18F684D98.title: "硫酸"
 	quest.74B2A4C09387A778.quest_desc: [
 		"&3古代城市&r有我们需要的一些材料，看来你是不得不去一趟了。"
 		"我们建议在前往古代城市之前先制作一个&e剪刀&r，就地取材获取静步所需的羊毛。"
 		"&b来自EDA的提示：一定要保持安静，曾经有&r&c191名&r&b工程师因为触发&r&6古城自动防卫系统&r&b而丧命，即使也有触发了防卫系统的工程师逃离了古代城市，他们也患上了严重的PTSD，并终生不能再从事相关工作。&r"
-		"&a来自EDA的消息：由于大量工程师反映找不到古代城市，公司进行了一次系统升级，具体前往支线&e冒险旅途&a中的&e探险家指南针&a查看。&r"
+		"&a来自EDA的消息：由于大量工程师反映找不到古代城市，公司进行了一次系统升级，具体前往支线&e冒险旅途&a中的&e结构罗盘&a查看。&r"
+		"[ { \"text\": \"点击此处前往任务页面\", \"underlined\": true,\"color\":\"red\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"60E1684C8097FC01\" } } ]"
 	]
 	quest.74B2A4C09387A778.quest_subtitle: "&e监守者：迫近"
+	quest.74B73EDEC42A769C.title: "乙烯"
 	quest.76CA5C23A816C8F6.quest_desc: [
 		"使用&e原油探测器&r寻找拥有原油的地方，然后在那里搭建一个&b抽油机&r来提取当地的&a原油&r。"
 		"&c来自EDA的警告：你的防护服接触到原油会损坏。在地表有很多原油池，请不要陷入其中，否则公司将起诉你蓄意破坏公司财产。&r"
@@ -521,19 +649,26 @@
 	quest.76CA5C23A816C8F6.title: "石油开采"
 	quest.79DAD3919E3B92EE.quest_desc: ["树场的动力好伙伴，缺点就是产能太低，为什么不去看看隔壁的风车呢？"]
 	quest.79DAD3919E3B92EE.quest_subtitle: "河动力"
+	quest.7AF3BFB4C8641425.quest_subtitle: "有尘车间"
+	quest.7C4948C473CA9D5F.quest_subtitle: "强氧化性"
+	quest.7C4948C473CA9D5F.title: "硝酸产线"
 	quest.7DB7FC5CAB2B92C8.quest_desc: ["安山合金，你工业的基石"]
 	quest.7DB7FC5CAB2B92C8.quest_subtitle: "What's This?"
+	quest.7EAF181EFCCA3F85.quest_subtitle: "指针"
+	quest.7F849CDC6CF8E000.title: "电力工业-阶段I"
 	task.00D0EEDE292981E0.title: "Landing!"
 	task.0267AC0CE1044A87.title: "液态粗制硫化橡胶"
 	task.0649A3741602FE99.title: "功能03"
 	task.12A528CDB0C61D20.title: "&EDA"
 	task.17F094BA13190498.title: "我将填补能源缺口"
+	task.1D12A88781BD4C1B.title: "水溶制硫酸"
 	task.1DE8E66C3E212749.title: "红石酸"
 	task.203751712EEB4D7B.title: "检查01"
 	task.26A8999900EA5EB0.title: "脱硫"
 	task.281A4F151A1B6297.title: "纸浆"
 	task.316F67A57E4C5EE1.title: "物资交换"
 	task.326165CAD5B77E40.title: "古代城市"
+	task.3FF36632B9778366.title: "电力工业"
 	task.454BFBAF17F03F71.title: "酚醛树脂"
 	task.4637B5F4908D736B.title: "如何阅读"
 	task.46CA53F81A92F371.title: "我准备好了"
@@ -545,5 +680,6 @@
 	task.6135E6A2160297E3.title: "功能02"
 	task.6A1F66BA6D752EF9.title: "水热解"
 	task.6AF7623DCF6F34DF.title: "蚀刻酸"
+	task.769D98DF587A8142.title: "我将建立化工产线"
 	task.7E22A955CB1D8940.title: "我将扩充存储空间"
 }

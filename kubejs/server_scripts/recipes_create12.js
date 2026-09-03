@@ -71,6 +71,8 @@ ServerEvents.recipes(event => {
         event.custom(JSON.stringify(obj))
     }
     //* 删除配方
+    //移除原有vintage配方
+    //event.remove({mod:"vintageimprovements"})
     //移除原有炼金配方
     event.remove({ type: "embers:alchemy" })
     event.remove({ output: "embers:dynamic_crystal_seed"})
@@ -78,23 +80,30 @@ ServerEvents.recipes(event => {
     event.remove({ output: "pneumaticcraft:plastic_sheet" })
     event.remove({ id: "pneumaticcraft:thermo_plant/plastic_from_biodiesel" })
     event.remove({ id: "pneumaticcraft:thermo_plant/plastic_from_lpg" })
-    //* 化工
-    //水热解(懒得写固液电解)
-    event.recipes.createdieselgenerators.basin_fermenting(
+    //* 矿物处理
+    //下界合金
+    event.remove({id:"minecraft:netherite_ingot"})
+    //硫-增生
+    event.recipes.vintageimprovements.vacuumizing([Fluid.of(MODID+"carbon_dioxide",100),Fluid.of(MODID+"molten_ash_crystal",500)],"embers:ember_crystal_cluster").superheated().secondaryFluidOutput(0).processingTime(20)
+    event.recipes.createdieselgenerators.distillation(
         [
-            Fluid.of(MODID + "oxygen", 100),
-            Fluid.of(MODID + "hydrogen", 200)
+            Fluid.of(MODID+"molten_sulfur",100),
+            Fluid.of("embers:dwarven_oil",100),
+            Fluid.of(MODID+"carbon_monoxide",100),
+            Fluid.of("embers:dwarven_gas",200)
         ],
-        Fluid.of("minecraft:water", 100), 10
-    ).superheated()
+        Fluid.of(MODID+"molten_ash_crystal",500)
+    ).superheated().processingTime(10)
+    thermal_plant("alltheores:sulfur",1,MODID+"molten_sulfur",100,"alltheores:sulfur",2,null,null,-0.5,null,100,1,1,true)
+    thermal_plant("immersiveengineering:dust_sulfur",1,MODID+"molten_sulfur",100,"alltheores:sulfur",2,null,null,-0.5,null,100,1,1,true)
+    
     //* 石化
     const PPJA = "createdieselgenerators:pumpjack_"
     const PPJB = ["hole", "bearing", "crank", "head"]
     for (var a = 0; a < 4; a++) {
         event.remove({ output: PPJA + PPJB[a] })
     }
-    //添加压缩铁锭板配方
-    event.recipes.create.pressing(MODID + "plate_iron_compressed", "pneumaticcraft:ingot_iron_compressed")
+
     //初级分馏
     event.remove({ type: "immersivepetroleum:distillation" })
     event.remove({ type: "createdieselgenerators:distillation" })
@@ -102,12 +111,12 @@ ServerEvents.recipes(event => {
     const crude = ['immersivepetroleum:crudeoil', 'pneumaticcraft:oil', 'createdieselgenerators:crude_oil']
     event.recipes.createdieselgenerators.distillation(
         [
+            Fluid.of(MODID + "processed_crude", 100),
             Fluid.of("embers:soul_crude", 75),
             Fluid.of("immersivepetroleum:lubricant", 50),
             Fluid.of("immersivepetroleum:diesel_sulfur", 100),
             Fluid.of("immersivepetroleum:kerosene", 100),
-            Fluid.of("industrialforegoing:ether_gas", 100),
-            Fluid.of(MODID + "processed_crude", 100)
+            Fluid.of("industrialforegoing:ether_gas", 100)
         ],
         "800x #c:crude_oil"
     ).processingTime(20).superheated()
@@ -122,6 +131,7 @@ ServerEvents.recipes(event => {
         ],
         Fluid.of(MODID + "processed_crude", 100)
     ).processingTime(20).superheated()
+
     //脱硫
     const IPHT = "immersivepetroleum:hydrotreater"
     event.remove({ id: IPHT + "/sulfur_recovery" })
@@ -221,6 +231,8 @@ ServerEvents.recipes(event => {
     ).superheated()
 
     //* Stage 2
+    //添加压缩铁锭板配方
+    event.recipes.create.pressing(MODID + "plate_iron_compressed", "pneumaticcraft:ingot_iron_compressed")
     //分馏塔控制器配方替换
     event.remove({ output: "createdieselgenerators:distillation_controller" })
     event.shaped("3x createdieselgenerators:distillation_controller", [
@@ -450,7 +462,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.deploying(MODID + "incomplete_echo_mechanism", [MODID + "incomplete_echo_mechanism", MODID + "echo_catalyst"])
     ]).transitionalItem(MODID + "incomplete_echo_mechanism").loops(3)
     //添加灵魂醇配方
-    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "soul_alcohol", 250), ["minecraft:soul_sand", Fluid.of("minecraft:water", 250)]).heated().processingTime(50)
+    event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "soul_alcohol", 250), ["minecraft:soul_sand", Fluid.of("minecraft:water", 250)]).heated().processingTime(40)
     //添加回响催化剂配方
     event.recipes.create.mixing([MODID + "echo_catalyst", MODID + "iron_ingot_with_echo_impurity"], ["minecraft:echo_shard", "minecraft:iron_ingot", Fluid.of(MODID + "soul_alcohol", 250)]).heated()
     //添加液态粗制硫化橡胶配方
@@ -482,7 +494,7 @@ ServerEvents.recipes(event => {
     ]).loops(3).transitionalItem(MODID + "incomplete_menril_mechanism")
     //修改逻辑线缆配方
     event.remove({ output: "integrateddynamics:cable" })
-    event.recipes.create.filling("integrateddynamics:cable", ["immersiveengineering:wire_copper", Fluid.of("integrateddynamics:menril_resin", 100)])
+    event.recipes.create.filling("integrateddynamics:cable", ["createaddition:copper_wire", Fluid.of("integrateddynamics:menril_resin", 100)])
     //删除发电机配方
     event.remove({ output: "integrateddynamics:coal_generator" })
     //添加紫颂果浆配方
@@ -603,8 +615,6 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.basin_fermenting(Fluid.of(MODID + "ethylene", 250), Fluid.of(MODID + "steam_cracked_refinery_gas", 500)).heated().processingTime(50)
     //加聚乙烯
     event.recipes.create.mixing([Fluid.of("pneumaticcraft:plastic", 1000), MODID + "ineffective_echo_catalyst"], [Fluid.of(MODID + "ethylene", 1000), MODID + "echo_catalyst"]).heated()
-    //氯
-    event.recipes.create.mixing([Fluid.of(MODID + "chlorine", 100), MODID + "echo_catalyst"], ["alltheores:salt", MODID + "ineffective_echo_catalyst"]).heated()
     //电路板制作+蚀刻液
     event.remove({ id: "pneumaticcraft:printed_circuit_board" })
     event.recipes.create.sequenced_assembly(
@@ -618,4 +628,6 @@ ServerEvents.recipes(event => {
     ).transitionalItem(MODID + "incomplete_pcb").loops(3)
     event.remove({ id: "pneumaticcraft:pressure_chamber/etching_acid" })
     event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of("pneumaticcraft:etching_acid", 100), [Fluid.of(MODID + "chlorine", 150), "alltheores:copper_dust", Fluid.of("minecraft:water", 100)]).superheated().processingTime(10)
+
+   
 })

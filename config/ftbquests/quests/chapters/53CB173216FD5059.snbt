@@ -117,9 +117,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: true
 				count: 32L
-				id: "3AC55A2B3591AAB3"
+				id: "4F727365ACF60348"
 				item: { count: 1, id: "tse:copper_coin" }
 				type: "item"
 			}]
@@ -139,7 +138,7 @@
 			}]
 			tasks: [{
 				count: 16L
-				id: "3A533FFEA304F5E3"
+				id: "70C14664C4E657BA"
 				item: { count: 1, id: "tse:copper_coin" }
 				type: "item"
 			}]

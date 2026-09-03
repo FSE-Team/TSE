@@ -19,30 +19,34 @@
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7DB7FC5CAB2B92C8"]
+			dependencies: [
+				"7DB7FC5CAB2B92C8"
+				"48AF8A64A0A22B48"
+				"70FDF5B5F7CF2D59"
+			]
 			id: "579309CB6A94D760"
 			tasks: [{
 				id: "41336AE895513BD9"
 				item: { count: 1, id: "tse:andesite_mechanism" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["0BD582E3AA6B5A68"]
+			dependencies: ["7DB7FC5CAB2B92C8"]
 			id: "4A05221101810ABA"
 			tasks: [{
 				id: "1002DAF2622F3166"
 				item: { count: 1, id: "createdieselgenerators:bulk_fermenter" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -57,7 +61,7 @@
 				id: "1DE8E66C3E212749"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -68,7 +72,7 @@
 				item: { count: 1, id: "minecraft:redstone" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -82,7 +86,7 @@
 				item: { count: 1, id: "create:polished_rose_quartz" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: 4.0d
 		}
 		{
@@ -93,8 +97,8 @@
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -118,14 +122,14 @@
 				item: { count: 1, id: "alltheores:gold_plate" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"0F1ECF6AE31D7E4B"
-				"2ABC4633A9656F4E"
 				"579309CB6A94D760"
+				"2C0DFC774C4679AC"
 			]
 			id: "30CD90CA2094A10E"
 			size: 2.0d
@@ -141,24 +145,52 @@
 			dependencies: ["04E5224676789B5F"]
 			hide_dependent_lines: true
 			id: "5AB1E3FB67DA27E0"
-			size: 2.0d
+			size: 3.0d
 			tasks: [{
 				id: "1542F667BE12A610"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7DB7FC5CAB2B92C8"]
-			id: "0BD582E3AA6B5A68"
+			dependencies: [
+				"3303A45009A5ABC1"
+				"579309CB6A94D760"
+				"2ABC4633A9656F4E"
+			]
+			id: "2C0DFC774C4679AC"
 			tasks: [{
-				id: "4F9B4ABA3C99C47C"
-				item: { count: 1, id: "create:sturdy_sheet" }
+				id: "4A6C22ECC2B4543C"
+				item: { count: 1, id: "create:deployer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4E7E0A05646A828F"]
+			id: "3303A45009A5ABC1"
+			tasks: [{
+				id: "7F3B1E63386BF936"
+				item: { count: 1, id: "alltheores:brass_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5AB1E3FB67DA27E0"]
+			hide_dependency_lines: true
+			id: "4E7E0A05646A828F"
+			tasks: [{
+				count: 8L
+				id: "55999B0EB5768C6C"
+				item: { count: 1, id: "immersiveengineering:alloybrick" }
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: -2.5d
 		}
 	]
 }

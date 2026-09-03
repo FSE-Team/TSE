@@ -75,7 +75,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3DFC7DC9A092F864"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "3EF7405B7BCBA6D0"
 			tasks: [{
 				id: "27DEA0AE14B86AFE"
@@ -88,7 +88,7 @@
 		{
 			dependencies: [
 				"0753C053F288D3BB"
-				"3DFC7DC9A092F864"
+				"3EC99ED11AFC4FEE"
 			]
 			id: "6CBAAF53DC95FF5C"
 			tasks: [{
@@ -96,19 +96,20 @@
 				item: { count: 1, id: "pneumaticcraft:air_compressor" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3DFC7DC9A092F864"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "712BC5FBC79F99A3"
+			optional: true
 			tasks: [{
 				id: "35A8650C6418F5A6"
 				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 2.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -169,7 +170,7 @@
 				item: { count: 1, id: "pneumaticcraft:advanced_air_compressor" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -4.0d
 			y: 0.0d
 		}
 		{
@@ -184,19 +185,21 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["3EC99ED11AFC4FEE"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "3DFC7DC9A092F864"
+			optional: true
 			tasks: [{
 				id: "085DEF3E09697D5F"
 				item: { count: 1, id: "pneumaticcraft:manual_compressor" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["3DFC7DC9A092F864"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "13977959C818A458"
+			optional: true
 			tasks: [{
 				id: "676A9B3AE133A1A5"
 				item: { count: 1, id: "pneumaticcraft:solar_compressor" }
@@ -206,8 +209,9 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3DFC7DC9A092F864"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "081C65ACC72A4177"
+			optional: true
 			tasks: [{
 				id: "11D210FDB2EB7CB2"
 				item: { count: 1, id: "pneumaticcraft:electrostatic_compressor" }
@@ -217,7 +221,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["3DFC7DC9A092F864"]
+			dependencies: ["6CBAAF53DC95FF5C"]
 			id: "0C5819B9671E553E"
 			tasks: [{
 				id: "7AADD7D709CA95E0"

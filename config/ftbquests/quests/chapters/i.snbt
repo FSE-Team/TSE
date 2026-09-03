@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "i"
+	group: "7856FC9742FDA805"
+	icon: {
+		id: "immersiveengineering:wirecoil_copper"
+	}
+	id: "40D490DDB575B647"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["6A96F351A7C2775A"]
+		hide_dependent_lines: true
+		id: "7F849CDC6CF8E000"
+		size: 3.0d
+		tasks: [{
+			id: "3FF36632B9778366"
+			type: "checkmark"
+		}]
+		x: -4.0d
+		y: -1.5d
+	}]
+}

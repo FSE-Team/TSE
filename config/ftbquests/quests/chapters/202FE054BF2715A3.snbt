@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "202FE054BF2715A3"
+	group: "52016480CE0E93EF"
+	icon: {
+		id: "createdieselgenerators:bulk_fermenter"
+	}
+	id: "202FE054BF2715A3"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4A05221101810ABA"]
+			hide_dependent_lines: true
+			id: "1A6215F436465273"
+			size: 3.0d
+			tasks: [{
+				id: "769D98DF587A8142"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "459BD6AD705E3A0D"
+			tasks: [{
+				id: "42235B49ECC29385"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "04714CEDEC99E86E"
+			tasks: [{
+				id: "7CB4C3B028E39158"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "7C4948C473CA9D5F"
+			tasks: [{
+				id: "240C9836EB642EAE"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -5.0d
+		}
+		{
+			id: "739DE4510182B421"
+			tasks: [{
+				id: "43DC601797BD52AE"
+				item: { count: 1, id: "alltheores:sulfur" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			id: "0A11F311E9C6CB06"
+			tasks: [{
+				id: "7F275479C4EBA66B"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			id: "1AC85FE94B2A8896"
+			tasks: [{
+				id: "3F42ACFAE18D8235"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			id: "67E29E561A524C0E"
+			tasks: [{
+				id: "1D12A88781BD4C1B"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			id: "47DB819E481B94F1"
+			tasks: [{
+				id: "2F71BC8E71A946F2"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			id: "1D3C8622EE336FD6"
+			tasks: [{
+				id: "26204245C0DEF02C"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+	]
+}

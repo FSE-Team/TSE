@@ -1,0 +1,131 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21A358B505B15EDA"
+	group: "52016480CE0E93EF"
+	icon: {
+		id: "tse:ember_mechanism"
+	}
+	id: "21A358B505B15EDA"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["30CD90CA2094A10E"]
+			hide_dependent_lines: true
+			id: "05EC2866C1ABF490"
+			size: 3.0d
+			tasks: [{
+				id: "7F154792E36978CE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05EC2866C1ABF490"]
+			id: "27A49BCCEAAA286A"
+			tasks: [{
+				id: "5A32449FF7FA10FF"
+				item: { count: 1, id: "embers:ember_bore" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["27A49BCCEAAA286A"]
+			id: "07A47FBAD5127CA2"
+			tasks: [
+				{
+					id: "038F87F202FC07E6"
+					item: { count: 1, id: "embers:ember_grit" }
+					type: "item"
+				}
+				{
+					id: "26AE5591ECD38E7E"
+					item: { count: 1, id: "embers:ember_shard" }
+					type: "item"
+				}
+				{
+					id: "5C438172664E41CB"
+					item: { count: 1, id: "embers:ember_crystal" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07A47FBAD5127CA2"]
+			id: "1D108B83E092D8DD"
+			tasks: [{
+				id: "3AC7B7F3ED6FC1D5"
+				item: { count: 1, id: "embers:ember_crystal_cluster" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05EC2866C1ABF490"]
+			id: "2B22090C65E0137C"
+			tasks: [
+				{
+					id: "6ED539F9C79471F8"
+					item: { count: 1, id: "embers:ember_emitter" }
+					type: "item"
+				}
+				{
+					id: "60E2ED5BA35CE130"
+					item: { count: 1, id: "embers:ember_receiver" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B22090C65E0137C"]
+			id: "4CB9B2B9B81F24DE"
+			optional: true
+			tasks: [{
+				id: "7A58876FD71443ED"
+				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 24000.0d } } }, count: 1, id: "embers:copper_cell" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B22090C65E0137C"]
+			id: "343576E8BD2A0F9B"
+			tasks: [{
+				id: "5A198D7D7AF0E958"
+				item: { count: 1, id: "embers:ember_activator" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["05EC2866C1ABF490"]
+			id: "3D78482C4D9755A2"
+			tasks: [
+				{
+					id: "315A0BD6452D4AFD"
+					item: { count: 1, id: "advalchemy:exchange_tablet" }
+					type: "item"
+				}
+				{
+					id: "728D9D1C30D48D7E"
+					item: { count: 1, id: "advalchemy:alchemy_pedestal" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 6.0d
+		}
+	]
+}

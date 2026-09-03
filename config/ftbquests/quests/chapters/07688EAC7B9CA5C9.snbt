@@ -22,17 +22,6 @@
 		}
 		{
 			dependencies: ["3ADF1712A2A596CC"]
-			id: "4EB9AD3B631B39E3"
-			tasks: [{
-				id: "5D2FA709D6C6B6E6"
-				item: { count: 1, id: "integrateddynamics:crystalized_menril_block" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3ADF1712A2A596CC"]
 			id: "0402A6A0BFF95C9E"
 			tasks: [{
 				id: "2335A94778692858"
@@ -41,6 +30,361 @@
 			}]
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["3ADF1712A2A596CC"]
+			id: "09FF4DF5A855F0A7"
+			tasks: [{
+				id: "7F2EC30B53FB13BD"
+				item: { count: 1, id: "integrateddynamics:menril_log" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"09FF4DF5A855F0A7"
+				"579309CB6A94D760"
+			]
+			id: "6C8A77EFF19188D6"
+			tasks: [{
+				id: "7AE4A2A505EC8E1C"
+				item: { count: 1, id: "integrateddynamics:crystalized_menril_chunk" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C8A77EFF19188D6"]
+			id: "39552B5E96CDBEA4"
+			tasks: [{
+				id: "6827DF2ADE152E0D"
+				item: { count: 1, id: "integrateddynamics:cable" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6C8A77EFF19188D6"]
+			id: "03F1B7AE9E0855E6"
+			tasks: [{
+				id: "7FAB270582E2B98E"
+				item: { count: 1, id: "integrateddynamics:variable" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6C8A77EFF19188D6"]
+			id: "11A9E2D8399CABF2"
+			tasks: [{
+				id: "1CEE1D469B9728AC"
+				item: { count: 1, id: "integrateddynamics:logic_programmer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C8A77EFF19188D6"]
+			id: "43CB98C9AA302B37"
+			tasks: [{
+				id: "3DCF21A4F88EF91B"
+				item: { count: 1, id: "tse:menril_mechanism" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43CB98C9AA302B37"]
+			id: "0F5575E2769F92B3"
+			tasks: [
+				{
+					id: "47A20AA4451461BB"
+					item: { count: 1, id: "integrateddynamics:variable_transformer_input" }
+					type: "item"
+				}
+				{
+					id: "45C71CEC3547FB4A"
+					item: { count: 1, id: "integrateddynamics:variable_transformer_output" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6C8A77EFF19188D6"
+				"228A1F3C18713993"
+			]
+			id: "11270172775C3E80"
+			tasks: [{
+				id: "0331EB162142474C"
+				item: { count: 1, id: "integratedtunnels:part_interface_item" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6C8A77EFF19188D6"
+				"312BCCA9788AB306"
+			]
+			id: "0FCA6FB9675547CE"
+			tasks: [{
+				id: "096F7C7D84C9C3FF"
+				item: { count: 1, id: "integratedtunnels:part_interface_fluid" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0F5575E2769F92B3"]
+			id: "1586C482C552B686"
+			tasks: [{
+				id: "3B3CAD17BFD8EDE5"
+				item: { count: 1, id: "integratedterminals:part_terminal_storage" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0F5575E2769F92B3"]
+			id: "6D322FCD51547807"
+			tasks: [{
+				count: 2L
+				id: "31D66FB82FCA022C"
+				item: { count: 1, id: "integrateddynamics:part_connector_mono_directional" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"11270172775C3E80"
+				"0F5575E2769F92B3"
+			]
+			id: "6B8DEEC09B826431"
+			tasks: [
+				{
+					id: "629B7A5F5E537252"
+					item: { count: 1, id: "integratedtunnels:part_importer_item" }
+					type: "item"
+				}
+				{
+					id: "0F0F82D3A960527D"
+					item: { count: 1, id: "integratedtunnels:part_exporter_item" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0FCA6FB9675547CE"
+				"0F5575E2769F92B3"
+			]
+			id: "29614F3EAD9B0892"
+			tasks: [
+				{
+					id: "72B6B80B381D85CF"
+					item: { count: 1, id: "integratedtunnels:part_importer_fluid" }
+					type: "item"
+				}
+				{
+					id: "1EC6B70376E74B28"
+					item: { count: 1, id: "integratedtunnels:part_exporter_fluid" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["09FF4DF5A855F0A7"]
+			id: "72AFEEE3260B8496"
+			tasks: [{
+				id: "1905ED5E9D343F5A"
+				item: { count: 1, id: "integrateddynamics:menril_berries" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6C8A77EFF19188D6"
+				"2D742866BFF74B2A"
+			]
+			id: "6DF79A597BE1D996"
+			tasks: [{
+				id: "7D16B3EA161B3050"
+				item: { count: 1, id: "integrateddynamics:logic_director" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3ADF1712A2A596CC"]
+			hide_dependency_lines: true
+			id: "3F07187D75803B8F"
+			tasks: [{
+				id: "5CB22A4D8140475B"
+				item: { count: 1, id: "minecraft:ender_pearl" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"72AFEEE3260B8496"
+				"3F07187D75803B8F"
+			]
+			id: "2D742866BFF74B2A"
+			tasks: [{
+				id: "1F6D6B59256B3BF4"
+				item: { count: 1, id: "integrateddynamics:crystalized_chorus_chunk" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6B8DEEC09B826431"
+				"6DF79A597BE1D996"
+			]
+			id: "4AAB04238EE506C4"
+			tasks: [
+				{
+					id: "1D06DAA1F1A197D4"
+					item: { count: 1, id: "integratedtunnels:part_importer_world_block" }
+					type: "item"
+				}
+				{
+					id: "5FE6D06EEBA4E9D8"
+					item: { count: 1, id: "integratedtunnels:part_exporter_world_block" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"6B8DEEC09B826431"
+				"6DF79A597BE1D996"
+			]
+			id: "5C15D3E13056AEE5"
+			tasks: [
+				{
+					id: "206B0924DB1EA46B"
+					item: { count: 1, id: "integratedtunnels:part_importer_world_item" }
+					type: "item"
+				}
+				{
+					id: "46164BEEF33B94BD"
+					item: { count: 1, id: "integratedtunnels:part_exporter_world_item" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"29614F3EAD9B0892"
+				"6DF79A597BE1D996"
+			]
+			id: "33BDB4FF00522C3C"
+			tasks: [
+				{
+					id: "31981A0BBCA39FFA"
+					item: { count: 1, id: "integratedtunnels:part_importer_world_fluid" }
+					type: "item"
+				}
+				{
+					id: "2BE0A7B031F5C626"
+					item: { count: 1, id: "integratedtunnels:part_exporter_world_fluid" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"6DF79A597BE1D996"
+				"6D322FCD51547807"
+			]
+			id: "3A2BEFFEAD1FF666"
+			tasks: [{
+				id: "2F3B35D58705E419"
+				item: { count: 1, id: "integrateddynamics:part_connector_omni_directional" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["11A9E2D8399CABF2"]
+			id: "7EAF181EFCCA3F85"
+			tasks: [{
+				id: "4FB8BB838AE04597"
+				item: { count: 1, id: "integrateddynamics:proxy" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["11A9E2D8399CABF2"]
+			id: "1F2D952A7DC47105"
+			tasks: [{
+				id: "2207CECA9D12155D"
+				item: { count: 1, id: "integrateddynamics:materializer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11A9E2D8399CABF2"]
+			id: "680E60423421663C"
+			tasks: [{
+				id: "790092E2CF5B63B9"
+				item: { count: 1, id: "integrateddynamics:delay" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5C15D3E13056AEE5"
+				"4AAB04238EE506C4"
+			]
+			id: "3D636E80A7B1DE14"
+			tasks: [{
+				id: "2312C438A3934726"
+				item: { count: 1, id: "integratedtunnels:part_player_simulator" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
 		}
 	]
 }
