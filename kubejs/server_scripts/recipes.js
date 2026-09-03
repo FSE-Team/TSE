@@ -24,9 +24,9 @@ ServerEvents.recipes(event => {
         if (outputItem != null) obj.outputs.item_output = { id: outputItem, count: outputItemAmount }
         if (outputFluid != null) obj.outputs.fluid_output = { id: outputFluid, amount: outputFluidAmount }
         if (pressure != null) obj.pressure = pressure
-        if (minTemperature != null && maxTemperature == null) obj.temperature = { min_temp: minTemperature + 273 }
-        else if (maxTemperature == null && minTemperature != null) obj.temperature = { max_temp: maxTemperature + 273 }
-        else if (maxTemperature != null && minTemperature != null) obj.temperature = { min_temp: minTemperature + 273, max_temp: maxTemperature + 273 }
+        if (minTemperature != null && maxTemperature == null) obj.temperature = { min: minTemperature + 273 }
+        else if (minTemperature == null && maxTemperature != null) obj.temperature = { max: maxTemperature + 273 }
+        else if (maxTemperature != null && minTemperature != null) obj.temperature = { min: minTemperature + 273, max: maxTemperature + 273 }
         event.custom(JSON.stringify(obj))
     }
 
@@ -454,6 +454,7 @@ ServerEvents.recipes(event => {
     //添加回响催化剂配方
     event.recipes.create.mixing([MODID + "echo_catalyst", MODID + "iron_ingot_with_echo_impurity"], ["minecraft:echo_shard", "minecraft:iron_ingot", Fluid.of(MODID + "soul_alcohol", 250)]).heated()
     //添加液态粗制硫化橡胶配方
+    event.recipes.create.mixing([Fluid.of("industrialforegoing:latex", 1000), MODID + "echo_catalyst"], [Fluid.of("integrateddynamics:menril_resin", 1000), MODID + "echo_catalyst"]).heated()
     event.recipes.create.mixing(Fluid.of(MODID + "liquid_unprocessed_sulfurated_rubber", 1000), [Fluid.of("industrialforegoing:latex", 1000), "immersiveengineering:dust_sulfur"]).heated()
     //添加回响回收液配方
     event.recipes.create.mixing(["minecraft:iron_ingot", Fluid.of(MODID + "recycled_echo_liquid", 500)], [Fluid.of("minecraft:water", 500), MODID + "ineffective_echo_catalyst", MODID + "iron_ingot_with_echo_impurity"]).heated()
@@ -481,7 +482,7 @@ ServerEvents.recipes(event => {
     ]).loops(3).transitionalItem(MODID + "incomplete_menril_mechanism")
     //修改逻辑线缆配方
     event.remove({ output: "integrateddynamics:cable" })
-    event.recipes.create.filling("integrateddynamics:cable", ["createaddition:copper_wire", Fluid.of("integrateddynamics:menril_resin", 100)])
+    event.recipes.create.filling("integrateddynamics:cable", ["immersiveengineering:wire_copper", Fluid.of("integrateddynamics:menril_resin", 100)])
     //删除发电机配方
     event.remove({ output: "integrateddynamics:coal_generator" })
     //添加紫颂果浆配方
