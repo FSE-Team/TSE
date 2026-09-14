@@ -3,33 +3,6 @@ const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleType
 
 StartupEvents.registry("fluid", event => {
     const MODID = "tse:"
-    // const reg = (id, type, color) => {
-    //     if(type == "thin") {
-    //         event.create(MODID + id, "thin")
-    //             .tint(color)
-    //             .type(type => type
-    //                 .renderType(3)
-    //                 .stillTexture('kubejs:block/thin_fluid_still')
-    //                 .flowingTexture('kubejs:block/thin_fluid_flow')
-    //                 .fallDistanceModifier(0)
-    //                 .addDripstoneDripping(1, $ParticleTypes.DRIPPING_DRIPSTONE_WATER, 'minecraft:water_cauldron', $SoundEvents.POINTED_DRIPSTONE_DRIP_WATER)
-    //             )
-    //     } else {
-    //         event.create(MODID + id, "thick")
-    //             .tint(color)
-    //             .slopeFindDistance(2)
-    //             .type(type => type
-    //                 .renderType(0)
-    //                 .stillTexture('kubejs:block/thick_fluid_still')
-    //                 .flowingTexture('kubejs:block/thick_fluid_flow')
-    //                 .canSwim(false)
-    //                 .canDrown(false)
-    //                 .density(3000)
-    //                 .viscosity(6000)
-    //                 .addDripstoneDripping(1, $ParticleTypes.DRIPPING_DRIPSTONE_LAVA, 'minecraft:lava_cauldron', $SoundEvents.POINTED_DRIPSTONE_DRIP_LAVA)
-    //             )
-    //     }
-    // }
     const reg = (id, type, color) => {
         if(type == "thin") {
             event.create(MODID + id, "thin")
