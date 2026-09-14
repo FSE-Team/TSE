@@ -2,10 +2,10 @@ StartupEvents.registry("item", event => {
     const MODID = "tse:"
     
     const dust = (id, color) => {
-    event.create(MODID + id)
-        .parentModel("tse:item/dust_base")
-        .texture("tse:item/dust_base")
-        .color(0, color)
+        event.create(MODID + id)
+            .parentModel("tse:item/dust_base")
+            .texture("tse:item/dust_base")
+            .color(0, color)
     }
 
     //* Coins
