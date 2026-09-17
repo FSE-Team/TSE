@@ -8,7 +8,7 @@
 	}
 	id: "202FE054BF2715A3"
 	images: [ ]
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,8 +20,8 @@
 				id: "769D98DF587A8142"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: 7.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["1A6215F436465273"]
@@ -54,16 +54,23 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["04714CEDEC99E86E"]
+			icon: {
+				id: "alltheores:sulfur"
+			}
 			id: "739DE4510182B421"
 			tasks: [{
-				id: "43DC601797BD52AE"
-				item: { count: 1, id: "alltheores:sulfur" }
-				type: "item"
+				id: "25638FC4E7B2872E"
+				type: "checkmark"
 			}]
 			x: 10.0d
 			y: -3.5d
 		}
 		{
+			dependencies: ["739DE4510182B421"]
+			icon: {
+				id: "tse:sulfur_dioxide_bucket"
+			}
 			id: "0A11F311E9C6CB06"
 			tasks: [{
 				id: "7F275479C4EBA66B"
@@ -73,6 +80,10 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["0A11F311E9C6CB06"]
+			icon: {
+				id: "tse:sulfur_trioxide_bucket"
+			}
 			id: "1AC85FE94B2A8896"
 			tasks: [{
 				id: "3F42ACFAE18D8235"
@@ -82,6 +93,10 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["1AC85FE94B2A8896"]
+			icon: {
+				id: "tse:sulfuric_acid_bucket"
+			}
 			id: "67E29E561A524C0E"
 			tasks: [{
 				id: "1D12A88781BD4C1B"
@@ -91,6 +106,10 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["1AC85FE94B2A8896"]
+			icon: {
+				id: "tse:oleum_bucket"
+			}
 			id: "47DB819E481B94F1"
 			tasks: [{
 				id: "2F71BC8E71A946F2"
@@ -100,6 +119,14 @@
 			y: 1.0d
 		}
 		{
+			dependencies: [
+				"47DB819E481B94F1"
+				"67E29E561A524C0E"
+			]
+			hide_dependent_lines: true
+			icon: {
+				id: "tse:sulfuric_acid_bucket"
+			}
 			id: "1D3C8622EE336FD6"
 			tasks: [{
 				id: "26204245C0DEF02C"
@@ -107,6 +134,608 @@
 			}]
 			x: 10.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "1FEFFC700A9307C9"
+			tasks: [{
+				id: "142CC55A0277D43D"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["459BD6AD705E3A0D"]
+			icon: {
+				id: "alltheores:salt"
+			}
+			id: "2EC3B6EA27FB108D"
+			tasks: [{
+				id: "4087FD3E34C38AED"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1D3C8622EE336FD6"
+				"2EC3B6EA27FB108D"
+			]
+			icon: {
+				id: "tse:hydrochloric_acid_bucket"
+			}
+			id: "1A7273832E0E7C3D"
+			tasks: [{
+				id: "66D2F8562B9498A5"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1A7273832E0E7C3D"
+				"38E9760AD5EEB115"
+				"6321DE949490756B"
+			]
+			icon: {
+				id: "tse:lead_dioxide"
+			}
+			id: "15866FA394350DF1"
+			tasks: [{
+				id: "2A0167656104E3F3"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["15866FA394350DF1"]
+			icon: {
+				id: "tse:chlorine_bucket"
+			}
+			id: "35F98D8137DA4451"
+			tasks: [{
+				id: "41621DD9C9D94B8A"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17B83F26CB43C6AA"]
+			icon: {
+				id: "tse:red_lead"
+			}
+			id: "38E9760AD5EEB115"
+			tasks: [{
+				id: "412BF4DE22EAE382"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			icon: {
+				id: "tse:lead_monoxide"
+			}
+			id: "17B83F26CB43C6AA"
+			tasks: [{
+				id: "03B9BD94E60A1674"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1FEFFC700A9307C9"
+				"03EC604D31607F58"
+			]
+			icon: {
+				id: "minecraft:sponge"
+			}
+			id: "3C9E1E247459E70A"
+			tasks: [{
+				id: "6901BE16C275D66E"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3C9E1E247459E70A"]
+			icon: {
+				id: "tse:air_bucket"
+			}
+			id: "00534F4F84DF4991"
+			tasks: [{
+				id: "759B75E88CC9D37D"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00534F4F84DF4991"]
+			icon: {
+				id: "tse:liquid_air_bucket"
+			}
+			id: "38C3A91B1AE49F33"
+			tasks: [{
+				id: "37EE834EDCB2E901"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"38C3A91B1AE49F33"
+				"6555C19A8E318116"
+			]
+			hide_dependent_lines: true
+			id: "102B21412B78D606"
+			tasks: [
+				{
+					id: "2F859D977968045D"
+					type: "checkmark"
+				}
+				{
+					id: "5B5D361E8CC1EC96"
+					item: { count: 1, id: "tse:nitrogen_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "48B53559EA4979E9"
+					item: { count: 1, id: "tse:oxygen_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5183B18062B20C33"
+					item: { count: 1, id: "industrialforegoing:ether_gas_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "702AAAFEC813CAD4"
+					item: { count: 1, id: "minecraft:water_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C4948C473CA9D5F"]
+			icon: {
+				id: "immersiveengineering:dust_saltpeter"
+			}
+			id: "469D938D7A73C4D8"
+			tasks: [{
+				id: "7AE57A75A654C7B6"
+				type: "checkmark"
+			}]
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"469D938D7A73C4D8"
+				"1D3C8622EE336FD6"
+			]
+			hide_dependent_lines: true
+			icon: {
+				id: "tse:nitric_acid_bucket"
+			}
+			id: "6321DE949490756B"
+			tasks: [{
+				id: "5D9F4C39FE74E5FF"
+				type: "checkmark"
+			}]
+			x: 15.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["469D938D7A73C4D8"]
+			icon: {
+				id: "tse:sodium_hydrogen_sulfate_bucket"
+			}
+			id: "30AF1B86F0A95F62"
+			tasks: [{
+				id: "12F9C45ECFE53501"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15866FA394350DF1"]
+			id: "0C77D1DB5B3472A8"
+			tasks: [{
+				id: "421D98EEB46A01BD"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0C77D1DB5B3472A8"]
+			icon: {
+				id: "tse:lead_chloride_bucket"
+			}
+			id: "5ADAE35A7AA604C3"
+			tasks: [{
+				id: "2FE07A71F139D52C"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C77D1DB5B3472A8"]
+			icon: {
+				id: "tse:lead_nitrate_bucket"
+			}
+			id: "11120E39A9D14F3A"
+			tasks: [{
+				id: "3D005656F94AD2FC"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5ADAE35A7AA604C3"]
+			icon: {
+				id: "tse:lead_chloride"
+			}
+			id: "3D5B59DF98E38B14"
+			tasks: [{
+				id: "1E4BCC199EB8BA2D"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3D5B59DF98E38B14"]
+			icon: {
+				id: "tse:lead_dioxide"
+			}
+			id: "16C7C4F87E3A15ED"
+			tasks: [{
+				id: "56E0D39324A96963"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["11120E39A9D14F3A"]
+			icon: {
+				id: "tse:lead_carbonate"
+			}
+			id: "4E9BF99B8EDF68D9"
+			tasks: [{
+				id: "09B4EF6B2BD83C77"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E9BF99B8EDF68D9"]
+			icon: {
+				id: "tse:lead_monoxide"
+			}
+			id: "5D0D47D97B87CEC6"
+			tasks: [{
+				id: "28F23E0DC0DB9260"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "53373F47C12315C7"
+			tasks: [{
+				id: "15D0FE657AA028FA"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2EC3B6EA27FB108D"]
+			icon: {
+				id: "bakeries:salt_water_bucket"
+			}
+			id: "0BD332038D733913"
+			tasks: [{
+				id: "556267FCC2129511"
+				type: "checkmark"
+			}]
+			x: 3.9999999999999996d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0BD332038D733913"]
+			id: "09EF010E86A22EA8"
+			tasks: [{
+				id: "68774463FF4932F5"
+				type: "checkmark"
+			}]
+			x: 3.9999999999999996d
+			y: -2.0d
+		}
+		{
+			dependencies: ["53373F47C12315C7"]
+			id: "6B0B814BA848F078"
+			tasks: [{
+				id: "37202E023E3D89D7"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["44E8F7B781FE402D"]
+			id: "51FE607E23388ED6"
+			tasks: [{
+				id: "4BB550BA3509E5F9"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["6B0B814BA848F078"]
+			icon: {
+				id: "tse:quicklime"
+			}
+			id: "6A73095FAA4733FC"
+			tasks: [{
+				id: "6E19D0F67A29C56D"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["6A73095FAA4733FC"]
+			icon: {
+				id: "tse:calcium_hydroxide"
+			}
+			id: "3FACA01D4A7864E1"
+			tasks: [{
+				id: "48314D0F48C60700"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"3FACA01D4A7864E1"
+				"2BAC33F8436423D0"
+				"2FD91FDA9B986108"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "tse:sodium_hydroxide_bucket"
+			}
+			id: "44E8F7B781FE402D"
+			min_required_dependencies: 2
+			tasks: [{
+				id: "25D7FA11EA6F24A2"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["53373F47C12315C7"]
+			id: "4C959CF0B133137A"
+			tasks: [{
+				id: "6AE80AAAB3D94BB1"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["53373F47C12315C7"]
+			id: "686D269DA617F066"
+			tasks: [{
+				id: "1A6A153DC1F48EEF"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1A6215F436465273"]
+			id: "2A482A88B6CCB9BF"
+			tasks: [{
+				id: "234947FCF0FFFA29"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["4C959CF0B133137A"]
+			icon: {
+				id: "tse:sodium_sulfide"
+			}
+			id: "09391BEA803608BF"
+			tasks: [{
+				id: "43D1B825AD75B201"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["09391BEA803608BF"]
+			hide_dependent_lines: true
+			icon: {
+				id: "tse:sodium_carbonate_bucket"
+			}
+			id: "2BAC33F8436423D0"
+			tasks: [{
+				id: "586CBCCF9ECBDC74"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["09391BEA803608BF"]
+			icon: {
+				id: "tse:calcium_sulfide"
+			}
+			id: "75D75C5396E08033"
+			tasks: [{
+				id: "2840A42BBA855CE8"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["75D75C5396E08033"]
+			id: "7CAC05E7A5A294EE"
+			tasks: [{
+				id: "25E0DA53D5B23454"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["686D269DA617F066"]
+			icon: {
+				id: "bakeries:salt_water_bucket"
+			}
+			id: "74711B67070C4200"
+			tasks: [{
+				id: "20D670DCA7D4522C"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"74711B67070C4200"
+				"4EB15D60B17E56CC"
+			]
+			id: "07B867FE29C5DA53"
+			tasks: [{
+				id: "3EA09434DBF905D9"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["07B867FE29C5DA53"]
+			hide_dependent_lines: true
+			id: "2FD91FDA9B986108"
+			tasks: [{
+				id: "3C0729F06DDB29D8"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["07B867FE29C5DA53"]
+			id: "7FDC954A8430E8D4"
+			tasks: [{
+				id: "03F776AA8ABA5F6C"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["7FDC954A8430E8D4"]
+			id: "6AE43AF2035DFC0E"
+			tasks: [{
+				id: "7F4455C10372F123"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"2A482A88B6CCB9BF"
+				"102B21412B78D606"
+			]
+			icon: {
+				id: "tse:nitrogen_bucket"
+			}
+			id: "2996B933B6705468"
+			tasks: [{
+				id: "02CD0F67C13424C3"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"2996B933B6705468"
+				"1A4BA1C62DD05F2D"
+			]
+			hide_dependent_lines: true
+			icon: {
+				id: "tse:ammonia_bucket"
+			}
+			id: "4EB15D60B17E56CC"
+			tasks: [{
+				id: "25AA0B75096DC00D"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["2A482A88B6CCB9BF"]
+			icon: {
+				id: "tse:hydrogen_bucket"
+			}
+			id: "1A4BA1C62DD05F2D"
+			tasks: [{
+				id: "0F6EA3992CFB5456"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["5D0D47D97B87CEC6"]
+			icon: {
+				id: "tse:lead_chloride_bucket"
+			}
+			id: "2A3F6E077C199770"
+			tasks: [{
+				id: "68A55FE487FB6258"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 7.0d
 		}
 	]
 }

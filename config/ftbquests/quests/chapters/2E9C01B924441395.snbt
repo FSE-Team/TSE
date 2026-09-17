@@ -190,8 +190,8 @@
 				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -231,8 +231,8 @@
 				item: { count: 1, id: "immersiveengineering:dust_sulfur" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 8.0d
+			x: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6555C19A8E318116"]
@@ -273,7 +273,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["0753C053F288D3BB"]
+			dependencies: ["7D66E33CCBD4764B"]
 			hide_dependency_lines: true
 			id: "3ED32D91771C662E"
 			tasks: [
@@ -483,10 +483,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"04545FDA8C3C8CEB"
-				"7420FBE18F684D98"
-			]
+			dependencies: ["4D4E43324113C474"]
 			icon: {
 				id: "tse:chlorine_bucket"
 			}
@@ -507,7 +504,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -552,44 +549,13 @@
 		{
 			dependencies: ["479BC754CDF97258"]
 			icon: {
-				id: "createdieselgenerators:oil_scanner"
+				id: "pneumaticcraft:oil_bucket"
 			}
 			id: "76CA5C23A816C8F6"
-			tasks: [
-				{
-					count: 3L
-					id: "4CEF5497BB90605F"
-					item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
-					type: "item"
-				}
-				{
-					id: "47299D16A7A3216A"
-					item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
-					type: "item"
-				}
-				{
-					id: "077CBFA88D82662E"
-					item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0839E6E61FBEC2B6"
-					item: { count: 1, id: "create:industrial_iron_block" }
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "10724F6E78FA60EF"
-					item: { count: 1, id: "create:metal_girder" }
-					type: "item"
-				}
-				{
-					id: "7371C90B394BE902"
-					item: { count: 1, id: "createdieselgenerators:oil_scanner" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "110EC7ADBBCAE818"
+				type: "checkmark"
+			}]
 			x: 6.0d
 			y: 8.0d
 		}
@@ -732,18 +698,22 @@
 				id: "141F0B87BA85E1E1"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 10.0d
+			x: 10.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6865E893F50E4332"]
+			hide_dependent_lines: true
+			icon: {
+				id: "tse:sulfuric_acid_bucket"
+			}
 			id: "7420FBE18F684D98"
 			tasks: [{
 				id: "665041CEDEC06CB6"
 				type: "checkmark"
 			}]
 			x: 10.0d
-			y: 6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["7AF3BFB4C8641425"]
@@ -754,7 +724,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5262861053937675"]
@@ -765,12 +735,13 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"03EC604D31607F58"
 				"6DF79A597BE1D996"
+				"1D108B83E092D8DD"
 			]
 			id: "5262861053937675"
 			tasks: [{
@@ -779,7 +750,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["2379D7F230937C9F"]
@@ -797,10 +768,10 @@
 				}
 			]
 			x: 16.0d
-			y: -4.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["19905E1B602A7FC2"]
+			dependencies: ["07A47FBAD5127CA2"]
 			hide_dependency_lines: true
 			id: "2379D7F230937C9F"
 			tasks: [{
@@ -809,7 +780,158 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -5.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"1DE9C8F4D54A7C47"
+				"0A8ED0CB3EC8E889"
+			]
+			id: "2103B398EB70B94F"
+			tasks: [{
+				id: "72450DC3CEB8FCBE"
+				item: { count: 1, id: "embers:ember_bore" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2103B398EB70B94F"]
+			id: "07A47FBAD5127CA2"
+			tasks: [
+				{
+					id: "038F87F202FC07E6"
+					item: { count: 1, id: "embers:ember_grit" }
+					type: "item"
+				}
+				{
+					id: "26AE5591ECD38E7E"
+					item: { count: 1, id: "embers:ember_shard" }
+					type: "item"
+				}
+				{
+					id: "5C438172664E41CB"
+					item: { count: 1, id: "embers:ember_crystal" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["07A47FBAD5127CA2"]
+			id: "1D108B83E092D8DD"
+			tasks: [{
+				id: "3AC7B7F3ED6FC1D5"
+				item: { count: 1, id: "embers:ember_crystal_cluster" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["07A47FBAD5127CA2"]
+			id: "2B22090C65E0137C"
+			tasks: [
+				{
+					id: "6ED539F9C79471F8"
+					item: { count: 1, id: "embers:ember_emitter" }
+					type: "item"
+				}
+				{
+					id: "60E2ED5BA35CE130"
+					item: { count: 1, id: "embers:ember_receiver" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2B22090C65E0137C"]
+			id: "4CB9B2B9B81F24DE"
+			optional: true
+			tasks: [{
+				id: "7A58876FD71443ED"
+				item: { components: { "minecraft:custom_data": { ForgeCaps: { "embers:ember": 0.0d, "embers:ember_capacity": 24000.0d } } }, count: 1, id: "embers:copper_cell" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B22090C65E0137C"]
+			id: "343576E8BD2A0F9B"
+			tasks: [{
+				id: "5A198D7D7AF0E958"
+				item: { count: 1, id: "embers:ember_activator" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6623B6C11DE0BEFE"]
+			hide_dependency_lines: true
+			id: "1DE9C8F4D54A7C47"
+			tasks: [{
+				id: "533FDAE31E294FBB"
+				item: { count: 1, id: "embers:mechanical_core" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0753C053F288D3BB"]
+			id: "7D66E33CCBD4764B"
+			tasks: [{
+				id: "2A901D591D01A2E2"
+				item: { count: 1, id: "pneumaticcraft:air_compressor" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"04545FDA8C3C8CEB"
+				"7420FBE18F684D98"
+			]
+			icon: {
+				id: "tse:hydrochloric_acid_bucket"
+			}
+			id: "4D4E43324113C474"
+			tasks: [{
+				id: "695BA9B022D4ED0C"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["03EC604D31607F58"]
+			id: "6EBF45BAE12DC311"
+			optional: true
+			tasks: [{
+				id: "7896A54808782EBA"
+				item: { count: 1, id: "embers:catalytic_plug" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["479BC754CDF97258"]
+			id: "0A8ED0CB3EC8E889"
+			tasks: [{
+				id: "08B14DDF1A749E79"
+				item: { count: 1, id: "embers:atmospheric_gauge" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -8.5d
 		}
 	]
 }

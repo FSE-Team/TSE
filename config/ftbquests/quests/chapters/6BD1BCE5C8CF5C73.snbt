@@ -116,13 +116,14 @@
 		}
 		{
 			dependencies: ["579309CB6A94D760"]
+			hide_dependency_lines: true
 			id: "0F1ECF6AE31D7E4B"
 			tasks: [{
 				id: "624FFF3E738E3329"
 				item: { count: 1, id: "alltheores:gold_plate" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: -2.5d
 		}
 		{
@@ -138,7 +139,7 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -176,7 +177,7 @@
 				item: { count: 1, id: "alltheores:brass_ingot" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -2.5d
 		}
 		{
@@ -189,7 +190,7 @@
 				item: { count: 1, id: "immersiveengineering:alloybrick" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: -2.5d
 		}
 	]

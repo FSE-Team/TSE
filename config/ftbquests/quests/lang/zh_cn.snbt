@@ -2,9 +2,9 @@
 	chapter.07688EAC7B9CA5C9.title: "物流先锋"
 	chapter.1F44278D391DF444.title: "冒险旅途"
 	chapter.202FE054BF2715A3.title: "生化环材"
-	chapter.21A358B505B15EDA.title: "余烬重燃"
 	chapter.2E9C01B924441395.title: "机械动力 - II"
-	chapter.40D490DDB575B647.title: "电力工业 - I"
+	chapter.2FB82E7757ECA011.title: "开始之前"
+	chapter.40D490DDB575B647.title: "电力工业 - I 【施工中】"
 	chapter.49BAC0D0591F3BE0.title: "容量不足"
 	chapter.5281D556538A0AD5.title: "欢迎新员工"
 	chapter.53CB173216FD5059.title: "商店"
@@ -13,8 +13,16 @@
 	chapter.7C405B97AA2B9041.title: "前方高能"
 	chapter_group.52016480CE0E93EF.title: "支线"
 	chapter_group.7856FC9742FDA805.title: "主线"
+	quest.003F9EF19371B4E2.quest_desc: ["在发酵罐中充入足量氢气，并将含硫馏分输入以充分反应，就能使含硫馏分脱去硫，获得脱硫馏分与硫酸。"]
 	quest.003F9EF19371B4E2.quest_subtitle: "我是来退出这个混合物的"
-	quest.006389D3D894307D.title: "蒸汽裂化的炼油气"
+	quest.00534F4F84DF4991.title: "空气"
+	quest.006389D3D894307D.quest_desc: [
+		"蒸汽裂化是一种在高压蒸汽环境下将石油馏分中过长的碳链打碎，形成各类不饱和烯烃的过程。"
+		"而加氢裂化则是将馏分中大量长不饱和碳链转化为含有较多饱和烃，用以生产各类燃料油的过程。"
+		"如果需要生产乙烯，可以选择蒸汽裂化轻燃油，能产出较多乙烯。"
+	]
+	quest.006389D3D894307D.quest_subtitle: "从石油到塑料"
+	quest.006389D3D894307D.title: "蒸汽裂化"
 	quest.02A4490A70B1C12E.quest_desc: [
 		"这是一块纸板........."
 		"你还希望我给你提供什么信息？这就是普通的纸板!"
@@ -26,7 +34,12 @@
 		"经过适当加工，能够将余烬能量转化为热能。从而你可以使用它来制造燃烧室为工作盆加热。"
 	]
 	quest.03AACB95FB49D28D.quest_subtitle: "合金，还是石？"
+	quest.03EC604D31607F58.quest_desc: [
+		"还在为猜测炼金配方而苦恼吗？FSE魔法工业部荣誉出品，高级炼金装置！"
+		"需要在炼金台上放置一个主物品，在炼金基座上同时确保元素象征、灰烬量与参与材料正确，仪式才能成功进行。"
+	]
 	quest.03EC604D31607F58.quest_subtitle: "比矮人更好"
+	quest.03EC604D31607F58.title: "高级炼金"
 	quest.03F1B7AE9E0855E6.quest_desc: [
 		"得益于门瑞欧物质稳定的性质，它成为了存储信息的不二之选。向&a纸&r注入&a门瑞欧树脂&r便可得到&a变量卡&r。"
 		"顾名思义，变量卡是用来储存&4数据&r的。数据的种类多种多样，可以是&9各种数字&r、&9字符串&r、&9布尔值&r、&9物品&r、&9方块&r、&9流体&r，还可以是&9以上任意一种数据所组成的列表&r。数据的来源也很丰富，你可以&9通过逻辑编程器给它赋值&r，也可以&9通过各种读取器来让它存储读数&r，还可以&9让它成为另外几个变量卡经过某种运算得到的结果&r。"
@@ -39,13 +52,15 @@
 		"如果燃料为余烬晶簇，产出会折损140点。"
 	]
 	quest.0431FC0EFDA4C5CE.quest_subtitle: "提效设备"
+	quest.04545FDA8C3C8CEB.quest_desc: ["氯化钠，又称食盐，是一种白色方形晶体，易溶于水。"]
 	quest.04545FDA8C3C8CEB.quest_subtitle: "调味料"
 	quest.04714CEDEC99E86E.quest_subtitle: "工业之母"
 	quest.04714CEDEC99E86E.title: "硫酸产线"
 	quest.04E5224676789B5F.quest_desc: ["得益于机械部门的优秀设计，EDA默认搭载了“思索”演算示例系统，对着一些元件长按[W]以学习它们的工作方法。"]
-	quest.04E5224676789B5F.title: "你已经准备好了"
-	quest.05EC2866C1ABF490.quest_subtitle: "&bNew Industrial Technology Is Aviliable!"
-	quest.05EC2866C1ABF490.title: "余烬工业"
+	quest.04E5224676789B5F.quest_subtitle: "……顺便插播一条"
+	quest.04E5224676789B5F.title: "你准备好了吗？"
+	quest.063F1DCA97C1F5A3.quest_desc: ["新鲜的生胶乳，在这个阶段你只能加工门瑞欧树脂获取它。需要进一步加工才有用。"]
+	quest.063F1DCA97C1F5A3.quest_subtitle: "密封材质"
 	quest.063F1DCA97C1F5A3.title: "胶乳"
 	quest.06E8CF8A602115A2.quest_desc: [
 		"看起来我们工程师的大手强而有力，可以直接&9手搓制酸"
@@ -54,13 +69,22 @@
 	quest.06E8CF8A602115A2.quest_subtitle: "你的第一桶酸液"
 	quest.0753C053F288D3BB.quest_desc: ["使用压缩铁锭和强化石强化精密构件，安装齿轮，最后使用液态粗制硫化橡胶密封便可得到气密构件。"]
 	quest.0753C053F288D3BB.quest_subtitle: "密不透风"
+	quest.07A47FBAD5127CA2.quest_desc: [
+		"它们能够为机器提供运转所需的余烬能量，当然，你不能直接从大气中富集这些能量来让机器工作，不能。大气中的余烬能量不以我们能利用的形态存在，它只能代表当前区块产出更完整晶体的概率。"
+		"需要注意的是，当你选择使用这些不完整晶体而非晶簇来供能时，我们推荐你给发生器加装“热量交换器”以提升产出——同时让余烬沙砾拥有400点能量产出，而非0点。"
+		"我们更推荐你利用它们人工培育完整的余烬晶簇作为能源，毕竟岩浆也十分廉价，合成也不麻烦，何乐而不为呢？"
+	]
+	quest.07A47FBAD5127CA2.quest_subtitle: "地核深处的能量"
 	quest.07A47FBAD5127CA2.title: "余烬能源"
+	quest.07B867FE29C5DA53.title: "碳酸氢钠"
 	quest.081C65ACC72A4177.quest_desc: [
 		"压缩动力部门又一力作，我们很难不怀疑之前从电力部门开除的人流入了这个部门。"
 		"产出很强劲，但闪电本身就太过短暂，至少在这个阶段你可以利用自然电力，挺不错了。"
 	]
 	quest.081C65ACC72A4177.quest_subtitle: "也算一种电力压缩机"
 	quest.092E51EAAD029B4E.title: "陆地生物"
+	quest.09391BEA803608BF.title: "硫化钠"
+	quest.09EF010E86A22EA8.title: "电解路径"
 	quest.09FF4DF5A855F0A7.quest_desc: ["也许你已经发现了，在这个星球上到处都能看见这种奇异的树——他们长着&a蓝色的叶子&r，树干上时不时会有一些&a蓝色的结晶&r——这些树就是&e门瑞欧树&r。"]
 	quest.09FF4DF5A855F0A7.quest_subtitle: "发现门瑞欧树"
 	quest.0A11F311E9C6CB06.title: "二氧化硫"
@@ -108,6 +132,8 @@
 	quest.0A40FA728A069764.title: "&d工程材料情报数据库"
 	quest.0A7ECA553CB4E169.quest_desc: ["利用高温将木屑和水一起烹煮，就可以得到一团纸浆——想要进一步加工就得将其溶解在水中形成悬浊液。"]
 	quest.0A7ECA553CB4E169.quest_subtitle: "蔡伦®工艺"
+	quest.0A8ED0CB3EC8E889.quest_desc: ["这个星球上的余烬能量是流动的，但这不意味着你就不需要检测大气环境中的余烬能量——指针越偏右，大气中余烬能量越多，你也就越容易挖掘到大块的晶体。"]
+	quest.0A8ED0CB3EC8E889.quest_subtitle: "能量涌动"
 	quest.0AF025665FD6F767.quest_desc: [
 		"在小型柴油机上非常实用的插件，它能将它们的应力产出翻倍，并同时使转速翻倍。"
 		"&c在大型柴油引擎上不可用。&r"
@@ -132,11 +158,13 @@
 	]
 	quest.0BA2817A1C230CFC.quest_subtitle: "紧急降落程序失效，祝你好运"
 	quest.0BA2817A1C230CFC.title: "向新世界推进"
+	quest.0BD332038D733913.title: "盐水"
 	quest.0C5819B9671E553E.quest_desc: [
 		"离轮椅只有一步之遥的压缩机，电力才是最终解决方案。"
 		"不过散热依然是一个令人恼火的问题，现在你知道为什么热力学部如此讨厌压缩动力部门了。"
 	]
 	quest.0C5819B9671E553E.quest_subtitle: "真正的电力压缩机"
+	quest.0C77D1DB5B3472A8.title: "铅盐回收"
 	quest.0E1EBC16A026DEA6.quest_desc: [
 		"非常强力的冶炼帮手，能够在熔炼矿物时产出各类液态金属作为副产物。"
 		"如果你十分缺少银，可以考虑在熔炼金矿或铅矿时利用地质分离器副产银。"
@@ -157,6 +185,8 @@
 	quest.0F3E03D3354688AB.title: "关于商店"
 	quest.0F5575E2769F92B3.title: "变量I/O模块"
 	quest.0FCA6FB9675547CE.quest_desc: ["将它贴在流体容器上使物品容器连接至网络。"]
+	quest.102B21412B78D606.title: "分馏液态空气"
+	quest.11120E39A9D14F3A.title: "硝酸铅溶液"
 	quest.11270172775C3E80.quest_desc: ["将它贴在物品容器上使物品容器连接至网络。"]
 	quest.11A9E2D8399CABF2.quest_desc: [
 		"通过逻辑编程器，你可以为变量写入各种数据。&b你不仅可以写入常量，还可以写入比较运算符等。&r"
@@ -178,24 +208,30 @@
 		"机械动力部门力作，化学能释放更彻底，不过在燃烧初级生物燃料的情况下依然不如一台满配风车。"
 	]
 	quest.156DB059FC3A526B.quest_subtitle: "澎湃动力"
+	quest.15866FA394350DF1.title: "二氧化铅"
+	quest.16C7C4F87E3A15ED.title: "二氧化铅"
 	quest.170C73EE5FB4CF7C.quest_desc: [
 		"依然不是推荐的压缩机，液体燃料本身就足够金贵，现阶段生产的也质量不足，等到有条件批量使用液体燃料的时候，为什么不选择电力压缩机呢？"
 		"热力学部最讨厌的产品之一。"
 	]
 	quest.170C73EE5FB4CF7C.quest_subtitle: "注意过热"
 	quest.1777982A9C04BFDA.quest_desc: [
-		"在&b发酵盆&r中加入&e水&r后盖上盆盖，并使用燃烧室&c超级加热&r&b发酵盆&r，此时的温度足以让水分子裂解并重组成氢原子与氧原子，最终得到&a氢气与氧气&r。"
-		"如果你非得问水分子是如何分裂的，你可以亲自钻进发酵盆探究一下。"
+		"在&b发酵盆&r中加入&e水和二氧化碳&r，再&e补充一些碳&r，盖上盆盖，并使用燃烧室&c超级加热&r&b发酵盆&r，在高温下碳将会还原水与二氧化碳，最终得到&a氢气与一氧化碳&r。"
+		"氢气将会是炼化石油的重要试剂之一，一氧化碳则可以在高温与铜的催化下进一步还原水，产出氢气与二氧化碳。"
 	]
-	quest.1777982A9C04BFDA.quest_subtitle: "3-X 分子分裂者"
+	quest.1777982A9C04BFDA.quest_subtitle: "纯净的混合气体"
+	quest.1777982A9C04BFDA.title: "水煤气"
+	quest.17B83F26CB43C6AA.title: "一氧化铅"
 	quest.19905E1B602A7FC2.quest_desc: ["方镁矾被加工后形成的板材，十分坚固，可以作为&6余烬构件&r的基底和&e机器的原材料&r。"]
 	quest.19905E1B602A7FC2.quest_subtitle: "这是一块实心板材"
+	quest.1A4BA1C62DD05F2D.title: "氢气"
 	quest.1A6215F436465273.quest_desc: [
-		"化学工业是你建造工厂的一大基础，作为基本工业，你应当熟悉三酸两碱在不同阶段如何量产。"
+		"化学工业是你建造工厂的一大基础，作为基本工业，你应当熟悉三酸两碱等不同化工产品与原料在不同阶段如何量产。"
 		"化学部将会指导你的工作，不必担心。"
 	]
 	quest.1A6215F436465273.quest_subtitle: "万顷工厂平地起"
 	quest.1A6215F436465273.title: "天坑专业"
+	quest.1A7273832E0E7C3D.title: "盐酸"
 	quest.1AB7833D6F8AE256.quest_desc: [
 		"在你阅读EDA引导系统描述时，你会时常看到右下角的&a翻页箭头&r"
 		"点击翻页箭头，即可进行一次翻页"
@@ -222,9 +258,16 @@
 	]
 	quest.1CF63B09C35FE2D3.quest_subtitle: "我是&bEDA&r，你好工程师"
 	quest.1CF63B09C35FE2D3.title: "你好，新世界"
+	quest.1D108B83E092D8DD.quest_desc: [
+		"将余烬晶体与余烬沙砾加入发酵盆，再充入岩浆提供液体环境，加热保持环境温度，晶体就会自动生长成为余烬晶簇。"
+		"余烬晶簇是一种极好的能源，同时也是你合成野火核心的材料之一，让你能自动合成电子管。"
+	]
+	quest.1D108B83E092D8DD.quest_subtitle: "人工育晶"
 	quest.1D3C8622EE336FD6.title: "硫酸"
 	quest.1DD94D718E56D00A.quest_desc: ["&b来自EDA的提醒：你的脑读数已偏离正常值，请立即停止开小差行为，否则公司将有权对你进行处罚。&r"]
 	quest.1DD94D718E56D00A.quest_subtitle: "吃了一口后，你莫名地想要弹吉他"
+	quest.1DE9C8F4D54A7C47.quest_desc: ["不仅作为大量机器的核心部件，同时还能拓展机器的接口，为它们提供更多的交互面。这或许会有利你布置余烬晶体开采机。"]
+	quest.1DE9C8F4D54A7C47.quest_subtitle: "拓展接口"
 	quest.1EEB768E9067C53C.quest_desc: [
 		"在压力室中用塑料片封装铜线和电阻线圈即可得到电阻。"
 		"&b来自EDA的提醒：如果因为电阻发热过多而造成火灾，请不惜一切代价将机器搬出火场。&r"
@@ -232,6 +275,8 @@
 	quest.1EEB768E9067C53C.quest_subtitle: "电子小伙热量巨大"
 	quest.1F18670C39C06213.quest_desc: ["将纸板置于&b压印基座&r之上，同时向其中倒入&e酚醛树脂&r，让&b压印锤&r用&e平模具&r压扁&e纸板&r，并使&e酚醛树脂&r充分渗入&e纸板&r，这样你就得到了&a纸质电路基板&r。"]
 	quest.1F18670C39C06213.quest_subtitle: "别折坏了"
+	quest.1FEFFC700A9307C9.quest_subtitle: "氮氧来源"
+	quest.1FEFFC700A9307C9.title: "大气分离"
 	quest.205DEA17C622D9A2.quest_desc: [
 		"功能01-Jade™ · 环境感知扫描协议"
 		"&b系统标识：Jade™（玉·环境感知子系统）"
@@ -260,7 +305,15 @@
 	]
 	quest.205DEA17C622D9A2.quest_subtitle: "功能01-&bJade™ · 环境感知扫描协议"
 	quest.205DEA17C622D9A2.title: "&d环境感知扫描协议"
+	quest.20AF69741EE88189.quest_desc: ["将铁锭与回响催化剂在工作盆中加热压缩，即可得到压缩铁锭。你说通过爆炸来获取它们？为什么要选择那种过高损耗的办法呢？"]
+	quest.20AF69741EE88189.quest_subtitle: "紧凑"
+	quest.2103B398EB70B94F.quest_desc: [
+		"需要提供固体燃料以工作，每隔一段时间会开采出余烬沙砾/余烬晶体碎片/余烬晶体，不会开采出完整的晶簇。开采出不同完整度晶体取决于产物自身的权重与大气中的能量浓度。"
+		"由于自身只有一个可交互端口，你或许需要机械核心来拓展，又或者你有更好的设计方案来解决这个问题。"
+	]
+	quest.2103B398EB70B94F.quest_subtitle: "能量地脉"
 	quest.234EB8BBE98194FC.title: "水产品"
+	quest.2379D7F230937C9F.quest_desc: ["经过调整的余烬构件，超越了矮人科技，同时对原有的炼金技术进行了改良。"]
 	quest.2379D7F230937C9F.quest_subtitle: "你说这玩意能炼金？"
 	quest.25380F69E72590FB.quest_desc: [
 		"在&c加热&r的情况下，向&6发酵装置&r内放入&2灵魂沙和水&r，就可以产出&e250mB灵魂醇&r。"
@@ -344,6 +397,10 @@
 	quest.292BC95EFCCAF862.title: "存储的艺术"
 	quest.29614F3EAD9B0892.quest_desc: ["将它贴在流体容器上使网络能够与容器进行I/O。"]
 	quest.29614F3EAD9B0892.title: "流体I/O"
+	quest.2996B933B6705468.title: "氮气"
+	quest.2A3F6E077C199770.title: "氯化铅溶液"
+	quest.2A482A88B6CCB9BF.quest_subtitle: "厕所味气体"
+	quest.2A482A88B6CCB9BF.title: "合成氨"
 	quest.2AB7440591FC6676.quest_desc: [
 		"紫外线灯箱可以利用高强度紫外线为电路板刻上电路图案以便进行后续的蚀刻。"
 		"&b来自EDA的提醒：不要让自己的手暴露在高强度紫外线下，它会打碎你的染色体，公司不会因为员工操作不当而赔偿。&r"
@@ -354,7 +411,14 @@
 		"在真空管可以制造之前，你或许都要用它了"
 	]
 	quest.2ABC4633A9656F4E.quest_subtitle: "真空管下位替代"
+	quest.2B22090C65E0137C.quest_desc: [
+		"最基础的余烬能量传输办法，发射器需要拉杆激活才能开始喷射能量。需要使用铁匠锤绑定接收器。"
+		"每个接收器理论上可以绑定无限个发射器，而一个发射器仅能绑定一个接收器。"
+		"当你需要更大能量传输速率时，请考虑使用“余烬能量喷发器”与“余烬能量漏斗”。"
+	]
+	quest.2B22090C65E0137C.quest_subtitle: "发射！接收！"
 	quest.2B22090C65E0137C.title: "传输余烬能量"
+	quest.2BAC33F8436423D0.title: "碳酸钠"
 	quest.2C0DFC774C4679AC.quest_desc: ["有了黄铜，你便可以做出黄铜手部零件，进而做出机械手。不同于安山构件，精密构件所要求的零件公差更小，你的手无法再满足精度要求，而机械手比你的手要精确的多，因此你需要机械手来完成精密构件的生产。"]
 	quest.2C0DFC774C4679AC.quest_subtitle: "精确安装"
 	quest.2CDDA06B79B710C0.quest_desc: ["适合用来补充和过渡，动力强劲，体积过大，不建议常用。"]
@@ -372,6 +436,9 @@
 		"&b来自EDA的提醒：在机器工作时，酸液可能从机器中溅出，所以不要长时间停留在机器旁，公司不会因为员工操作不当而赔偿。&r"
 	]
 	quest.2D897DBE75533075.quest_subtitle: "当心酸液飞溅"
+	quest.2EC3B6EA27FB108D.title: "食盐"
+	quest.2FD91FDA9B986108.title: "碳酸钠"
+	quest.30AF1B86F0A95F62.title: "回收硫酸氢钠"
 	quest.30CD90CA2094A10E.quest_desc: [
 		"这是进行工业II期之前的最后一步,来看&6精密构件&r！新时代工业的明珠!"
 		"有了精密构件之后，你就可以依托你的旧工业系统发展 机械动力-工业II期的内容了"
@@ -387,11 +454,19 @@
 	quest.3367E382FD4ED628.quest_desc: ["你制作了方镁矾混合物，这是制作方镁矾系列物品和余烬机器的原材料。"]
 	quest.3367E382FD4ED628.quest_subtitle: "这不就是&m啥子&r沙子和粘土吗"
 	quest.33BDB4FF00522C3C.title: "流体抽放装置"
+	quest.343576E8BD2A0F9B.quest_desc: [
+		"最低级的能量发生器，白板数据没有任何倍率，仅推荐前期过渡使用。"
+		"[ \"更多有关产能的内容，请查阅“\", { \"text\": \"前方高能\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4EBA36D5C2FDBD7A\" } }, \"”章节。\" ]"
+	]
+	quest.343576E8BD2A0F9B.quest_subtitle: "Yes, I'm on fire!"
+	quest.35F98D8137DA4451.title: "氯气"
 	quest.382534FE67AEF2F2.quest_desc: [
 		"源自天然木屑的原生纸浆，是制作纸板的重要原材料"
 		"只有这样的原生纸浆才能制作出&e最优质的纸板！&r"
 	]
 	quest.382534FE67AEF2F2.quest_subtitle: "这不是可可饮料！"
+	quest.38C3A91B1AE49F33.title: "液态空气"
+	quest.38E9760AD5EEB115.title: "红丹"
 	quest.392E2E96A2573978.quest_desc: [
 		"&6余烬能量&r当然也可以用来&c加热。"
 		"&r通入&6余烬能量&r后，&a余烬燃烧室&r将开始&c加热&r，使用&b风箱&r将燃烧室提升到&9超级燃烧&r。"
@@ -417,6 +492,8 @@
 	]
 	quest.3BDDA627D171A69E.quest_subtitle: "工程师的亡魂"
 	quest.3BDDA627D171A69E.title: "灵魂沙"
+	quest.3C9E1E247459E70A.title: "海绵"
+	quest.3D5B59DF98E38B14.title: "氯化铅"
 	quest.3D636E80A7B1DE14.quest_subtitle: "终极机械手"
 	quest.3DFC7DC9A092F864.quest_desc: [
 		"这是你最高效的压缩空气来源——开玩笑的。"
@@ -453,14 +530,23 @@
 	]
 	quest.3EF7405B7BCBA6D0.quest_subtitle: "燃油打气筒"
 	quest.3F07187D75803B8F.quest_subtitle: "远程连接"
-	quest.410573A73BACB5FF.quest_desc: ["把&e失活的回响催化剂&r丢入&e盐水&r中&c加热搅拌&r，盐中的钠会附着在催化剂上并使其&a恢复活性&r，而盐中的氯会变成&a氯气&r逸出。"]
-	quest.410573A73BACB5FF.quest_subtitle: "天呐，钠是结晶的"
+	quest.3FACA01D4A7864E1.title: "熟石灰"
+	quest.410573A73BACB5FF.quest_desc: [
+		"将二氧化铅投入盐酸中可将部分盐酸氧化成氯气与水，从体系中分离。"
+		"关于盐酸产线与二氧化铅相关内容，请查阅“生化环材”章节。"
+	]
+	quest.410573A73BACB5FF.quest_subtitle: "氧化性"
+	quest.41B0005652F6138D.quest_desc: [
+		"恭喜！这是你的第一块塑料，而想要制作电子元件，塑料是封装必不可少的部分。"
+		"将熔融塑料倾倒在世界中自然冷却能够获取一个塑料，或者将含有熔融塑料的流体容器放入带有导热框架的容器中降温，有概率额外产出塑料。"
+	]
 	quest.41B0005652F6138D.quest_subtitle: "高分子"
 	quest.4440112C7AE255A4.quest_desc: [
 		"&c玫瑰石英&r，用于制作电子管，后续电子管需要的量也比较大，建议先储备一批"
 		"当然，我们更建议您制作一条&e被动产线&r"
 	]
 	quest.4440112C7AE255A4.quest_subtitle: "Smooth's Rose Quartz"
+	quest.44E8F7B781FE402D.title: "氢氧化钠"
 	quest.459BD6AD705E3A0D.quest_subtitle: "常见卤素"
 	quest.459BD6AD705E3A0D.title: "盐酸及氯气产线"
 	quest.45E914A68C80C2C7.quest_desc: [
@@ -470,6 +556,7 @@
 	]
 	quest.45E914A68C80C2C7.quest_subtitle: "液态金属工业"
 	quest.4620E51B9C1E48B0.title: "抽物品屉"
+	quest.469D938D7A73C4D8.title: "硝酸盐"
 	quest.479BC754CDF97258.quest_subtitle: "&bNew Industrial Technology Is Aviliable!"
 	quest.479BC754CDF97258.title: "机械动力-工业II期"
 	quest.47DB819E481B94F1.title: "发烟硫酸"
@@ -484,12 +571,33 @@
 	]
 	quest.4A05221101810ABA.quest_subtitle: "这是一个储罐，可以用于发酵"
 	quest.4AAB04238EE506C4.title: "方块交互装置"
+	quest.4C959CF0B133137A.quest_subtitle: "废物回收制纯碱"
+	quest.4C959CF0B133137A.title: "回收硫酸钠制碱"
+	quest.4CB9B2B9B81F24DE.quest_desc: [
+		"一种紧凑的余烬能量存储设备，但更好的作用是为余烬能量分流。"
+		"利用它可以从能源处利用余烬能量喷发器导出能量，然后利用余烬能量发射器进行末端传输，不浪费能源交互面的同时节约传输成本。"
+		"毕竟制作喷发器与能量漏斗都需要高级余烬构件。"
+	]
+	quest.4CB9B2B9B81F24DE.quest_subtitle: "储能单元"
+	quest.4D4E43324113C474.quest_desc: [
+		"盐酸是一种具有挥发性的强酸，在饱和状态下会在液面上方形成酸雾，具有强腐蚀性。"
+		"将&e硫酸&r与&e食盐&r&c充分反应&r，反应体系中钠离子会与硫酸根形成&a硫酸钠&r，而氯离子会与氢离子结合形成&a盐酸&r逸出。"
+		"[ \"当前阶段你只能通过化学办法制备，详情请查阅“\", { \"text\": \"生化环材\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"459BD6AD705E3A0D\" } }, \"”章节。\" ]"
+	]
+	quest.4D4E43324113C474.quest_subtitle: "挥发性酸雾"
+	quest.4D4E43324113C474.title: "盐酸"
 	quest.4E7E0A05646A828F.quest_desc: ["制作黄铜的必要设备，由耐热材料建造，在没有液态金属工业的情况下，这是你唯一的黄铜来源。"]
 	quest.4E7E0A05646A828F.quest_subtitle: "原子级聚合"
 	quest.4E7E0A05646A828F.title: "窑炉"
+	quest.4E9BF99B8EDF68D9.title: "碳酸铅"
+	quest.4EB15D60B17E56CC.title: "氨气"
 	quest.4EBA36D5C2FDBD7A.quest_desc: ["顶部输出余烬能量，底部输入余烬晶体——不要着急投入余烬沙砾，在做出热量交换器前余烬沙砾是没有产出的。"]
 	quest.4EBA36D5C2FDBD7A.quest_subtitle: "低效产能"
+	quest.51FE607E23388ED6.title: "电解路径"
+	quest.5262861053937675.quest_desc: ["矮人科技的结晶，工作原理尚不明晰。"]
 	quest.5262861053937675.quest_subtitle: "热科技"
+	quest.53373F47C12315C7.quest_subtitle: "小心灼伤"
+	quest.53373F47C12315C7.title: "碱类物质"
 	quest.573894DFF106A5C7.quest_desc: [
 		"使用&b辊压机&r压出的铜板材，具有好的延展性，表面十分平整，可以用于接下来的加工。"
 		"当然，我们建议先储备一批，因为这是PCB的材料之一。"
@@ -503,7 +611,8 @@
 	quest.5879669E4143A438.quest_desc: ["将&e空印刷电路板&r放在&b紫外线灯箱&r中刻上电路图，再放入&b蚀刻器&r中用&e蚀刻酸&r去掉不需要的铜便可以得到&a未组装的印刷电路板&r。"]
 	quest.5879669E4143A438.quest_subtitle: "百尺竿头"
 	quest.5881A65187C4318E.quest_desc: [
-		"将&e氯气&r与&e水&r混合后把所得液体加入&b大型发酵储罐&r，然后向其中加入&e铁粉&r，最后对储罐&c超级加热&r即可得到&a蚀刻酸&r。"
+		"在&b大型发酵储罐&r将&e氯气&r与&e铁粉&r在&c超级加热&r条件下充分反应，然后向其中加入&e水&r溶解产物，即可得到&a蚀刻酸&r。"
+		"本质是氯化铁溶液，可以将铜氧化为氯化铜，同时自身被还原成氯化亚铁。不过通过化学部的特别设计，这些氯化亚铁会在溶液中自行被氧化为氯化铁，氯化铜则会随着加热而散失的蚀刻酸消失。"
 		"&c来自EDA的警告：请勿将手伸入酸液内，否则公司将起诉你蓄意破坏公司财产。&r"
 	]
 	quest.5881A65187C4318E.quest_subtitle: "pH<0"
@@ -514,15 +623,27 @@
 	quest.59F2063DB8127981.quest_subtitle: "这是一块砖..........?!砖砖!?"
 	quest.5AB1E3FB67DA27E0.quest_subtitle: "&bNew Industrial Technology Is Aviliable!"
 	quest.5AB1E3FB67DA27E0.title: "机械动力-工业I期"
+	quest.5ADAE35A7AA604C3.title: "氯化铅溶液"
 	quest.5BC2DF96B69EA739.quest_desc: [
 		"获得&9回响碎片&r后，你就可以制作&b回响催化剂&r了。"
 		"回响催化剂满含&2古代力量&r，可以以神秘的方法增生一些金属和晶体，以及进行一些常理来说不能进行的配方。"
 		"在&a耗尽力量&r之后，&e催化剂会变为失活状态&r，你可以利用制造时的副产物——&b含回响杂质的铁锭&r——将&b失活的回响催化剂&r转换为&b回响回收液&r，然后用于&e增生回响碎片&r。"
+		"或者在加压氢气环境下带走表面杂质以恢复活性，同时产出回响回收液。"
 		"&c所以一定要记得留下足够余量的回响碎片，我相信你也不想回到古代城市吧。&r"
 	]
 	quest.5BC2DF96B69EA739.quest_subtitle: "古代力量"
 	quest.5C15D3E13056AEE5.title: "物品拾放装置"
+	quest.5CAA12C1977270EC.quest_desc: [
+		"电容是一种利用电场存储电能的原件，常在电路中用于稳定电压。"
+		"&b来自EDA的提醒：请确保电容质量合格，如公司在接收电路板后发现该批次电路板存在爆电容问题，公司有权扣除你的薪水。&r"
+	]
 	quest.5CAA12C1977270EC.quest_subtitle: "电子小伙容量巨大"
+	quest.5D0D47D97B87CEC6.title: "一氧化铅"
+	quest.5E62A06599880560.quest_desc: [
+		"现在，你终于可以自动化产出电子管了。"
+		"通过这条产线，你可以将玫瑰石英的利用率提升8倍！"
+		"由于电路板在未来的消耗量较大，我们推荐你使用这条路径批量生产电子管。"
+	]
 	quest.5E62A06599880560.quest_subtitle: "新产线"
 	quest.5E8E7D09FD08FB3E.quest_desc: [
 		"使用方镁矾和铁制成，十分稳定(真的很稳定！)，是接下来的&e压印&r流程需要的机器。"
@@ -551,11 +672,13 @@
 		"&r&cFSE免责声明:对于工程师利用本次更新提供的系统导致的迷失/死亡，FSE集团概不负责!&r"
 	]
 	quest.60E1684C8097FC01.quest_subtitle: "探险家导航系统"
+	quest.6321DE949490756B.title: "硝酸"
 	quest.635CB4116EF04942.quest_desc: [
 		"专为大型设备设计的柴油机，彻底释放燃料化学能，油耗速率更低。"
 		"缺点是有些笨重，不如模块化柴油机方便，而且不支持涡轮增压。不过一根曲轴最多可以支持4台大型柴油机输出动力，设计得当能够做出能量密度较大的引擎。"
 	]
 	quest.635CB4116EF04942.quest_subtitle: "化学能释放者"
+	quest.6555C19A8E318116.quest_desc: ["利用分馏塔，你可以将收集的原油分馏制成不同的产品，从而进一步生产各类燃料、塑料与树脂。"]
 	quest.6555C19A8E318116.quest_subtitle: "精炼提取"
 	quest.6555C19A8E318116.title: "分馏"
 	quest.6623B6C11DE0BEFE.quest_desc: [
@@ -566,14 +689,25 @@
 	quest.6623B6C11DE0BEFE.quest_subtitle: "稳定之选"
 	quest.6623B6C11DE0BEFE.title: "余烬构件"
 	quest.67E29E561A524C0E.title: "水溶制硫酸"
-	quest.6865E893F50E4332.quest_subtitle: "氧化性"
+	quest.6865E893F50E4332.quest_desc: [
+		"经典的氧族元素，单质常见氧化性与还原性，但主要作为硫酸的核心原料。"
+		"从地下开采矿物获取，或从余烬晶体中提取。"
+	]
+	quest.6865E893F50E4332.quest_subtitle: "化工起点"
+	quest.6865E893F50E4332.title: "硫"
+	quest.686D269DA617F066.quest_subtitle: "氮肥与纯碱"
+	quest.686D269DA617F066.title: "侯氏制碱"
 	quest.689DF10255D780EE.title: "流体抽屉"
+	quest.6A73095FAA4733FC.title: "烧石灰"
 	quest.6A96F351A7C2775A.quest_desc: [
 		"在&e未组装的印刷电路板&r上依次安上&e电子管&r、&e电容&r和&e电阻&r，最后滴入一些&e润滑油&r，&c循环三次&r后你就得到了公司所需要的一种工业产品：&a印刷电路板&r。"
 		"&b现在，你可以拿着印刷电路板去商店页面向公司换点硬币了。&r"
 	]
 	quest.6A96F351A7C2775A.quest_subtitle: "落后制程"
 	quest.6A96F351A7C2775A.title: "印刷电路板"
+	quest.6AE43AF2035DFC0E.title: "回收废液"
+	quest.6B0B814BA848F078.quest_subtitle: "从石灰到烧碱"
+	quest.6B0B814BA848F078.title: "苛化制碱"
 	quest.6B8DEEC09B826431.quest_desc: ["将它贴在物品容器上使网络能够与容器进行I/O。"]
 	quest.6B8DEEC09B826431.title: "物品I/O"
 	quest.6C8A77EFF19188D6.quest_desc: [
@@ -604,6 +738,13 @@
 	quest.6DDBC4E45D1B821E.quest_subtitle: "工业用余烬能源"
 	quest.6DDBC4E45D1B821E.title: "高温催化反应器"
 	quest.6DF79A597BE1D996.quest_subtitle: "与世界接轨"
+	quest.6EBF45BAE12DC311.quest_desc: [
+		"需要插在机器的交互面上，充入蒸汽或矮人燃气以加速机器运行速度。"
+		"利用蒸汽时，每tick会消耗1mB，并为机器提供2x的速度加成，可叠加。"
+		"利用矮人燃气时，每5tick会消耗1mB，并为机器提供2.5x的速度加成，可叠加。"
+		"一般推荐安装2-3个即可。"
+	]
+	quest.6EBF45BAE12DC311.quest_subtitle: "突破功率墙"
 	quest.70FBA5647434FEB2.quest_desc: ["只是一个消音器。"]
 	quest.70FBA5647434FEB2.quest_subtitle: "听力保护"
 	quest.70FDF5B5F7CF2D59.quest_desc: [
@@ -619,6 +760,7 @@
 	quest.712BC5FBC79F99A3.quest_subtitle: "废热废冷回收者"
 	quest.72AFEEE3260B8496.quest_desc: ["作为门瑞欧树的果实，吃下门瑞欧浆果不仅可以恢复少许的饱食度，还可以让你获得短暂的夜视效果。"]
 	quest.72AFEEE3260B8496.quest_subtitle: "眼前一亮"
+	quest.739DE4510182B421.title: "硫单质"
 	quest.73CA62F8C1BFF523.quest_desc: [
 		"你好，工程师"
 		"TSE全域发展协议目前处于早期研制阶段"
@@ -630,8 +772,13 @@
 		"推荐使用铜/银/琥珀金块以达到最大工作效率。"
 	]
 	quest.741463E4C035470C.quest_subtitle: "导热“蒸”效"
+	quest.7420FBE18F684D98.quest_desc: [
+		"硫酸是化工领域最重要的原料之一，多种酸与化合物的制备都需要硫酸的参与。"
+		"[ \"关于硫酸产线，请查看“\", { \"text\": \"生化环材\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"04714CEDEC99E86E\" } }, \"”章节。\" ]"
+	]
 	quest.7420FBE18F684D98.quest_subtitle: "化工之母"
 	quest.7420FBE18F684D98.title: "硫酸"
+	quest.74711B67070C4200.title: "盐水"
 	quest.74B2A4C09387A778.quest_desc: [
 		"&3古代城市&r有我们需要的一些材料，看来你是不得不去一趟了。"
 		"我们建议在前往古代城市之前先制作一个&e剪刀&r，就地取材获取静步所需的羊毛。"
@@ -640,24 +787,55 @@
 		"[ { \"text\": \"点击此处前往任务页面\", \"underlined\": true,\"color\":\"red\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"60E1684C8097FC01\" } } ]"
 	]
 	quest.74B2A4C09387A778.quest_subtitle: "&e监守者：迫近"
+	quest.74B73EDEC42A769C.quest_desc: [
+		"乙烯是最简单的含C=C化合物，两个碳由一个σ键与一个π键链接，因此较易参与反应，属于不饱和烃。"
+		"通过氧气辅助，乙烯的C=C将会变为-C-C-，与其他同样打开的乙烯聚合形成长链，进而形成聚乙烯。"
+		"聚乙烯是最基础的塑料，广泛运用在各类场合。"
+	]
+	quest.74B73EDEC42A769C.quest_subtitle: "π键"
 	quest.74B73EDEC42A769C.title: "乙烯"
+	quest.75D75C5396E08033.title: "硫化钙"
 	quest.76CA5C23A816C8F6.quest_desc: [
-		"使用&e原油探测器&r寻找拥有原油的地方，然后在那里搭建一个&b抽油机&r来提取当地的&a原油&r。"
-		"&c来自EDA的警告：你的防护服接触到原油会损坏。在地表有很多原油池，请不要陷入其中，否则公司将起诉你蓄意破坏公司财产。&r"
+		"使用&e地图&r寻找地表分布的原油坑，然后在那里&b手动收集&r当地的&a原油&r。"
+		"&c你现在还没有从星球深处开采原油的能力&r"
 	]
 	quest.76CA5C23A816C8F6.quest_subtitle: "USA：Where？"
 	quest.76CA5C23A816C8F6.title: "石油开采"
+	quest.7958FE8C7AC2B662.quest_desc: [
+		"这是一个&#FF0000尚在开发的整合包&r，目前尚有许多内容未完善，遇到问题请及时反馈给我们！"
+		"整合包测试交流群：916621739"
+		"----------"
+		"整合包策划与创意设计：Lsd6thgrz"
+		"代码编写与功能实现主力：Lsd6thgrz、Moai"
+		"贴图美工：mian_bao_cat"
+		"----------"
+		"Produce By FSE-股尾前科组（TSE-Dev Team）"
+	]
+	quest.7958FE8C7AC2B662.quest_subtitle: "FSE-股尾前科组 荣誉出品！"
+	quest.7958FE8C7AC2B662.title: "关于整合包"
 	quest.79DAD3919E3B92EE.quest_desc: ["树场的动力好伙伴，缺点就是产能太低，为什么不去看看隔壁的风车呢？"]
 	quest.79DAD3919E3B92EE.quest_subtitle: "河动力"
+	quest.7A2AFE8F1FD10779.quest_desc: [
+		"将硫与生胶乳反应混合，即可得到硫化橡胶。"
+		"硫化橡胶具有良好的机械强度与可塑性，同时不易变质，是良好的密封材料。"
+	]
+	quest.7A2AFE8F1FD10779.quest_subtitle: "稳定耐用"
+	quest.7AF3BFB4C8641425.quest_desc: ["电子管的运算部分，还需要为它安装引脚才能成为电子管。"]
 	quest.7AF3BFB4C8641425.quest_subtitle: "有尘车间"
 	quest.7C4948C473CA9D5F.quest_subtitle: "强氧化性"
 	quest.7C4948C473CA9D5F.title: "硝酸产线"
+	quest.7CAC05E7A5A294EE.title: "回收硫化钙"
+	quest.7D66E33CCBD4764B.quest_desc: ["[ \"与空气压缩机有关的条目，请查阅“\", { \"text\": \"前方高能\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6CBAAF53DC95FF5C\" } }, \"”章节。\" ]"]
+	quest.7D66E33CCBD4764B.quest_subtitle: "再多一点就会爆炸"
 	quest.7DB7FC5CAB2B92C8.quest_desc: ["安山合金，你工业的基石"]
 	quest.7DB7FC5CAB2B92C8.quest_subtitle: "What's This?"
 	quest.7EAF181EFCCA3F85.quest_subtitle: "指针"
+	quest.7F849CDC6CF8E000.quest_subtitle: "尚在制作中！"
 	quest.7F849CDC6CF8E000.title: "电力工业-阶段I"
+	quest.7FDC954A8430E8D4.title: "氯化铵"
 	task.00D0EEDE292981E0.title: "Landing!"
 	task.0267AC0CE1044A87.title: "液态粗制硫化橡胶"
+	task.03B9BD94E60A1674.title: "氧化铅"
 	task.0649A3741602FE99.title: "功能03"
 	task.12A528CDB0C61D20.title: "&EDA"
 	task.17F094BA13190498.title: "我将填补能源缺口"
@@ -666,9 +844,12 @@
 	task.203751712EEB4D7B.title: "检查01"
 	task.26A8999900EA5EB0.title: "脱硫"
 	task.281A4F151A1B6297.title: "纸浆"
+	task.28F23E0DC0DB9260.title: "一氧化铅"
+	task.2F859D977968045D.title: "分馏液态空气"
 	task.316F67A57E4C5EE1.title: "物资交换"
 	task.326165CAD5B77E40.title: "古代城市"
 	task.3FF36632B9778366.title: "电力工业"
+	task.412BF4DE22EAE382.title: "红丹"
 	task.454BFBAF17F03F71.title: "酚醛树脂"
 	task.4637B5F4908D736B.title: "如何阅读"
 	task.46CA53F81A92F371.title: "我准备好了"
@@ -676,6 +857,7 @@
 	task.504A42844D883AD8.title: "&cINDEV"
 	task.53C6AB0ACA5654F8.title: "在开始之前......"
 	task.5637D568907C2570.title: "蒸汽"
+	task.56E0D39324A96963.title: "二氧化铅"
 	task.5FB30D2A7052FF93.title: "灵魂醇"
 	task.6135E6A2160297E3.title: "功能02"
 	task.6A1F66BA6D752EF9.title: "水热解"

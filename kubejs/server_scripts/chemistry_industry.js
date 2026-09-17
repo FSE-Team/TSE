@@ -73,24 +73,28 @@ ServerEvents.recipes(event => {
 
 
     //大气分离
-    event.recipes.vintageimprovements.pressurizing([Fluid.of(MODID+"air",500),"minecraft:sponge"],["minecraft:sponge"]).secondaryFluidOutput(0).processingTime(100)
+    event.recipes.vintageimprovements.pressurizing([Fluid.of(MODID+"air",5),"minecraft:sponge"],["minecraft:sponge"]).secondaryFluidOutput(0).processingTime(1)
     thermal_plant(null,null,MODID+"air",1000,null,null,MODID+"liquid_air",500,8.0,-200,-180,1,1,false)
     event.recipes.createdieselgenerators.distillation(
         [
+            Fluid.of("minecraft:water",10),
+            Fluid.of(MODID+"nitrogen",700),
             Fluid.of(MODID+"oxygen",200),
-            Fluid.of(MODID+"nitrogen",800)
+            Fluid.of("industrialforegoing:ether_gas",90)
         ],
         Fluid.of(MODID+"liquid_air")
-    )
+    ).processingTime(20)
+
 
     //水煤气
     event.recipes.createdieselgenerators.basin_fermenting(
         [
-            Fluid.of(MODID + "carbon_monoxide", 100),
+            Fluid.of(MODID + "carbon_monoxide", 300),
             Fluid.of(MODID + "hydrogen", 100)
         ],[
             Fluid.of("minecraft:water", 100),
-            Fluid.of(MODID+"carbon_dioxide",100)
+            Fluid.of(MODID+"carbon_dioxide",100),
+            Ingredient.of("#minecraft:coals",2)
         ], 20
     ).superheated()
     
@@ -143,7 +147,7 @@ ServerEvents.recipes(event => {
 
     //硫酸
     event.recipes.vintageimprovements.pressurizing(Fluid.of(MODID+"sulfur_dioxide",100),[Ingredient.of("#c:dusts/sulfur"),Fluid.of(MODID+"oxygen",100)]).heated().secondaryFluidOutput(0).processingTime(200)
-    event.recipes.vintageimprovements.pressurizing([Fluid.of(MODID+"sulfur_trioxide",100),CreateItem.of("alltheores:platinum_dust",0.9999)],[Fluid.of(MODID+"sulfur_dioxide",100),"alltheores:platinum_dust",Fluid.of(MODID+"oxygen",100)]).superheated().secondaryFluidOutput(0).processingTime(100)
+    event.recipes.vintageimprovements.pressurizing([Fluid.of(MODID+"sulfur_trioxide",100),"alltheores:platinum_dust"],[Fluid.of(MODID+"sulfur_dioxide",100),"alltheores:platinum_dust",Fluid.of(MODID+"oxygen",100)]).superheated().secondaryFluidOutput(0).processingTime(100)
     event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of(MODID+"sulfuric_acid",100),[Fluid.of(MODID+"sulfur_trioxide",100),Fluid.of("minecraft:water",100)]).processingTime(500).heated()
     event.recipes.createdieselgenerators.bulk_fermenting(Fluid.of(MODID+"oleum",100),[Fluid.of(MODID+"sulfur_trioxide",10),Fluid.of(MODID+"sulfuric_acid",100)]).processingTime(50)
     event.recipes.create.mixing(Fluid.of(MODID+"sulfuric_acid",150),[Fluid.of(MODID+"oleum",100),Fluid.of("minecraft:water",100)])
@@ -169,18 +173,28 @@ ServerEvents.recipes(event => {
     ).heated()
     
     //制碱
+    event.recipes.create.crushing([Item.of(MODID+"limestone_dust",3),CreateItem.of(MODID+"limestone_dust",0.5)],"create:limestone")
+    event.recipes.create.mixing(MODID+"calcium_hydroxide",[Fluid.of("minecraft:water",100),"2x "+MODID+"quicklime"])
+    event.blasting(MODID+"quicklime",MODID+"limestone_dust")
     event.recipes.create.mixing([Fluid.of(MODID+"carbon_dioxide",200),MODID+"sodium_sulfide"],[MODID+"sodium_sulfate",Ingredient.of("#minecraft:coals",2)]).superheated()
-    event.recipes.create.mixing([Item.of(MODID+"sodium_carbonate"),MODID+"calcium_sulfide"],[MODID+"sodium_sulfide","create:limestone"]).superheated()
-    event.recipes.createdieselgenerators.bulk_fermenting(["create:limestone",Fluid.of(MODID+"hydrogen_sulfide",100)],[MODID+"calcium_sulfide",Fluid.of(MODID+"carbon_dioxide",100),Fluid.of("minecraft:water",100)]).heated()
+    event.recipes.create.mixing([Item.of(MODID+"sodium_carbonate"),MODID+"calcium_sulfide"],[MODID+"sodium_sulfide",MODID+"limestone_dust"]).superheated()
+    event.recipes.create.mixing([Fluid.of(MODID+"sodium_carbonate",100)],[Fluid.of(MODID+"sodium_hydroxide",100),Fluid.of(MODID+"carbon_dioxide",100)])
+    event.recipes.createdieselgenerators.bulk_fermenting([MODID+"limestone_dust",Fluid.of(MODID+"hydrogen_sulfide",100)],[MODID+"calcium_sulfide",Fluid.of(MODID+"carbon_dioxide",100),Fluid.of("minecraft:water",100)]).heated()
     event.recipes.createdieselgenerators.bulk_fermenting(["2x alltheores:sulfur",Fluid.of("minecraft:water",200)],[Fluid.of(MODID+"hydrogen_sulfide",200),Fluid.of(MODID+"oxygen",100)]).heated()
     event.recipes.create.mixing(Fluid.of(MODID+"sodium_carbonate",100),[Fluid.of("minecraft:water",100),Item.of(MODID+"sodium_carbonate")])
-    thermal_plant(MODID+"calcium_hydroxide",1,MODID+"sodium_carbonate",100,"create:limestone",1,MODID+"sodium_hydroxide",100,3,-20,10,1,1,true)
+    thermal_plant(MODID+"calcium_hydroxide",1,MODID+"sodium_carbonate",100,MODID+"limestone_dust",1,MODID+"sodium_hydroxide",100,3,-20,10,1,1,true)
 
     //铅回收
-    event.recipes.create.mixing([MODID+"lead_carbonate",Item.of('immersiveengineering:dust_saltpeter',2)],[MODID+"sodium_carbonate",Fluid.of(MODID+"lead_nitrate",100)])
+    event.recipes.create.mixing([MODID+"lead_carbonate",Item.of('immersiveengineering:dust_saltpeter',2)],[Ingredient.of(MODID+"sodium_carbonate"),Fluid.of(MODID+"lead_nitrate",100)])
     event.recipes.createdieselgenerators.basin_fermenting([MODID+"lead_monoxide",Fluid.of(MODID+"carbon_dioxide",100)],MODID+"lead_carbonate").superheated().processingTime(20)
     event.recipes.vintageimprovements.vacuumizing(Item.of(MODID+"lead_chloride"),Fluid.of(MODID+"lead_chloride",100)).processingTime(50)
     event.recipes.createdieselgenerators.bulk_fermenting([MODID+"lead_dioxide","3x alltheores:salt",Fluid.of("minecraft:water",100)],[Fluid.of(MODID+"sodium_hypochlorite",100),Fluid.of(MODID+"sodium_hydroxide",200),Item.of(MODID+"lead_chloride")]).processingTime(20)
+    event.recipes.create.mixing([MODID+"lead_monoxide",Fluid.of(MODID+"ammonia",200)],[Fluid.of(MODID+"ammonium_chloride",200),Fluid.of(MODID+"lead_chloride",100)]).heated()
+    event.recipes.create.mixing(Fluid.of(MODID+"ammonium_chloride",200),[Fluid.of(MODID+"ammonia",100),Fluid.of(MODID+"hydrochloric_acid",100)])
+
+    //合成氨
+    event.recipes.createdieselgenerators.basin_fermenting([Fluid.of(MODID+"hydrogen",100),Fluid.of(MODID+"carbon_dioxide",100),"alltheores:copper_dust"],[Fluid.of("minecraft:water",100),Fluid.of(MODID+"carbon_monoxide",100),"alltheores:copper_dust"]).superheated()
+    event.recipes.vintageimprovements.pressurizing([Fluid.of(MODID+"ammonia",20),Fluid.of(MODID+"hydrogen",270),Fluid.of(MODID+"nitrogen",90),"alltheores:iron_dust"],[Fluid.of(MODID+"hydrogen",300),Fluid.of(MODID+"nitrogen",100),"alltheores:iron_dust"]).heated().processingTime(800).secondaryFluidOutput(0).secondaryFluidInput(0).secondaryFluidInput2(1)
 
 
 })
